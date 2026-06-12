@@ -3,7 +3,7 @@ import streamlit.components.v1 as components
 
 # Page configuration
 st.set_page_config(
-    page_title="Obeth Gabiana Silawan | BOT | DATA ANALYST & SEO Portfolio",
+    page_title="Obeth Gabiana Silawan | SEO Specialist Portfolio",
     page_icon="✨",
     layout="wide",
     initial_sidebar_state="collapsed"
@@ -27,9 +27,9 @@ portfolio_html = """
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Obeth Gabiana Silawan | AI Engineer & SEO Specialist Portfolio</title>
-<meta name="description" content="Obeth Gabiana Silawan - AI Engineer, SEO Specialist, Jr Data Analyst, WordPress Developer, and Server Administrator">
-<meta name="keywords" content="AI Engineer, SEO Specialist, Jr Data Analyst, WordPress Developer, Server Administrator">
+<title>Obeth Gabiana Silawan | SEO Specialist Portfolio</title>
+<meta name="description" content="Obeth Gabiana Silawan - SEO Specialist, WordPress Developer, ASO Specialist, and Server Administrator">
+<meta name="keywords" content="SEO Specialist, WordPress Developer, ASO Specialist, Server Administrator">
 <meta name="author" content="Obeth Gabiana Silawan">
 
 <style>
@@ -520,10 +520,10 @@ footer {
 
 <section class="hero">
   <div>
-    <div class="badge">✨ AI Engineer & SEO Specialist & Jr Data Analyst</div>
+    <div class="badge">✨ SEO Specialist & WordPress Developer</div>
     <h1>Hi, I'm <span>Obeth Gabiana Silawan</span></h1>
     <p>
-      Senior SEO Specialist, Jr Data Analyst, AI-driven digital builder, WordPress Developer, and Server Administrator.
+      SEO Specialist, WordPress Developer, ASO Specialist, and Server Administrator.
       I create intelligent websites, automation systems, data-driven insights, and search-optimized digital
       experiences that help brands grow smarter in the modern world.
     </p>
@@ -544,7 +544,6 @@ footer {
     </div>
 
     <div class="buttons">
-      <a href="https://scatter-dashboard-bert.streamlit.app/" target="_blank" class="btn btn-primary">📊 View My Work</a>
       <a href="#contact" class="btn btn-secondary">📧 Hire Me</a>
       <a href="#" onclick="downloadCV()" class="btn btn-secondary">📄 Download CV</a>
     </div>
@@ -562,9 +561,9 @@ footer {
         <div class="body"></div>
       </div>
       <div class="code-chip">
-        🔍 Senior SEO Specialist | 📊 Jr Data Analyst<br>
-        🖥️ Server Admin (VPS) | aaPanel | cPanel | WHM | HPanel<br>
-        🔄 Website Migration | Database Transfer
+        🔍 SEO Specialist | WordPress Developer<br>
+        🖥️ VPS | aaPanel | cPanel | WHM<br>
+        📱 ASO Specialist | Data Analyst
       </div>
     </div>
   </div>
@@ -573,8 +572,7 @@ footer {
 <section id="about">
   <h2 class="section-title">About Me</h2>
   <div class="about-box">
-    <p>I am <strong>Obeth Gabiana Silawan</strong>, a passionate technology professional from Samar Island with a strong background in <strong>Senior SEO</strong>, <strong>Jr Data Analysis</strong>, <strong>WordPress development</strong>, and <strong>Server Administration</strong>. My interest in coding started when I was young, and that curiosity pushed me to keep learning, exploring, and improving every single day.</p>
-    <p>I believe that knowledge becomes powerful when it is turned into real solutions. Through personal study, hands-on work, and conversations with experienced developers and IT professionals, I learned how to transform information into useful systems, better websites, and smarter strategies that deliver measurable results.</p>
+    <p>As a young coder from Samar, I left home seeking deeper knowledge and skills to thrive in a fast-changing world. My journey led me to explore what it takes to succeed in the 21st century. I've discovered through years of study and insights from experienced friends in IT. While there's plenty of information available, turning it into real understanding is the real challenge.</p>
     <p>My mission is to build websites and digital systems that are functional, user-friendly, visually attractive, search-friendly, powered by smart data analytics, and hosted on reliable server infrastructure.</p>
     <p><strong>✨ Core Philosophy:</strong> "Build smart, optimize constantly, analyze data deeply, and let insights drive decisions."</p>
   </div>
@@ -582,95 +580,131 @@ footer {
 
 <section id="experience">
   <h2 class="section-title">Work Experience</h2>
-  <p class="section-desc">My complete professional journey from 2019 to Present - chronological order from newest to oldest.</p>
+  <p class="section-desc">My complete professional journey from 2019 to Present - chronological order.</p>
 
   <div class="grid">
-    <!-- 2026 - Present -->
+    <!-- SEO FREELANCE / Self-employed -->
     <div class="card">
-      <h3>🔹 Senior SEO Specialist</h3>
-      <p><strong>Self-employed / Freelance</strong> | 2026 - Present</p>
+      <h3>🔹 SEO FREELANCE</h3>
+      <p><strong>Self-employed</strong> | 2024 - 2025</p>
       <ul>
-        <li>VPS Self-Managed Setup & Configuration (DigitalOcean, Vultr, Linode)</li>
-        <li>aaPanel, cPanel, WHM, hPanel Administration and Management</li>
-        <li>Website Migration between hosting providers with zero downtime</li>
-        <li>Database to Database Transfer ensuring data integrity</li>
-        <li>Technical SEO Audits and implementation</li>
-        <li>Nginx / Apache Web Server Configuration</li>
-        <li>SSL Certificate Installation (Let's Encrypt, Commercial)</li>
-        <li>Server Security Hardening & Firewall Setup (UFW, CSF)</li>
-        <li>Linux Command Line Operations (Ubuntu, CentOS, Debian)</li>
+        <li>Black hat SEO - Casino India Market</li>
+        <li>Auto Claim GMB/GBP - Bypass Verification</li>
+        <li>Cloaking: Showing different content to users and search engines</li>
+        <li>Private Blog Networks (PBNs)</li>
+        <li>Negative SEO</li>
+        <li>Auto-generated/Click fraud or bot traffic backlinks injection / High DA/DR</li>
+        <li>No Tools - Linux Based Operations</li>
       </ul>
     </div>
 
-    <!-- 2024 - 2025 -->
+    <!-- IE Soft Technology - SEO Team Lead -->
     <div class="card">
       <h3>🔹 SEO Team Lead</h3>
-      <p><strong>Freelance</strong> | 2024 - 2025</p>
+      <p><strong>IE Soft Technology</strong> | 2024 - 2025</p>
       <ul>
-        <li>Led a team of SEO specialists to design and implement SEO strategies</li>
-        <li>Created roadmaps for SEO campaigns</li>
-        <li>Managed technical SEO audits and link-building campaigns</li>
-        <li>Analyzed performance via Google Analytics 4 (GA4) and Search Console</li>
-        <li>Translated data insights into scalable actionable strategies</li>
-        <li>Collaborated with cross-functional teams for SEO integration</li>
+        <li>Led a team of specialists to design and implement SEO strategies</li>
+        <li>Create road Map & SEO strategies</li>
+        <li>Managed technical audits</li>
+        <li>Managed link-building campaigns</li>
+        <li>Analyzed performance via GA4, Search Console</li>
+        <li>Translating insights into scalable actions</li>
+        <li>Collaborated with cross-functional teams</li>
+      </ul>
+    </div>
+
+    <!-- BRICKSHARTS TECHNOLOGY - Offpage SEO -->
+    <div class="card">
+      <h3>🔹 Offpage SEO Specialist</h3>
+      <p><strong>Bricksharts Technology</strong> | 2022</p>
+      <ul>
+        <li>Executed strategic backlink campaigns (HARO, Digital PR)</li>
+        <li>Built relationships with industry influencers</li>
         <li>Managed local SEO citations and directory listings</li>
         <li>Monitored and disavowed toxic backlinks</li>
       </ul>
     </div>
 
-    <!-- 2024 - 2025 Freelance -->
+    <!-- ELEVATE OUTSOURCING - Onpage SEO -->
     <div class="card">
-      <h3>🔹 SEO Freelance</h3>
-      <p><strong>Self-employed</strong> | 2024 - 2025</p>
+      <h3>🔹 Onpage SEO Specialist</h3>
+      <p><strong>Elevate Outsourcing</strong> | 2022</p>
       <ul>
-        <li>Managed 20+ client accounts across various industries</li>
-        <li>On-page and off-page SEO optimization</li>
-        <li>Local SEO for small businesses</li>
-        <li>Technical SEO fixes and site migrations</li>
-        <li>Monthly reporting and strategy calls</li>
-        <li>Keyword research and content strategy</li>
+        <li>Keyword Research & Optimization</li>
+        <li>Content Optimization</li>
+        <li>Meta Tags & URL Structuring</li>
+        <li>Header Tags (H1, H2, H3) & HTML Markup</li>
+        <li>Internal Linking Strategy</li>
+        <li>Image & Multimedia Optimization</li>
+        <li>Mobile & Core Web Vitals</li>
+        <li>User Experience (UX) Signals</li>
       </ul>
     </div>
 
-    <!-- 2024 WordPress Developer -->
+    <!-- LEVENDER GROUPS - Onpage SEO -->
     <div class="card">
-      <h3>🔹 WordPress Developer</h3>
-      <p><strong>IE Soft Technology</strong> | 2024</p>
+      <h3>🔹 Onpage SEO Specialist</h3>
+      <p><strong>Levender Groups</strong> | 2022</p>
       <ul>
-        <li>Theme & Plugin Development from scratch</li>
-        <li>Page Builders (Elementor, Gutenberg) customization</li>
-        <li>Performance Optimization (speed, caching, CDN)</li>
-        <li>Security hardening and malware removal</li>
-        <li>Custom post types and advanced custom fields</li>
-        <li>WooCommerce store setup and optimization</li>
+        <li>Keyword Research & Optimization</li>
+        <li>Content Optimization</li>
+        <li>Meta Tags & URL Structuring</li>
+        <li>Header Tags (H1, H2, H3) & HTML Markup</li>
+        <li>Internal Linking Strategy</li>
+        <li>Image & Multimedia Optimization</li>
+        <li>Mobile & Core Web Vitals</li>
+        <li>User Experience (UX) Signals</li>
       </ul>
     </div>
 
-    <!-- 2021 Junior ASO -->
+    <!-- COSMOLINK GLOBAL SOLUTION - Junior ASO -->
     <div class="card">
       <h3>🔹 Junior ASO Specialist</h3>
-      <p><strong>Various Clients</strong> | 2021</p>
+      <p><strong>Cosmolink Global Solution</strong> | 2021</p>
       <ul>
         <li>Keyword Research & Optimization for app stores</li>
         <li>A/B tested icons, screenshots, and video previews to improve CTR</li>
         <li>Analyzed competitor creatives and adapted best practices</li>
         <li>Tools: AppTweak, MobileAction, Google Play Console, App Store Connect</li>
-        <li>Improved app rankings and conversion rates</li>
-        <li>Localized app store listings for international markets</li>
       </ul>
     </div>
 
-    <!-- 2019 - 2020 Junior SEO -->
+    <!-- BRICKSHARTS TECHNOLOGY - WordPress Developer -->
+    <div class="card">
+      <h3>🔹 WordPress Developer</h3>
+      <p><strong>Bricksharts Technology</strong> | 2021</p>
+      <ul>
+        <li>Theme & Plugin Development</li>
+        <li>Page Builders & Gutenberg</li>
+        <li>Performance Optimization</li>
+        <li>Security & Maintenance</li>
+      </ul>
+    </div>
+
+    <!-- WBridge Island Cove - Junior SEO Specialist -->
     <div class="card">
       <h3>🔹 Junior SEO Specialist</h3>
       <p><strong>WBridge Island Cove</strong> | 2019 - 2020</p>
       <ul>
-        <li>Supported organic growth for multiple client websites</li>
-        <li>Improved URL structures, header tags, and meta descriptions</li>
-        <li>Updated old content for freshness and search relevance</li>
-        <li>Monitored keyword rankings and organic traffic</li>
-        <li>Used Google Analytics and Search Console for reporting</li>
-        <li>Assisted in backlink analysis and competitor research</li>
+        <li>Black hat SEO - Casino India Market</li>
+        <li>Click fraud or bot traffic</li>
+        <li>Cloaking: Showing different content to users and search engines</li>
+        <li>Private Blog Networks (PBNs)</li>
+        <li>Negative SEO</li>
+        <li>Auto-generated/Click fraud or bot traffic</li>
+        <li>Bypass GMB/GBP/Bing Business</li>
+      </ul>
+    </div>
+
+    <!-- Additional Junior SEO -->
+    <div class="card">
+      <h3>🔹 Junior SEO Specialist</h3>
+      <p><strong>Various Clients</strong> | 2019 - 2020</p>
+      <ul>
+        <li>Supporting organic growth</li>
+        <li>Improved URL structures, header tags</li>
+        <li>Updated old content for freshness and relevance</li>
+        <li>Monitored rankings, traffic (Google Analytics/Search Console)</li>
       </ul>
     </div>
   </div>
@@ -678,68 +712,52 @@ footer {
 
 <section id="skills">
   <h2 class="section-title">Skills & Expertise</h2>
-  <p class="section-desc">A comprehensive skill set combining SEO mastery, Data Analysis, Server Administration, AI integration, and web development.</p>
+  <p class="section-desc">A comprehensive skill set combining SEO mastery, WordPress Development, ASO, and Server Administration.</p>
 
   <div class="grid">
     <div class="card">
-      <h3>🔍 Senior SEO</h3>
+      <h3>🔍 On-Page SEO</h3>
       <ul>
-        <li>On-Page SEO Optimization</li>
-        <li>Technical SEO Audits</li>
-        <li>Local SEO Strategies</li>
-        <li>Off-Page & Link Building</li>
-        <li>Keyword Research & Strategy</li>
-        <li>SEO Analytics & Reporting (GA4, GSC)</li>
+        <li>Keyword Research & Optimization</li>
+        <li>Content Optimization</li>
+        <li>Meta Tags & URL Structuring</li>
+        <li>Header Tags (H1, H2, H3) & HTML Markup</li>
+        <li>Internal Linking Strategy</li>
+        <li>Image & Multimedia Optimization</li>
+        <li>Mobile & Core Web Vitals</li>
+        <li>User Experience (UX) Signals</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>📊 Jr Data Analyst</h3>
+      <h3>🔗 Off-Page SEO</h3>
       <ul>
-        <li>Data Collection & Cleaning</li>
-        <li>Exploratory Data Analysis (EDA)</li>
-        <li>Data Visualization (Charts, Graphs)</li>
-        <li>SQL Querying & Database Analysis</li>
-        <li>Excel / Google Sheets Analytics</li>
-        <li>Business Intelligence Reporting</li>
+        <li>Strategic backlink campaigns (HARO, Digital PR)</li>
+        <li>Industry influencer relationships</li>
+        <li>Local SEO citations and directories</li>
+        <li>Toxic backlink monitoring & disavow</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>🖥️ Server & Hosting Management</h3>
+      <h3>🖥️ Server & Hosting</h3>
       <ul>
-        <li>VPS Self-Managed Setup & Configuration</li>
-        <li>aaPanel Installation & Management</li>
-        <li>cPanel & WHM Administration</li>
+        <li>VPS Setup & Configuration</li>
+        <li>aaPanel / cPanel / WHM</li>
         <li>hPanel Management</li>
-        <li>Website Migration (Zero Downtime)</li>
-        <li>Database to Database Transfer</li>
-        <li>Nginx / Apache Configuration</li>
-        <li>Linux Command Line Operations</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>🤖 AI & Automation</h3>
-      <ul>
-        <li>Advanced Prompt Engineering</li>
-        <li>AI Workflow Automation</li>
-        <li>Content Generation Strategy</li>
-        <li>Smart Process Optimization</li>
-        <li>AI-Powered Data Analysis</li>
-        <li>Chatbot Integration</li>
+        <li>Website Migration</li>
+        <li>Database Transfer</li>
+        <li>Linux Operations (No Tools)</li>
       </ul>
     </div>
 
     <div class="card">
       <h3>💻 WordPress Development</h3>
       <ul>
-        <li>Custom Theme Development</li>
-        <li>Plugin Development & Customization</li>
-        <li>Website Speed Optimization</li>
+        <li>Theme & Plugin Development</li>
+        <li>Page Builders & Gutenberg</li>
+        <li>Performance Optimization</li>
         <li>Security & Maintenance</li>
-        <li>WooCommerce Setup</li>
-        <li>Page Builders (Elementor, Gutenberg)</li>
       </ul>
     </div>
 
@@ -747,11 +765,19 @@ footer {
       <h3>📱 ASO & Mobile</h3>
       <ul>
         <li>App Store Optimization</li>
-        <li>Google Play Console Management</li>
-        <li>App Store Connect Management</li>
         <li>Keyword Research for Apps</li>
         <li>Creative A/B Testing</li>
-        <li>Competitor Analysis</li>
+        <li>Tools: AppTweak, MobileAction, Google Play Console, App Store Connect</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>📊 Analytics & Tools</h3>
+      <ul>
+        <li>Google Analytics 4 (GA4)</li>
+        <li>Google Search Console</li>
+        <li>Data Analysis & Reporting</li>
+        <li>Performance Tracking</li>
       </ul>
     </div>
   </div>
@@ -760,18 +786,19 @@ footer {
 <section id="contact">
   <div class="contact-box">
     <h2>Let's Build Something Intelligent</h2>
-    <p>Ready to create an AI-powered, SEO-friendly, data-driven digital experience? Let's collaborate and bring your vision to life.</p>
+    <p>Ready to create an SEO-friendly, data-driven digital experience? Let's collaborate and bring your vision to life.</p>
     <div style="margin-bottom: 20px;">
       <p>📞 +63 9564574637</p>
       <p>✉️ ieph.bert888@gmail.com</p>
       <p>📍 San Leon Umingan Pangasinan</p>
+      <p>🌐 Languages: English | Tagalog</p>
     </div>
     <a href="mailto:ieph.bert888@gmail.com" class="btn btn-primary">✉️ Contact Me</a>
   </div>
 </section>
 
 <footer>
-  © 2026 Obeth Gabiana Silawan | AI Engineer | Senior SEO Specialist | Jr Data Analyst | Server Administrator | Built with 💙
+  © 2026 Obeth Gabiana Silawan | SEO Specialist | WordPress Developer | ASO Specialist | Server Administrator | Built with 💙
 </footer>
 
 <script>
@@ -813,13 +840,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Download CV function with complete experience 2019-2026
+// Download CV function
 function downloadCV() {
   const cvContent = `<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Obeth Gabiana Silawan - Complete CV 2019-2026</title>
+<title>Obeth Gabiana Silawan - Complete CV</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -890,79 +917,83 @@ function downloadCV() {
     <div class="header">
       <div class="name-title">
         <h1>OBETH GABIANA SILAWAN</h1>
-        <div class="title">Senior SEO Specialist | WordPress Developer | Server Administrator | Jr Data Analyst</div>
+        <div class="title">SEO Specialist | WordPress Developer | ASO Specialist | Server Administrator</div>
       </div>
       <div class="contact-info">
         <p>📞 +63 9564574637</p>
         <p>✉️ ieph.bert888@gmail.com</p>
         <p>📍 San Leon Umingan Pangasinan</p>
+        <p>🌐 English | Tagalog</p>
       </div>
     </div>
 
     <div class="section">
       <div class="section-title">Professional Summary</div>
-      <p style="line-height: 1.6; color: #4a5568;">As a young coder from Samar, I left home seeking deeper knowledge and skills to thrive in a fast-changing world. With 7+ years of experience in SEO, WordPress development, data analysis, and server administration, I deliver results-driven digital solutions.</p>
+      <p style="line-height: 1.6; color: #4a5568;">As a young coder from Samar, I left home seeking deeper knowledge and skills to thrive in a fast-changing world. My journey led me to explore what it takes to succeed in the 21st century. I've discovered through years of study and insights from experienced friends in IT. While there's plenty of information available, turning it into real understanding is the real challenge.</p>
     </div>
 
     <div class="section">
-      <div class="section-title">Work Experience (2019 - Present)</div>
+      <div class="section-title">Work Experience</div>
       
       <div class="job">
-        <div class="job-title">Senior SEO Specialist</div>
-        <div class="company">Self-employed / Freelance</div>
-        <div class="date">2026 - Present</div>
+        <div class="job-title">SEO FREELANCE</div>
+        <div class="company">Self-employed</div>
+        <div class="date">2024 - 2025</div>
         <ul class="job-description">
-          <li>VPS Self-Managed Setup & Configuration (DigitalOcean, Vultr, Linode)</li>
-          <li>aaPanel, cPanel, WHM, hPanel Administration and Management</li>
-          <li>Website Migration between hosting providers with zero downtime</li>
-          <li>Database to Database Transfer ensuring data integrity</li>
-          <li>Technical SEO Audits and implementation</li>
-          <li>Nginx / Apache Web Server Configuration</li>
-          <li>Server Security Hardening & Firewall Setup</li>
+          <li>Black hat SEO - Casino India Market</li>
+          <li>Auto Claim GMB/GBP - Bypass Verification</li>
+          <li>Cloaking: Showing different content to users and search engines</li>
+          <li>Private Blog Networks (PBNs)</li>
+          <li>Negative SEO</li>
+          <li>Auto-generated/Click fraud or bot traffic backlinks injection / High DA/DR</li>
+          <li>No Tools - Linux Based Operations</li>
         </ul>
       </div>
 
       <div class="job">
         <div class="job-title">SEO Team Lead</div>
-        <div class="company">Freelance</div>
-        <div class="date">2024 - 2025</div>
-        <ul class="job-description">
-          <li>Led a team of SEO specialists to design and implement SEO strategies</li>
-          <li>Created roadmaps for SEO campaigns</li>
-          <li>Managed technical SEO audits and link-building campaigns</li>
-          <li>Analyzed performance via Google Analytics 4 (GA4) and Search Console</li>
-          <li>Managed local SEO citations and directory listings</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-title">SEO Freelance</div>
-        <div class="company">Self-employed</div>
-        <div class="date">2024 - 2025</div>
-        <ul class="job-description">
-          <li>Managed 20+ client accounts across various industries</li>
-          <li>On-page and off-page SEO optimization</li>
-          <li>Local SEO for small businesses</li>
-          <li>Technical SEO fixes and site migrations</li>
-          <li>Monthly reporting and strategy calls</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-title">WordPress Developer</div>
         <div class="company">IE Soft Technology</div>
-        <div class="date">2024</div>
+        <div class="date">2024 - 2025</div>
         <ul class="job-description">
-          <li>Theme & Plugin Development from scratch</li>
-          <li>Page Builders (Elementor, Gutenberg) customization</li>
-          <li>Performance Optimization (speed, caching, CDN)</li>
-          <li>Security hardening and malware removal</li>
+          <li>Led a team of specialists to design and implement SEO strategies</li>
+          <li>Create road Map & SEO strategies</li>
+          <li>Managed technical audits and link-building campaigns</li>
+          <li>Analyzed performance via GA4, Search Console</li>
+          <li>Translating insights into scalable actions</li>
+          <li>Collaborated with cross-functional teams</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-title">Offpage SEO Specialist</div>
+        <div class="company">Bricksharts Technology</div>
+        <div class="date">2022</div>
+        <ul class="job-description">
+          <li>Executed strategic backlink campaigns (HARO, Digital PR)</li>
+          <li>Built relationships with industry influencers</li>
+          <li>Managed local SEO citations and directory listings</li>
+          <li>Monitored and disavowed toxic backlinks</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-title">Onpage SEO Specialist</div>
+        <div class="company">Elevate Outsourcing / Levender Groups</div>
+        <div class="date">2022</div>
+        <ul class="job-description">
+          <li>Keyword Research & Optimization</li>
+          <li>Content Optimization, Meta Tags & URL Structuring</li>
+          <li>Header Tags (H1, H2, H3) & HTML Markup</li>
+          <li>Internal Linking Strategy</li>
+          <li>Image & Multimedia Optimization</li>
+          <li>Mobile & Core Web Vitals</li>
+          <li>User Experience (UX) Signals</li>
         </ul>
       </div>
 
       <div class="job">
         <div class="job-title">Junior ASO Specialist</div>
-        <div class="company">Various Clients</div>
+        <div class="company">Cosmolink Global Solution</div>
         <div class="date">2021</div>
         <ul class="job-description">
           <li>Keyword Research & Optimization for app stores</li>
@@ -973,15 +1004,32 @@ function downloadCV() {
       </div>
 
       <div class="job">
+        <div class="job-title">WordPress Developer</div>
+        <div class="company">Bricksharts Technology</div>
+        <div class="date">2021</div>
+        <ul class="job-description">
+          <li>Theme & Plugin Development</li>
+          <li>Page Builders & Gutenberg</li>
+          <li>Performance Optimization</li>
+          <li>Security & Maintenance</li>
+        </ul>
+      </div>
+
+      <div class="job">
         <div class="job-title">Junior SEO Specialist</div>
         <div class="company">WBridge Island Cove</div>
         <div class="date">2019 - 2020</div>
         <ul class="job-description">
-          <li>Supported organic growth for multiple client websites</li>
-          <li>Improved URL structures, header tags, and meta descriptions</li>
-          <li>Updated old content for freshness and search relevance</li>
-          <li>Monitored keyword rankings and organic traffic</li>
-          <li>Used Google Analytics and Search Console for reporting</li>
+          <li>Black hat SEO - Casino India Market</li>
+          <li>Click fraud or bot traffic</li>
+          <li>Cloaking: Showing different content to users and search engines</li>
+          <li>Private Blog Networks (PBNs)</li>
+          <li>Negative SEO</li>
+          <li>Bypass GMB/GBP/Bing Business</li>
+          <li>Supporting organic growth</li>
+          <li>Improved URL structures, header tags</li>
+          <li>Updated old content for freshness and relevance</li>
+          <li>Monitored rankings, traffic (Google Analytics/Search Console)</li>
         </ul>
       </div>
     </div>
@@ -996,46 +1044,20 @@ function downloadCV() {
             <div class="date">2015 - 2018</div>
           </div>
         </div>
-
-        <div class="section">
-          <div class="section-title">Languages</div>
-          <div class="job">
-            <div class="job-title">English</div>
-            <div class="company">Fluent - Professional Working Proficiency</div>
-          </div>
-          <div class="job">
-            <div class="job-title">Tagalog / Filipino</div>
-            <div class="company">Native Speaker</div>
-          </div>
-        </div>
       </div>
-
       <div>
         <div class="section">
           <div class="section-title">Core Competencies</div>
           <div class="skills-tags">
-            <span class="skill-tag">VPS Setup</span>
-            <span class="skill-tag">aaPanel</span>
-            <span class="skill-tag">cPanel/WHM</span>
-            <span class="skill-tag">WordPress</span>
             <span class="skill-tag">SEO</span>
-            <span class="skill-tag">Data Analysis</span>
+            <span class="skill-tag">On-Page SEO</span>
+            <span class="skill-tag">Off-Page SEO</span>
+            <span class="skill-tag">WordPress</span>
+            <span class="skill-tag">ASO</span>
+            <span class="skill-tag">VPS</span>
+            <span class="skill-tag">cPanel/WHM</span>
             <span class="skill-tag">GA4</span>
             <span class="skill-tag">Linux</span>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-title">References</div>
-          <div class="job">
-            <div class="job-title">Prince Alojado</div>
-            <div class="company">All World SEO / Manager</div>
-            <div>📞 09095699870</div>
-          </div>
-          <div class="job">
-            <div class="job-title">Aladin Legazpi</div>
-            <div class="company">All World SEO / CEO</div>
-            <div>📱 Telegram: @aladinlegaspi</div>
           </div>
         </div>
       </div>
@@ -1049,7 +1071,7 @@ function downloadCV() {
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'Obeth_Silawan_Complete_CV.html';
+  a.download = 'Obeth_Silawan_CV.html';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
