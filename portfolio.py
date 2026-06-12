@@ -574,44 +574,7 @@ footer {
 </footer>
 
 <script>
-const cursor = document.querySelector(".cursor");
-const cursorDot = document.querySelector(".cursor-dot");
-const avatarCard = document.getElementById("avatarCard");
-
-document.addEventListener("mousemove", function(e) {
-  cursor.style.left = e.clientX + "px";
-  cursor.style.top = e.clientY + "px";
-  cursorDot.style.left = e.clientX + "px";
-  cursorDot.style.top = e.clientY + "px";
-  
-  if (avatarCard) {
-    const x = (window.innerWidth / 2 - e.clientX) / 35;
-    const y = (window.innerHeight / 2 - e.clientY) / 35;
-    avatarCard.style.transform = `rotateY(${-x}deg) rotateX(${y}deg)`;
-  }
-});
-
-// Eye tracking
-document.addEventListener("mousemove", function(e) {
-  const eyes = document.querySelectorAll(".eye");
-  eyes.forEach(eye => {
-    const rect = eye.getBoundingClientRect();
-    const angle = Math.atan2(e.clientY - rect.top, e.clientX - rect.left);
-    const distance = Math.min(5, Math.hypot(e.clientX - rect.left, e.clientY - rect.top) / 30);
-    eye.style.transform = `translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px)`;
-  });
-});
-
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) target.scrollIntoView({ behavior: 'smooth' });
-  });
-});
-
-<script>
+// Cursor and 3D effects
 const cursor = document.querySelector(".cursor");
 const cursorDot = document.querySelector(".cursor-dot");
 const avatarCard = document.getElementById("avatarCard");
@@ -800,7 +763,6 @@ function downloadCV() {
   document.body.removeChild(a);
   URL.revokeObjectURL(url);
 }
-</script>
 </script>
 </body>
 </html>
