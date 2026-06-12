@@ -743,8 +743,8 @@ function downloadCV() {
           <div class="section-title">References</div>
           <h4>Prince Alojado</h4>
           <p>All World SEO / Manager | 09095699870</p>
-          <h4>Aladin Legazpi</h4>
-          <p>All World SEO / CEO | Telegram: @aladinlegaspi</p>
+          <h4>Mark Robert Bobo</h4>
+          <p>SEO MANAGER</p>
         </div>
       </div>
     </div>
