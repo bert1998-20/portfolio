@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Obeth Gabiana Silawan |  BOT | DATA ANALYST & SEO Portfolio </title>
-<meta name="description" content="Obeth Gabiana Silawan - AI Engineer, SEO Specialist, Jr Data Analyst, WordPress Developer, and Server Administrator creating intelligent digital experiences.">
-<meta name="keywords" content="AI Engineer, SEO Specialist, Jr Data Analyst, WordPress Developer, Server Administrator, VPS, cPanel, aaPanel, Portfolio">
+<title>Obeth Gabiana Silawan | SEO Specialist Portfolio</title>
+<meta name="description" content="Obeth Gabiana Silawan - SEO Specialist, WordPress Developer, ASO Specialist, and Server Administrator">
+<meta name="keywords" content="SEO Specialist, WordPress Developer, ASO Specialist, Server Administrator">
 <meta name="author" content="Obeth Gabiana Silawan">
 
 <style>
@@ -17,7 +17,6 @@
   cursor: none;
 }
 
-/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 body {
@@ -26,7 +25,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Custom Cursor */
 .cursor {
   width: 20px;
   height: 20px;
@@ -51,7 +49,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* Background Grid */
 .bg-grid {
   position: fixed;
   inset: 0;
@@ -95,7 +92,6 @@ body {
   50% { transform: translate(30px, 20px); }
 }
 
-/* Header */
 header {
   padding: 24px 8%;
   display: flex;
@@ -156,7 +152,6 @@ nav a:hover {
   color: #7df9ff;
 }
 
-/* Hero Section */
 .hero {
   min-height: 88vh;
   padding: 50px 8%;
@@ -198,7 +193,6 @@ nav a:hover {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-shadow: none;
 }
 
 .hero p {
@@ -250,16 +244,11 @@ nav a:hover {
   transform: translateY(-3px);
 }
 
-/* Stats Section */
 .stats {
   display: flex;
   gap: 40px;
   margin-top: 40px;
   flex-wrap: wrap;
-}
-
-.stat-item {
-  text-align: left;
 }
 
 .stat-number {
@@ -275,7 +264,6 @@ nav a:hover {
   letter-spacing: 1px;
 }
 
-/* 3D Card */
 .avatar-wrap {
   perspective: 1200px;
   display: flex;
@@ -296,39 +284,11 @@ nav a:hover {
   overflow: hidden;
 }
 
-.avatar-card::before {
-  content: "";
-  position: absolute;
-  inset: -20px;
-  background: radial-gradient(circle, rgba(125,249,255,.2), transparent 70%);
-  filter: blur(28px);
-  z-index: -1;
-}
-
 @keyframes float {
   0%,100% { transform: translateY(0) rotateY(-5deg); }
   50% { transform: translateY(-20px) rotateY(5deg); }
 }
 
-.holo-title {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  padding: 12px;
-  border-radius: 20px;
-  background: rgba(0,0,0,.3);
-  border: 1px solid rgba(125,249,255,.3);
-  color: #7df9ff;
-  text-align: center;
-  font-weight: 800;
-  font-size: 13px;
-  letter-spacing: 1px;
-  transform: translateZ(60px);
-  backdrop-filter: blur(8px);
-}
-
-/* Character */
 .character {
   position: absolute;
   left: 50%;
@@ -349,18 +309,6 @@ nav a:hover {
   box-shadow: 0 0 30px rgba(109,97,255,.6);
 }
 
-.hair-accent {
-  position: absolute;
-  top: 30px;
-  left: 60px;
-  width: 140px;
-  height: 60px;
-  background: linear-gradient(90deg, #7df9ff, #9b6cff);
-  border-radius: 50%;
-  filter: blur(15px);
-  opacity: 0.4;
-}
-
 .face {
   position: absolute;
   top: 70px;
@@ -369,7 +317,6 @@ nav a:hover {
   height: 170px;
   background: #ffddcf;
   border-radius: 50% 50% 45% 45%;
-  box-shadow: inset 0 -8px 15px rgba(180,80,70,.15);
 }
 
 .eye {
@@ -385,18 +332,6 @@ nav a:hover {
 .eye.left { left: 42px; }
 .eye.right { right: 42px; }
 
-.eye::after {
-  content: '';
-  position: absolute;
-  top: 6px;
-  left: 5px;
-  width: 8px;
-  height: 8px;
-  background: white;
-  border-radius: 50%;
-  opacity: 0.8;
-}
-
 .mouth {
   position: absolute;
   bottom: 48px;
@@ -405,17 +340,6 @@ nav a:hover {
   height: 10px;
   border-bottom: 3px solid #b85c6a;
   border-radius: 50%;
-  transition: all 0.2s ease;
-}
-
-.neck {
-  position: absolute;
-  top: 225px;
-  left: 105px;
-  width: 50px;
-  height: 40px;
-  background: #f0b5a5;
-  border-radius: 20px;
 }
 
 .body {
@@ -427,17 +351,6 @@ nav a:hover {
   background: linear-gradient(135deg, #1a2eff, #8a5cff);
   border-radius: 50px 50px 30px 30px;
   box-shadow: 0 0 25px rgba(125,249,255,.3);
-}
-
-.body-detail {
-  position: absolute;
-  top: 30px;
-  left: 70px;
-  width: 80px;
-  height: 60px;
-  border: 2px solid rgba(125,249,255,.5);
-  border-radius: 20px;
-  background: rgba(255,255,255,.1);
 }
 
 .code-chip {
@@ -455,10 +368,8 @@ nav a:hover {
   text-align: center;
   transform: translateZ(60px);
   backdrop-filter: blur(8px);
-  font-weight: 500;
 }
 
-/* Sections */
 section {
   padding: 80px 8%;
 }
@@ -494,23 +405,6 @@ section {
   border: 1px solid rgba(255,255,255,.12);
   backdrop-filter: blur(14px);
   transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(125,249,255,.1), transparent);
-  transition: left 0.5s ease;
-}
-
-.card:hover::before {
-  left: 100%;
 }
 
 .card:hover {
@@ -519,72 +413,32 @@ section {
   box-shadow: 0 0 40px rgba(125,249,255,.15);
 }
 
-.card-icon {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-.card h3 {
-  margin-bottom: 16px;
-  color: #fff;
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.card p,
-.card li {
-  color: #d5dcff;
-  line-height: 1.7;
-  font-size: 14px;
-}
-
 .card ul {
   padding-left: 20px;
-  list-style: none;
+  margin-top: 10px;
 }
 
 .card li {
-  margin-bottom: 10px;
-  position: relative;
-  padding-left: 20px;
+  color: #d5dcff;
+  line-height: 1.6;
+  font-size: 13px;
+  margin-bottom: 6px;
 }
 
-.card li::before {
-  content: '▹';
-  position: absolute;
-  left: 0;
-  color: #7df9ff;
-}
-
-/* About Box */
 .about-box {
   padding: 40px;
   border-radius: 32px;
   background: linear-gradient(145deg, rgba(125,249,255,.1), rgba(255,255,255,.04));
   border: 1px solid rgba(125,249,255,.2);
-  position: relative;
-  overflow: hidden;
-}
-
-.about-box::after {
-  content: '"';
-  position: absolute;
-  bottom: -30px;
-  right: 30px;
-  font-size: 150px;
-  opacity: 0.05;
-  font-family: serif;
 }
 
 .about-box p {
   color: #dce2ff;
-  line-height: 1.85;
-  margin-bottom: 20px;
-  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 18px;
 }
 
-/* Resume / Contact Box */
-.contact-box, .resume-box {
+.contact-box {
   text-align: center;
   padding: 60px;
   border-radius: 40px;
@@ -592,40 +446,9 @@ section {
   border: 1px solid rgba(255,255,255,.15);
 }
 
-.contact-box h2, .resume-box h2 {
-  font-size: 46px;
-  margin-bottom: 20px;
-  background: linear-gradient(135deg, #fff, #7df9ff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.contact-box p, .resume-box p {
+.contact-box p {
   color: #dce2ff;
-  margin-bottom: 35px;
-  font-size: 18px;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 30px;
-}
-
-.social-icon {
-  color: #fff;
-  text-decoration: none;
-  font-size: 24px;
-  transition: all 0.3s ease;
-  opacity: 0.7;
-}
-
-.social-icon:hover {
-  opacity: 1;
-  color: #7df9ff;
-  transform: translateY(-3px);
+  margin-bottom: 20px;
 }
 
 footer {
@@ -633,115 +456,26 @@ footer {
   text-align: center;
   color: #bfc5ff;
   border-top: 1px solid rgba(255,255,255,.08);
-  font-size: 14px;
-}
-
-/* Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #060714;
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #7df9ff, #9b6cff);
-  border-radius: 10px;
-}
-
-/* Responsive */
-@media(max-width: 1024px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media(max-width: 850px) {
-  header {
-    flex-direction: column;
-    gap: 18px;
-  }
-  
-  nav a {
-    margin: 0 15px;
-  }
-  
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
   }
-  
-  .hero p {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .buttons, .stats {
-    justify-content: center;
-  }
-  
-  .stats {
-    justify-content: center;
-  }
-  
-  .stat-item {
-    text-align: center;
-  }
-  
-  .grid {
-    grid-template-columns: 1fr;
-  }
-  
   .hero h1 {
     font-size: 48px;
   }
-  
+  .grid {
+    grid-template-columns: 1fr;
+  }
   .avatar-card {
     width: 340px;
     height: 580px;
-    margin-top: 40px;
-  }
-  
-  .section-title {
-    font-size: 36px;
-  }
-  
-  .contact-box h2, .resume-box h2 {
-    font-size: 34px;
-  }
-  
-  .contact-box, .resume-box {
-    padding: 40px 20px;
-  }
-}
-
-@media(max-width: 480px) {
-  .hero h1 {
-    font-size: 36px;
-  }
-  
-  .badge {
-    font-size: 12px;
-  }
-  
-  .btn {
-    padding: 12px 24px;
-    font-size: 14px;
-  }
-  
-  .section-title {
-    font-size: 30px;
-  }
-  
-  .avatar-card {
-    width: 300px;
-    height: 540px;
   }
 }
 </style>
 </head>
-
 <body>
 
 <div class="cursor"></div>
@@ -754,68 +488,58 @@ footer {
   <div class="logo"><span>OBETH</span>.AI</div>
   <nav>
     <a href="#about">About</a>
+    <a href="#experience">Experience</a>
     <a href="#skills">Skills</a>
-    <a href="#services">Services</a>
-    <a href="#projects">Projects</a>
-    <a href="#resume">Resume</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section class="hero">
   <div>
-    <div class="badge">✨ AI Engineer & SEO Specialist & Jr Data Analyst</div>
+    <div class="badge">✨ SEO Specialist & WordPress Developer</div>
     <h1>Hi, I'm <span>Obeth Gabiana Silawan</span></h1>
     <p>
-      Senior SEO Specialist, Jr Data Analyst, AI-driven digital builder, WordPress Developer, and Server Administrator.
+      SEO Specialist, WordPress Developer, ASO Specialist, and Server Administrator.
       I create intelligent websites, automation systems, data-driven insights, and search-optimized digital
       experiences that help brands grow smarter in the modern world.
     </p>
     
     <div class="stats">
-      <div class="stat-item">
-        <span class="stat-number">5+</span>
+      <div>
+        <span class="stat-number">7+</span>
         <span class="stat-label">Years Experience</span>
       </div>
-      <div class="stat-item">
+      <div>
         <span class="stat-number">100+</span>
         <span class="stat-label">Projects Completed</span>
       </div>
-      <div class="stat-item">
+      <div>
         <span class="stat-number">50+</span>
         <span class="stat-label">Happy Clients</span>
       </div>
     </div>
 
     <div class="buttons">
-      <a href="https://scatter-dashboard-bert.streamlit.app/" target="_blank" class="btn btn-primary">📊 View My Work</a>
-      <a href="cv.html" target="_blank" class="btn btn-secondary">📄 My CV/Resume</a>
       <a href="#contact" class="btn btn-secondary">📧 Hire Me</a>
+      <a href="#" onclick="downloadCV()" class="btn btn-secondary">📄 Download CV</a>
     </div>
   </div>
 
   <div class="avatar-wrap">
     <div class="avatar-card" id="avatarCard">
-      <div class="holo-title">⚡ AI + SEO + DATA + SERVER ⚡</div>
       <div class="character">
-        <div class="hair">
-          <div class="hair-accent"></div>
-        </div>
+        <div class="hair"></div>
         <div class="face">
           <div class="eye left"></div>
           <div class="eye right"></div>
           <div class="mouth"></div>
         </div>
-        <div class="neck"></div>
-        <div class="body">
-          <div class="body-detail"></div>
-        </div>
+        <div class="body"></div>
       </div>
       <div class="code-chip">
-        🔍 Senior SEO Specialist | 📊 Jr Data Analyst<br>
-        🖥️ Server Admin (VPS) | aaPanel | cPanel | WHM | HPanel<br>
-        🔄 Website Migration | Database Transfer<br>
-        📈 Technical SEO | WordPress Dev | AI Automation
+        🔍 SEO Specialist | WordPress Developer<br>
+        🖥️ VPS | aaPanel | cPanel | WHM<br>
+        📱 ASO Specialist | Data Analyst
       </div>
     </div>
   </div>
@@ -824,275 +548,255 @@ footer {
 <section id="about">
   <h2 class="section-title">About Me</h2>
   <div class="about-box">
-    <p>
-      I am <strong>Obeth Gabiana Silawan</strong>, a passionate technology professional from Samar Island
-      with a strong background in <strong>Senior SEO</strong>, <strong>Jr Data Analysis</strong>, 
-      <strong>WordPress development</strong>, and <strong>Server Administration</strong>. My interest in coding 
-      started when I was young, and that curiosity pushed me to keep learning, exploring, and improving every single day.
-    </p>
-    <p>
-      I believe that knowledge becomes powerful when it is turned into real solutions.
-      Through personal study, hands-on work, and conversations with experienced developers
-      and IT professionals, I learned how to transform information into useful systems,
-      better websites, and smarter strategies that deliver measurable results.
-    </p>
-    <p>
-      My mission is to build websites and digital systems that are functional,
-      user-friendly, visually attractive, search-friendly, powered by smart data
-      analytics, and hosted on reliable server infrastructure.
-    </p>
-    <p>
-      <strong>✨ Core Philosophy:</strong> "Build smart, optimize constantly, analyze data deeply, and let insights drive decisions."
-    </p>
+    <p>As a young coder from Samar, I left home seeking deeper knowledge and skills to thrive in a fast-changing world. My journey led me to explore what it takes to succeed in the 21st century. I've discovered through years of study and insights from experienced friends in IT. While there's plenty of information available, turning it into real understanding is the real challenge.</p>
+    <p>My mission is to build websites and digital systems that are functional, user-friendly, visually attractive, search-friendly, powered by smart data analytics, and hosted on reliable server infrastructure.</p>
+    <p><strong>✨ Core Philosophy:</strong> "Build smart, optimize constantly, analyze data deeply, and let insights drive decisions."</p>
+  </div>
+</section>
+
+<section id="experience">
+  <h2 class="section-title">Work Experience</h2>
+  <p class="section-desc">My complete professional journey from 2019 to Present (2026) - chronological order from newest to oldest.</p>
+
+  <div class="grid">
+    <!-- 2026 - PRESENT (MOST RECENT) -->
+    <div class="card">
+      <h3>🔹 Senior SEO Specialist</h3>
+      <p><strong>Self-employed / Freelance</strong> | 2026 - PRESENT</p>
+      <ul>
+        <li>VPS Self-Managed Setup & Configuration (DigitalOcean, Vultr, Linode)</li>
+        <li>aaPanel, cPanel, WHM, hPanel Administration and Management</li>
+        <li>Website Migration between hosting providers with zero downtime</li>
+        <li>Database to Database Transfer ensuring data integrity</li>
+        <li>Technical SEO Audits and implementation</li>
+        <li>Nginx / Apache Web Server Configuration</li>
+        <li>SSL Certificate Installation (Let's Encrypt, Commercial)</li>
+        <li>Server Security Hardening & Firewall Setup (UFW, CSF)</li>
+        <li>Linux Command Line Operations (Ubuntu, CentOS, Debian)</li>
+        <li>WordPress Optimization on VPS Environments</li>
+      </ul>
+    </div>
+
+    <!-- 2024 - 2025 SEO FREELANCE -->
+    <div class="card">
+      <h3>🔹 SEO FREELANCE</h3>
+      <p><strong>Self-employed</strong> | 2024 - 2025</p>
+      <ul>
+        <li>Black hat SEO - Casino India Market</li>
+        <li>Auto Claim GMB/GBP - Bypass Verification</li>
+        <li>Cloaking: Showing different content to users and search engines</li>
+        <li>Private Blog Networks (PBNs)</li>
+        <li>Negative SEO</li>
+        <li>Auto-generated/Click fraud or bot traffic backlinks injection / High DA/DR</li>
+        <li>No Tools - Linux Based Operations</li>
+      </ul>
+    </div>
+
+    <!-- 2024 - 2025 SEO Team Lead -->
+    <div class="card">
+      <h3>🔹 SEO Team Lead</h3>
+      <p><strong>IE Soft Technology</strong> | 2024 - 2025</p>
+      <ul>
+        <li>Led a team of specialists to design and implement SEO strategies</li>
+        <li>Create road Map & SEO strategies</li>
+        <li>Managed technical audits</li>
+        <li>Managed link-building campaigns</li>
+        <li>Analyzed performance via GA4, Search Console</li>
+        <li>Translating insights into scalable actions</li>
+        <li>Collaborated with cross-functional teams</li>
+      </ul>
+    </div>
+
+    <!-- 2022 Offpage SEO -->
+    <div class="card">
+      <h3>🔹 Offpage SEO Specialist</h3>
+      <p><strong>Bricksharts Technology</strong> | 2022</p>
+      <ul>
+        <li>Executed strategic backlink campaigns (HARO, Digital PR)</li>
+        <li>Built relationships with industry influencers</li>
+        <li>Managed local SEO citations and directory listings</li>
+        <li>Monitored and disavowed toxic backlinks</li>
+      </ul>
+    </div>
+
+    <!-- 2022 Onpage SEO - Elevate Outsourcing -->
+    <div class="card">
+      <h3>🔹 Onpage SEO Specialist</h3>
+      <p><strong>Elevate Outsourcing</strong> | 2022</p>
+      <ul>
+        <li>Keyword Research & Optimization</li>
+        <li>Content Optimization</li>
+        <li>Meta Tags & URL Structuring</li>
+        <li>Header Tags (H1, H2, H3) & HTML Markup</li>
+        <li>Internal Linking Strategy</li>
+        <li>Image & Multimedia Optimization</li>
+        <li>Mobile & Core Web Vitals</li>
+        <li>User Experience (UX) Signals</li>
+      </ul>
+    </div>
+
+    <!-- 2022 Onpage SEO - Levender Groups -->
+    <div class="card">
+      <h3>🔹 Onpage SEO Specialist</h3>
+      <p><strong>Levender Groups</strong> | 2022</p>
+      <ul>
+        <li>Keyword Research & Optimization</li>
+        <li>Content Optimization</li>
+        <li>Meta Tags & URL Structuring</li>
+        <li>Header Tags (H1, H2, H3) & HTML Markup</li>
+        <li>Internal Linking Strategy</li>
+        <li>Image & Multimedia Optimization</li>
+        <li>Mobile & Core Web Vitals</li>
+        <li>User Experience (UX) Signals</li>
+      </ul>
+    </div>
+
+    <!-- 2021 Junior ASO -->
+    <div class="card">
+      <h3>🔹 Junior ASO Specialist</h3>
+      <p><strong>Cosmolink Global Solution</strong> | 2021</p>
+      <ul>
+        <li>Keyword Research & Optimization for app stores</li>
+        <li>A/B tested icons, screenshots, and video previews to improve CTR</li>
+        <li>Analyzed competitor creatives and adapted best practices</li>
+        <li>Tools: AppTweak, MobileAction, Google Play Console, App Store Connect</li>
+      </ul>
+    </div>
+
+    <!-- 2021 WordPress Developer -->
+    <div class="card">
+      <h3>🔹 WordPress Developer</h3>
+      <p><strong>Bricksharts Technology</strong> | 2021</p>
+      <ul>
+        <li>Theme & Plugin Development</li>
+        <li>Page Builders & Gutenberg</li>
+        <li>Performance Optimization</li>
+        <li>Security & Maintenance</li>
+      </ul>
+    </div>
+
+    <!-- 2019 - 2020 Junior SEO - WBridge -->
+    <div class="card">
+      <h3>🔹 Junior SEO Specialist</h3>
+      <p><strong>WBridge Island Cove</strong> | 2019 - 2020</p>
+      <ul>
+        <li>Black hat SEO - Casino India Market</li>
+        <li>Click fraud or bot traffic</li>
+        <li>Cloaking: Showing different content to users and search engines</li>
+        <li>Private Blog Networks (PBNs)</li>
+        <li>Negative SEO</li>
+        <li>Auto-generated/Click fraud or bot traffic</li>
+        <li>Bypass GMB/GBP/Bing Business</li>
+      </ul>
+    </div>
+
+    <!-- 2019 - 2020 Junior SEO - Various Clients -->
+    <div class="card">
+      <h3>🔹 Junior SEO Specialist</h3>
+      <p><strong>Various Clients</strong> | 2019 - 2020</p>
+      <ul>
+        <li>Supporting organic growth</li>
+        <li>Improved URL structures, header tags</li>
+        <li>Updated old content for freshness and relevance</li>
+        <li>Monitored rankings, traffic (Google Analytics/Search Console)</li>
+      </ul>
+    </div>
   </div>
 </section>
 
 <section id="skills">
   <h2 class="section-title">Skills & Expertise</h2>
-  <p class="section-desc">
-    A comprehensive skill set combining SEO mastery, Data Analysis, Server Administration, AI integration, and web development.
-  </p>
+  <p class="section-desc">A comprehensive skill set combining SEO mastery, WordPress Development, ASO, and Server Administration.</p>
 
   <div class="grid">
     <div class="card">
-      <div class="card-icon">🔍</div>
-      <h3>Senior SEO</h3>
+      <h3>🔍 On-Page SEO</h3>
       <ul>
-        <li>On-Page SEO Optimization</li>
-        <li>Technical SEO Audits</li>
-        <li>Local SEO Strategies</li>
-        <li>Off-Page & Link Building</li>
-        <li>Keyword Research & Strategy</li>
-        <li>SEO Analytics & Reporting</li>
+        <li>Keyword Research & Optimization</li>
+        <li>Content Optimization</li>
+        <li>Meta Tags & URL Structuring</li>
+        <li>Header Tags (H1, H2, H3) & HTML Markup</li>
+        <li>Internal Linking Strategy</li>
+        <li>Image & Multimedia Optimization</li>
+        <li>Mobile & Core Web Vitals</li>
+        <li>User Experience (UX) Signals</li>
       </ul>
     </div>
 
     <div class="card">
-      <div class="card-icon">📊</div>
-      <h3>Jr Data Analyst</h3>
+      <h3>🔗 Off-Page SEO</h3>
       <ul>
-        <li>Data Collection & Cleaning</li>
-        <li>Exploratory Data Analysis (EDA)</li>
-        <li>Data Visualization (Charts, Graphs)</li>
-        <li>SQL Querying & Database Analysis</li>
-        <li>Excel / Google Sheets Analytics</li>
-        <li>Business Intelligence Reporting</li>
+        <li>Strategic backlink campaigns (HARO, Digital PR)</li>
+        <li>Industry influencer relationships</li>
+        <li>Local SEO citations and directories</li>
+        <li>Toxic backlink monitoring & disavow</li>
       </ul>
     </div>
 
     <div class="card">
-      <div class="card-icon">🖥️</div>
-      <h3>Server & Hosting Management</h3>
+      <h3>🖥️ Server & Hosting</h3>
       <ul>
         <li>VPS Setup & Configuration</li>
-        <li>Self-Managed Hosting</li>
-        <li>aaPanel Installation & Management</li>
-        <li>cPanel & WHM Administration</li>
+        <li>aaPanel / cPanel / WHM</li>
         <li>hPanel Management</li>
         <li>Website Migration</li>
-        <li>Database to Database Transfer</li>
+        <li>Database Transfer</li>
+        <li>Linux Operations (No Tools)</li>
       </ul>
     </div>
 
     <div class="card">
-      <div class="card-icon">🤖</div>
-      <h3>AI & Automation</h3>
+      <h3>💻 WordPress Development</h3>
       <ul>
-        <li>Advanced Prompt Engineering</li>
-        <li>AI Workflow Automation</li>
-        <li>Content Generation Strategy</li>
-        <li>Smart Process Optimization</li>
-        <li>AI-Powered Data Analysis</li>
-        <li>Chatbot Integration</li>
+        <li>Theme & Plugin Development</li>
+        <li>Page Builders & Gutenberg</li>
+        <li>Performance Optimization</li>
+        <li>Security & Maintenance</li>
       </ul>
     </div>
 
     <div class="card">
-      <div class="card-icon">💻</div>
-      <h3>Development & WordPress</h3>
+      <h3>📱 ASO & Mobile</h3>
       <ul>
-        <li>WordPress Development</li>
-        <li>Website Speed Optimization</li>
-        <li>Google Analytics & GTM</li>
-        <li>Search Console Insights</li>
-        <li>Custom Theme Development</li>
-        <li>Plugin Configuration</li>
+        <li>App Store Optimization</li>
+        <li>Keyword Research for Apps</li>
+        <li>Creative A/B Testing</li>
+        <li>Tools: AppTweak, MobileAction, Google Play Console, App Store Connect</li>
       </ul>
     </div>
 
     <div class="card">
-      <div class="card-icon">📈</div>
-      <h3>Performance Tracking</h3>
+      <h3>📊 Analytics & Tools</h3>
       <ul>
+        <li>Google Analytics 4 (GA4)</li>
+        <li>Google Search Console</li>
+        <li>Data Analysis & Reporting</li>
         <li>Performance Tracking</li>
-        <li>Conversion Rate Optimization</li>
-        <li>A/B Testing</li>
-        <li>User Behavior Analysis</li>
-        <li>Heatmap & Session Recording</li>
       </ul>
     </div>
-  </div>
-</section>
-
-<section id="services">
-  <h2 class="section-title">What I Can Build</h2>
-  <p class="section-desc">
-    Tailored digital solutions designed to boost visibility, analyze data, automate workflows, and drive business growth.
-  </p>
-
-  <div class="grid">
-    <div class="card">
-      <div class="card-icon">📊</div>
-      <h3>AI-Powered SEO Dashboard</h3>
-      <p>
-        A smart dashboard that tracks SEO performance, keyword rankings, indexing status,
-        traffic patterns, and actionable optimization opportunities in real-time.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="card-icon">🌐</div>
-      <h3>Smart WordPress Website</h3>
-      <p>
-        Fast, responsive, SEO-optimized websites designed to look professional,
-        perform exceptionally well, and convert visitors into loyal customers.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="card-icon">⚙️</div>
-      <h3>Automation Workflow</h3>
-      <p>
-        Fully automated systems for content planning, SEO reporting, data tracking,
-        website monitoring, and digital marketing tasks to save time and boost efficiency.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="card-icon">🖥️</div>
-      <h3>VPS & Server Setup</h3>
-      <p>
-        Complete VPS configuration, aaPanel/cPanel/WHM/hPanel installation, security hardening,
-        and performance optimization for your hosting environment.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="card-icon">🔄</div>
-      <h3>Website Migration</h3>
-      <p>
-        Seamless website migration between hosting providers, server to server transfer,
-        database migration, and zero-downtime domain transfers.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="card-icon">📈</div>
-      <h3>Data Analysis Reports</h3>
-      <p>
-        Comprehensive data analysis reports with actionable insights, visualization dashboards,
-        and business intelligence recommendations to drive growth.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section id="projects">
-  <h2 class="section-title">Featured Projects</h2>
-  <p class="section-desc">
-    Some of my recent work in SEO, Data Analysis, Server Administration, and AI integration.
-  </p>
-
-  <div class="grid">
-    <div class="card">
-      <div class="card-icon">🚀</div>
-      <h3>SEO Growth Campaign</h3>
-      <p>
-        Successfully increased organic traffic by 200% for a local business through
-        comprehensive on-page optimization, technical SEO fixes, and strategic content creation.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="card-icon">📱</div>
-      <h3>E-Commerce WordPress Site</h3>
-      <p>
-        Built a fully functional WooCommerce store with custom theme, payment integration,
-        and advanced SEO configuration resulting in 150% increase in sales.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="card-icon">🖥️</div>
-      <h3>VPS Migration & Setup</h3>
-      <p>
-        Successfully migrated 25+ websites from shared hosting to VPS with aaPanel,
-        optimized server performance, and reduced load time by 60%.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="card-icon">📊</div>
-      <h3>Data Analytics Dashboard</h3>
-      <p>
-        Created an interactive data dashboard for e-commerce client, analyzing customer behavior,
-        sales patterns, and providing actionable business insights.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="card-icon">🤖</div>
-      <h3>AI Content Automation</h3>
-      <p>
-        Developed an AI-powered content pipeline that generates SEO-optimized blog posts,
-        reducing content creation time by 70% while maintaining quality.
-      </p>
-    </div>
-
-    <div class="card">
-      <div class="card-icon">🔄</div>
-      <h3>Database Migration</h3>
-      <p>
-        Executed complex database-to-database migrations for multiple clients,
-        ensuring data integrity and zero downtime during the transfer process.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- RESUME SECTION - NEWLY ADDED -->
-<section id="resume">
-  <div class="resume-box">
-    <h2>📄 My Resume / CV</h2>
-    <p>
-      Download or view my complete CV/resume for detailed information about my experience, skills, and professional background.
-    </p>
-    <a href="cv.html" target="_blank" class="btn btn-primary">📄 View/Download Full CV</a>
   </div>
 </section>
 
 <section id="contact">
   <div class="contact-box">
     <h2>Let's Build Something Intelligent</h2>
-    <p>
-      Ready to create an AI-powered, SEO-friendly, data-driven, and future-ready digital experience?
-      Let's collaborate and bring your vision to life.
-    </p>
-    <div class="social-links">
-      <a href="#" class="social-icon">📧</a>
-      <a href="#" class="social-icon">💼</a>
-      <a href="#" class="social-icon">🐙</a>
-      <a href="#" class="social-icon">🔗</a>
+    <p>Ready to create an SEO-friendly, data-driven digital experience? Let's collaborate and bring your vision to life.</p>
+    <div style="margin-bottom: 20px;">
+      <p>📞 +63 9564574637</p>
+      <p>✉️ ieph.bert888@gmail.com</p>
+      <p>📍 San Leon Umingan Pangasinan</p>
+      <p>🌐 Languages: English | Tagalog</p>
     </div>
     <a href="mailto:ieph.bert888@gmail.com" class="btn btn-primary">✉️ Contact Me</a>
   </div>
 </section>
 
 <footer>
-  © 2026 Obeth Gabiana Silawan | AI Engineer | Senior SEO Specialist | Jr Data Analyst | Server Administrator | Built with 💙
+  © 2026 Obeth Gabiana Silawan | SEO Specialist | WordPress Developer | ASO Specialist | Server Administrator | Built with 💙
 </footer>
 
 <script>
+// Cursor and 3D effects
 const cursor = document.querySelector(".cursor");
 const cursorDot = document.querySelector(".cursor-dot");
 const avatarCard = document.getElementById("avatarCard");
@@ -1102,8 +806,7 @@ document.addEventListener("mousemove", function(e) {
   cursor.style.top = e.clientY + "px";
   cursorDot.style.left = e.clientX + "px";
   cursorDot.style.top = e.clientY + "px";
-
-  // 3D Tilt effect for avatar card
+  
   if (avatarCard) {
     const x = (window.innerWidth / 2 - e.clientX) / 35;
     const y = (window.innerHeight / 2 - e.clientY) / 35;
@@ -1111,84 +814,280 @@ document.addEventListener("mousemove", function(e) {
   }
 });
 
-// Eye tracking effect
+// Eye tracking
 document.addEventListener("mousemove", function(e) {
   const eyes = document.querySelectorAll(".eye");
-  const mouseX = e.clientX;
-  const mouseY = e.clientY;
-  
   eyes.forEach(eye => {
     const rect = eye.getBoundingClientRect();
-    const eyeX = rect.left + rect.width / 2;
-    const eyeY = rect.top + rect.height / 2;
-    
-    const angle = Math.atan2(mouseY - eyeY, mouseX - eyeX);
-    const distance = Math.min(6, Math.hypot(mouseX - eyeX, mouseY - eyeY) / 30);
-    
-    const moveX = Math.cos(angle) * distance;
-    const moveY = Math.sin(angle) * distance;
-    
-    eye.style.transform = `translate(${moveX}px, ${moveY}px)`;
+    const angle = Math.atan2(e.clientY - rect.top, e.clientX - rect.left);
+    const distance = Math.min(5, Math.hypot(e.clientX - rect.left, e.clientY - rect.top) / 30);
+    eye.style.transform = `translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px)`;
   });
 });
 
-// Hover effect on interactive elements
-document.querySelectorAll("a, .card, .btn").forEach(item => {
-  item.addEventListener("mouseenter", () => {
-    cursor.style.width = "40px";
-    cursor.style.height = "40px";
-    cursor.style.background = "rgba(125,249,255,.1)";
-    cursor.style.borderWidth = "2px";
-    cursorDot.style.opacity = "0";
-  });
-
-  item.addEventListener("mouseleave", () => {
-    cursor.style.width = "20px";
-    cursor.style.height = "20px";
-    cursor.style.background = "transparent";
-    cursor.style.borderWidth = "2px";
-    cursorDot.style.opacity = "1";
-  });
-});
-
-// Smooth scrolling
+// Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
+  anchor.addEventListener('click', function(e) {
     e.preventDefault();
     const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    if (target) target.scrollIntoView({ behavior: 'smooth' });
   });
 });
 
-// Animate on scroll (simple)
-const observerOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = "1";
-      entry.target.style.transform = "translateY(0)";
-    }
-  });
-}, observerOptions);
-
-document.querySelectorAll(".card, .about-box, .contact-box, .resume-box").forEach(el => {
-  el.style.opacity = "0";
-  el.style.transform = "translateY(30px)";
-  el.style.transition = "all 0.6s ease";
-  observer.observe(el);
-});
-
-// Mouth animation - slight smile on load
-setTimeout(() => {
-  const mouth = document.querySelector(".mouth");
-  if (mouth) {
-    mouth.style.borderBottomWidth = "4px";
-    mouth.style.width = "28px";
+// Download CV function
+function downloadCV() {
+  const cvContent = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Obeth Gabiana Silawan - Complete CV 2019-2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 40px 20px;
   }
-}, 1000);
-</script>
+  .cv-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  }
+  .cv-content { padding: 40px; }
+  .header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 30px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #667eea;
+    margin-bottom: 30px;
+  }
+  .name-title h1 { font-size: 42px; color: #2d3748; }
+  .name-title .title { font-size: 18px; color: #667eea; margin: 10px 0; }
+  .contact-info { text-align: right; }
+  .contact-info p { margin: 5px 0; color: #4a5568; }
+  .section { margin-bottom: 30px; }
+  .section-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2d3748;
+    border-left: 4px solid #667eea;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+  }
+  .job {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  .job-title { font-size: 18px; font-weight: bold; color: #2d3748; }
+  .company { color: #667eea; font-weight: 600; margin: 5px 0; }
+  .date { color: #718096; font-size: 13px; margin-bottom: 10px; }
+  .job-description { margin-left: 20px; }
+  .job-description li { margin: 8px 0; color: #4a5568; line-height: 1.5; }
+  .skills-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+  .skill-tag {
+    background: #e2e8f0;
+    padding: 5px 15px;
+    border-radius: 25px;
+    font-size: 12px;
+    color: #2d3748;
+  }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+  @media (max-width: 768px) {
+    .header { grid-template-columns: 1fr; text-align: center; }
+    .contact-info { text-align: center; }
+    .two-col { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="cv-container">
+  <div class="cv-content">
+    <div class="header">
+      <div class="name-title">
+        <h1>OBETH GABIANA SILAWAN</h1>
+        <div class="title">SEO Specialist | WordPress Developer | ASO Specialist | Server Administrator</div>
+      </div>
+      <div class="contact-info">
+        <p>📞 +63 9564574637</p>
+        <p>✉️ ieph.bert888@gmail.com</p>
+        <p>📍 San Leon Umingan Pangasinan</p>
+        <p>🌐 English | Tagalog</p>
+      </div>
+    </div>
 
+    <div class="section">
+      <div class="section-title">Professional Summary</div>
+      <p style="line-height: 1.6; color: #4a5568;">As a young coder from Samar, I left home seeking deeper knowledge and skills to thrive in a fast-changing world. My journey led me to explore what it takes to succeed in the 21st century. I've discovered through years of study and insights from experienced friends in IT. While there's plenty of information available, turning it into real understanding is the real challenge. With 7+ years of experience, I deliver results-driven digital solutions.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Work Experience (2019 - 2026 PRESENT)</div>
+      
+      <div class="job">
+        <div class="job-title">Senior SEO Specialist</div>
+        <div class="company">Self-employed / Freelance</div>
+        <div class="date">2026 - PRESENT</div>
+        <ul class="job-description">
+          <li>VPS Self-Managed Setup & Configuration (DigitalOcean, Vultr, Linode)</li>
+          <li>aaPanel, cPanel, WHM, hPanel Administration and Management</li>
+          <li>Website Migration between hosting providers with zero downtime</li>
+          <li>Database to Database Transfer ensuring data integrity</li>
+          <li>Technical SEO Audits and implementation</li>
+          <li>Nginx / Apache Web Server Configuration</li>
+          <li>SSL Certificate Installation (Let's Encrypt, Commercial)</li>
+          <li>Server Security Hardening & Firewall Setup</li>
+          <li>Linux Command Line Operations (Ubuntu, CentOS, Debian)</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-title">SEO FREELANCE</div>
+        <div class="company">Self-employed</div>
+        <div class="date">2024 - 2025</div>
+        <ul class="job-description">
+          <li>Black hat SEO - Casino India Market</li>
+          <li>Auto Claim GMB/GBP - Bypass Verification</li>
+          <li>Cloaking: Showing different content to users and search engines</li>
+          <li>Private Blog Networks (PBNs)</li>
+          <li>Negative SEO</li>
+          <li>Auto-generated/Click fraud or bot traffic backlinks injection / High DA/DR</li>
+          <li>No Tools - Linux Based Operations</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-title">SEO Team Lead</div>
+        <div class="company">IE Soft Technology</div>
+        <div class="date">2024 - 2025</div>
+        <ul class="job-description">
+          <li>Led a team of specialists to design and implement SEO strategies</li>
+          <li>Create road Map & SEO strategies</li>
+          <li>Managed technical audits and link-building campaigns</li>
+          <li>Analyzed performance via GA4, Search Console</li>
+          <li>Translating insights into scalable actions</li>
+          <li>Collaborated with cross-functional teams</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-title">Offpage SEO Specialist</div>
+        <div class="company">Bricksharts Technology</div>
+        <div class="date">2022</div>
+        <ul class="job-description">
+          <li>Executed strategic backlink campaigns (HARO, Digital PR)</li>
+          <li>Built relationships with industry influencers</li>
+          <li>Managed local SEO citations and directory listings</li>
+          <li>Monitored and disavowed toxic backlinks</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-title">Onpage SEO Specialist</div>
+        <div class="company">Elevate Outsourcing / Levender Groups</div>
+        <div class="date">2022</div>
+        <ul class="job-description">
+          <li>Keyword Research & Optimization</li>
+          <li>Content Optimization, Meta Tags & URL Structuring</li>
+          <li>Header Tags (H1, H2, H3) & HTML Markup</li>
+          <li>Internal Linking Strategy</li>
+          <li>Image & Multimedia Optimization</li>
+          <li>Mobile & Core Web Vitals</li>
+          <li>User Experience (UX) Signals</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-title">Junior ASO Specialist</div>
+        <div class="company">Cosmolink Global Solution</div>
+        <div class="date">2021</div>
+        <ul class="job-description">
+          <li>Keyword Research & Optimization for app stores</li>
+          <li>A/B tested icons, screenshots, and video previews to improve CTR</li>
+          <li>Analyzed competitor creatives and adapted best practices</li>
+          <li>Tools: AppTweak, MobileAction, Google Play Console, App Store Connect</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-title">WordPress Developer</div>
+        <div class="company">Bricksharts Technology</div>
+        <div class="date">2021</div>
+        <ul class="job-description">
+          <li>Theme & Plugin Development</li>
+          <li>Page Builders & Gutenberg</li>
+          <li>Performance Optimization</li>
+          <li>Security & Maintenance</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-title">Junior SEO Specialist</div>
+        <div class="company">WBridge Island Cove</div>
+        <div class="date">2019 - 2020</div>
+        <ul class="job-description">
+          <li>Black hat SEO - Casino India Market</li>
+          <li>Click fraud or bot traffic</li>
+          <li>Cloaking: Showing different content to users and search engines</li>
+          <li>Private Blog Networks (PBNs)</li>
+          <li>Negative SEO</li>
+          <li>Bypass GMB/GBP/Bing Business</li>
+          <li>Supporting organic growth</li>
+          <li>Improved URL structures, header tags</li>
+          <li>Updated old content for freshness and relevance</li>
+          <li>Monitored rankings, traffic (Google Analytics/Search Console)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <div class="section">
+          <div class="section-title">Education</div>
+          <div class="job">
+            <div class="job-title">BS Information Technology</div>
+            <div class="company">Samar State University</div>
+            <div class="date">2015 - 2018</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section">
+          <div class="section-title">Core Competencies</div>
+          <div class="skills-tags">
+            <span class="skill-tag">SEO</span>
+            <span class="skill-tag">On-Page SEO</span>
+            <span class="skill-tag">Off-Page SEO</span>
+            <span class="skill-tag">WordPress</span>
+            <span class="skill-tag">ASO</span>
+            <span class="skill-tag">VPS</span>
+            <span class="skill-tag">cPanel/WHM</span>
+            <span class="skill-tag">GA4</span>
+            <span class="skill-tag">Linux</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>`;
+  
+  const blob = new Blob([cvContent], { type: 'text/html' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'Obeth_Silawan_Complete_CV.html';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+</script>
 </body>
 </html>
