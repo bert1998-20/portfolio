@@ -3,7 +3,7 @@ import streamlit.components.v1 as components
 
 # Page configuration
 st.set_page_config(
-    page_title="Obeth Gabiana Silawan | AI Engineer & SEO Portfolio",
+    page_title="Obeth Gabiana Silawan | BOT AUTOMATION DATA ANALYST & SEO Portfolio",
     page_icon="✨",
     layout="wide",
     initial_sidebar_state="collapsed"
