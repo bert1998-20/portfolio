@@ -547,6 +547,7 @@ footer {
   <a href="https://scatter-dashboard-bert.streamlit.app/" target="_blank" class="btn btn-primary">📊 View Previous Work</a>
   <a href="#contact" class="btn btn-secondary">📧 Hire Me</a>
   <a href="#" onclick="downloadCV()" class="btn btn-secondary">📄 Download CV</a>
+    </div>
 </div>
 
   <div class="avatar-wrap">
