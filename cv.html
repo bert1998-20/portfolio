@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Obeth Silawan | CV/Resume</title>
+<meta name="description" content="Obeth Gabiana Silawan - SEO Team Lead, Black Hat SEO Specialist, WordPress Developer">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px 20px;
+}
+
+/* CV Container */
+.cv-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  overflow: hidden;
+  position: relative;
+}
+
+/* Download Button */
+.download-btn-wrapper {
+  position: sticky;
+  top: 20px;
+  z-index: 100;
+  text-align: right;
+  padding: 20px 30px;
+  background: transparent;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  border: none;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* CV Content */
+.cv-content {
+  padding: 0 40px 40px 40px;
+}
+
+/* Header Section */
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 30px;
+  padding: 40px 0;
+  border-bottom: 3px solid #667eea;
+}
+
+.name-title h1 {
+  font-size: 48px;
+  color: #2d3748;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.name-title .title {
+  font-size: 20px;
+  color: #667eea;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  color: #4a5568;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.contact-info {
+  text-align: right;
+}
+
+.contact-info p {
+  margin-bottom: 8px;
+  color: #4a5568;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.contact-info i {
+  width: 20px;
+  color: #667eea;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* Two Column Layout */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 30px 0;
+}
+
+/* Section Styles */
+.section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2d3748;
+  border-left: 4px solid #667eea;
+  padding-left: 12px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.section-content {
+  padding-left: 16px;
+}
+
+/* About Me */
+.about-text {
+  color: #4a5568;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+/* Experience Items */
+.experience-item, .education-item, .reference-item {
+  margin-bottom: 20px;
+}
+
+.experience-item h4, .education-item h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 5px;
+}
+
+.company, .date {
+  font-size: 13px;
+  color: #718096;
+  margin-bottom: 8px;
+}
+
+.company {
+  font-weight: 600;
+  color: #667eea;
+}
+
+.description {
+  font-size: 13px;
+  color: #4a5568;
+  line-height: 1.6;
+  margin-left: 15px;
+}
+
+.description li {
+  margin-bottom: 5px;
+}
+
+/* Skills Tags */
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background: #f3f4f6;
+  color: #2d3748;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.skill-tag.black-hat {
+  background: #1a202c;
+  color: #fff;
+}
+
+.skill-tag.casino {
+  background: #e53e3e;
+  color: #fff;
+}
+
+/* Language */
+.language-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.language-name {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.language-level {
+  color: #667eea;
+}
+
+/* References */
+.reference-item p {
+  font-size: 13px;
+  color: #4a5568;
+  margin: 5px 0;
+}
+
+/* Special Skills Box */
+.special-box {
+  background: linear-gradient(135deg, #1a202c, #2d3748);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.special-box h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #fbbf24;
+}
+
+.special-box p {
+  font-size: 12px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  color: #e2e8f0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cv-content {
+    padding: 0 20px 20px 20px;
+  }
+  
+  .header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .contact-info {
+    text-align: center;
+  }
+  
+  .contact-info p {
+    justify-content: center;
+  }
+  
+  .two-col {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .name-title h1 {
+    font-size: 32px;
+  }
+  
+  .download-btn-wrapper {
+    text-align: center;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+    padding: 0;
+  }
+  
+  .download-btn-wrapper {
+    display: none;
+  }
+  
+  .cv-container {
+    box-shadow: none;
+    border-radius: 0;
+  }
+  
+  .special-box {
+    background: #f0f0f0;
+    color: black;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="cv-container" id="cv-content">
+  <div class="download-btn-wrapper">
+    <button class="download-btn" onclick="downloadCV()">
+      📄 Download CV (PDF)
+    </button>
+  </div>
+  
+  <div class="cv-content">
+    <!-- Header -->
+    <div class="header">
+      <div class="name-title">
+        <h1>OBETH GABIANA SILAWAN</h1>
+        <div class="title">SEO Team Lead | Black Hat SEO Specialist | WordPress Developer</div>
+        <div class="tagline">"Turning information into real understanding through experience and innovation"</div>
+      </div>
+      <div class="contact-info">
+        <p><i>📞</i> +63 9564574637</p>
+        <p><i>✉️</i> ieph.bert888@gmail.com</p>
+        <p><i>📍</i> San Leon Umingan Pangasinan</p>
+      </div>
+    </div>
+
+    <!-- Two Column Layout -->
+    <div class="two-col">
+      <!-- LEFT COLUMN -->
+      <div class="left-col">
+        
+        <!-- About Me -->
+        <div class="section">
+          <div class="section-title">About Me</div>
+          <div class="section-content">
+            <p class="about-text">As a young coder from Samar, I left home seeking deeper knowledge and skills to thrive in a fast-changing world. My journey led me to explore what it takes to succeed in the 21st century. I've discovered through years of study and insights from experienced friends in IT. While there's plenty of information available, turning it into real understanding is the real challenge.</p>
+          </div>
+        </div>
+
+        <!-- Special Skills / Black Hat Expertise -->
+        <div class="special-box">
+          <h3>⚠️ Black Hat SEO Expertise</h3>
+          <p>• Casino India Market Specialist</p>
+          <p>• Click Fraud / Bot Traffic Bypass</p>
+          <p>• Cloaking (Different content to users vs search engines)</p>
+          <p>• Private Blog Networks (PBNs)</p>
+          <p>• Negative SEO</p>
+          <p>• Auto-generated Content Injection / High DA/DR</p>
+          <p>• GMB/GBP/Bing Business Bypass Verification</p>
+          <p>• No Tools - Linux Based</p>
+        </div>
+
+        <!-- Work Experience -->
+        <div class="section">
+          <div class="section-title">Work Experience</div>
+          <div class="section-content">
+            
+            <div class="experience-item">
+              <h4>Senior SEO Specialist</h4>
+              <div class="company">Self-employed / Freelance</div>
+              <div class="date">2026 to Present</div>
+              <ul class="description">
+                <li>VPS Setup & Configuration</li>
+                <li>aaPanel / cPanel / WHM Administration</li>
+                <li>Website Migration & Database Transfer</li>
+              </ul>
+            </div>
+
+            <div class="experience-item">
+              <h4>SEO Team Lead</h4>
+              <div class="company">Freelance</div>
+              <div class="date">2024 - 05-2025</div>
+              <ul class="description">
+                <li>Led team of specialists to design and implement SEO strategies</li>
+                <li>Create roadmap & SEO strategies for India Casino Market</li>
+                <li>Managed technical audits and link-building campaigns</li>
+                <li>Analyzed performance via GA4 & Search Console</li>
+                <li>Translated insights into scalable actions</li>
+              </ul>
+            </div>
+
+            <div class="experience-item">
+              <h4>WordPress Developer</h4>
+              <div class="company">IE Soft Technology</div>
+              <div class="date">01-2024 - 07-2024</div>
+              <ul class="description">
+                <li>Theme & Plugin Development</li>
+                <li>Page Builders & Gutenberg</li>
+                <li>Performance Optimization</li>
+                <li>Security & Maintenance</li>
+              </ul>
+            </div>
+
+            <div class="experience-item">
+              <h4>Junior SEO Specialist</h4>
+              <div class="company">WBridge Island Cove</div>
+              <div class="date">06-2019 - 01-2020</div>
+              <ul class="description">
+                <li>Supporting organic growth</li>
+                <li>Improved URL structures, header tags</li>
+                <li>Updated old content for freshness and relevance</li>
+                <li>Monitored rankings & traffic via Google Analytics/Search Console</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+          <div class="section-title">Education</div>
+          <div class="section-content">
+            <div class="education-item">
+              <h4>Bachelor of Science in Information Technology</h4>
+              <div class="company">Samar State University</div>
+              <div class="date">2015 — 2018</div>
+            </div>
+            <div class="education-item">
+              <h4>Secondary Education</h4>
+              <div class="company">CNCHS High School</div>
+              <div class="date">2011 — 2014</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="section">
+          <div class="section-title">Languages</div>
+          <div class="section-content">
+            <div class="language-item">
+              <span class="language-name">English</span>
+              <span class="language-level">Fluent</span>
+            </div>
+            <div class="language-item">
+              <span class="language-name">Tagalog / Filipino</span>
+              <span class="language-level">Native</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="right-col">
+
+        <!-- ASO Experience -->
+        <div class="section">
+          <div class="section-title">ASO Experience</div>
+          <div class="section-content">
+            <div class="experience-item">
+              <h4>Junior ASO Specialist</h4>
+              <div class="date">06-2021 - 12-2021</div>
+              <ul class="description">
+                <li>Keyword Research & Optimization</li>
+                <li>A/B tested icons, screenshots, and video previews to improve CTR</li>
+                <li>Analyzed competitor creatives and adapted best practices</li>
+                <li>Tools: AppTweak, MobileAction, Google Play Console, App Store Connect</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- On-Page SEO -->
+        <div class="section">
+          <div class="section-title">On-Page SEO</div>
+          <div class="section-content">
+            <ul class="description">
+              <li>Keyword Research & Optimization</li>
+              <li>Content Optimization</li>
+              <li>Meta Tags & URL Structuring</li>
+              <li>Header Tags (H1, H2, H3) & HTML Markup</li>
+              <li>Internal Linking Strategy</li>
+              <li>Image & Multimedia Optimization</li>
+              <li>Mobile & Core Web Vitals</li>
+              <li>User Experience (UX) Signals</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Off-Page SEO -->
+        <div class="section">
+          <div class="section-title">Off-Page SEO</div>
+          <div class="section-content">
+            <ul class="description">
+              <li>Executed strategic backlink campaigns (HARO, Digital PR)</li>
+              <li>Built relationships with industry influencers</li>
+              <li>Managed local SEO citations and directories</li>
+              <li>Monitored and disavowed toxic backlinks</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="section">
+          <div class="section-title">Technical Skills</div>
+          <div class="section-content">
+            <div class="skills-tags">
+              <span class="skill-tag">VPS Setup</span>
+              <span class="skill-tag">aaPanel</span>
+              <span class="skill-tag">cPanel/WHM</span>
+              <span class="skill-tag">hPanel</span>
+              <span class="skill-tag">Website Migration</span>
+              <span class="skill-tag">Database Transfer</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">WordPress</span>
+              <span class="skill-tag">GA4</span>
+              <span class="skill-tag">Search Console</span>
+              <span class="skill-tag black-hat">Black Hat SEO</span>
+              <span class="skill-tag casino">Casino SEO</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="section">
+          <div class="section-title">Soft Skills</div>
+          <div class="section-content">
+            <div class="skills-tags">
+              <span class="skill-tag">Management Skills</span>
+              <span class="skill-tag">Creativity</span>
+              <span class="skill-tag">Digital Marketing</span>
+              <span class="skill-tag">Critical Thinking</span>
+              <span class="skill-tag">Leadership</span>
+              <span class="skill-tag">Team Management</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- References -->
+        <div class="section">
+          <div class="section-title">References</div>
+          <div class="section-content">
+            <div class="reference-item">
+              <h4>Prince Alojado</h4>
+              <p>All World SEO / Manager</p>
+              <p>📞 09095699870</p>
+              <p>✉️ princealojado12@gmail.com</p>
+            </div>
+            <div class="reference-item">
+              <h4>Aladin Legazpi</h4>
+              <p>All World SEO / CEO</p>
+              <p>Telegram: @aladinlegaspi</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Companies Worked With -->
+        <div class="section">
+          <div class="section-title">Companies / Clients</div>
+          <div class="section-content">
+            <div class="skills-tags">
+              <span class="skill-tag">LEVENDER GROUPS</span>
+              <span class="skill-tag">ELEVATE OUTSOURCING</span>
+              <span class="skill-tag">BRICKSHARTS TECHNOLOGY</span>
+              <span class="skill-tag">COSMOLINK GLOBAL SOLUTION</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function downloadCV() {
+  // Get the CV content
+  const cvElement = document.getElementById('cv-content');
+  const originalContent = cvElement.innerHTML;
+  
+  // Create a temporary container for printing
+  const printWindow = window.open('', '_blank');
+  
+  printWindow.document.write(`
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Obeth Silawan - CV</title>
+      <meta charset="UTF-8">
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        body {
+          font-family: 'Segoe UI', Arial, sans-serif;
+          background: white;
+          padding: 40px 20px;
+        }
+        .cv-container {
+          max-width: 1200px;
+          margin: 0 auto;
+          background: #fff;
+        }
+        .download-btn-wrapper {
+          display: none;
+        }
+        .cv-content {
+          padding: 0 40px 40px 40px;
+        }
+        .header {
+          display: grid;
+          grid-template-columns: 1fr auto;
+          gap: 30px;
+          padding: 40px 0;
+          border-bottom: 3px solid #667eea;
+        }
+        .name-title h1 {
+          font-size: 48px;
+          color: #2d3748;
+          letter-spacing: 2px;
+          margin-bottom: 10px;
+        }
+        .name-title .title {
+          font-size: 20px;
+          color: #667eea;
+          font-weight: 600;
+          margin-bottom: 15px;
+        }
+        .tagline {
+          color: #4a5568;
+          font-size: 14px;
+        }
+        .contact-info {
+          text-align: right;
+        }
+        .contact-info p {
+          margin-bottom: 8px;
+          color: #4a5568;
+          font-size: 14px;
+        }
+        .two-col {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 40px;
+          margin: 30px 0;
+        }
+        .section {
+          margin-bottom: 30px;
+        }
+        .section-title {
+          font-size: 18px;
+          font-weight: 700;
+          color: #2d3748;
+          border-left: 4px solid #667eea;
+          padding-left: 12px;
+          margin-bottom: 15px;
+          text-transform: uppercase;
+        }
+        .section-content {
+          padding-left: 16px;
+        }
+        .about-text {
+          color: #4a5568;
+          line-height: 1.7;
+          font-size: 14px;
+        }
+        .experience-item, .education-item, .reference-item {
+          margin-bottom: 20px;
+        }
+        .experience-item h4, .education-item h4 {
+          font-size: 16px;
+          font-weight: 700;
+          color: #2d3748;
+          margin-bottom: 5px;
+        }
+        .company, .date {
+          font-size: 13px;
+          color: #718096;
+          margin-bottom: 8px;
+        }
+        .company {
+          font-weight: 600;
+          color: #667eea;
+        }
+        .description {
+          font-size: 13px;
+          color: #4a5568;
+          line-height: 1.6;
+          margin-left: 15px;
+        }
+        .skills-tags {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+        .skill-tag {
+          background: #f3f4f6;
+          color: #2d3748;
+          padding: 5px 12px;
+          border-radius: 20px;
+          font-size: 11px;
+        }
+        .special-box {
+          background: #f0f0f0;
+          padding: 15px;
+          border-radius: 12px;
+          margin: 20px 0;
+          border: 1px solid #ddd;
+        }
+        .special-box h3 {
+          font-size: 14px;
+          margin-bottom: 10px;
+          color: #e53e3e;
+        }
+        .special-box p {
+          font-size: 11px;
+          line-height: 1.5;
+          margin-bottom: 5px;
+        }
+        .language-item {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 8px;
+          padding: 5px 0;
+          border-bottom: 1px solid #e2e8f0;
+        }
+        @media print {
+          body {
+            padding: 0;
+          }
+          .special-box {
+            background: #f9f9f9;
+            break-inside: avoid;
+          }
+          .experience-item, .section {
+            break-inside: avoid;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <div class="cv-container">
+        <div class="cv-content">
+          ${document.querySelector('.cv-content').innerHTML}
+        </div>
+      </div>
+      <script>
+        window.print();
+      <\/script>
+    </body>
+    </html>
+  `);
+  
+  printWindow.document.close();
+}
+</script>
+
+</body>
+</html>
