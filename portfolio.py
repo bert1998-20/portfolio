@@ -291,7 +291,7 @@ nav a:hover {
 .avatar-wrap {
   perspective: 1200px;
   display: flex;
-  justify-content: center;
+  justify-center;
 }
 
 .avatar-card {
@@ -543,12 +543,12 @@ footer {
       </div>
     </div>
 
-   <div class="buttons">
-  <a href="https://scatter-dashboard-bert.streamlit.app/" target="_blank" class="btn btn-primary">📊 View Previous Work</a>
-  <a href="#contact" class="btn btn-secondary">📧 Hire Me</a>
-  <a href="#" onclick="downloadCV()" class="btn btn-secondary">📄 Download CV</a>
+    <div class="buttons">
+      <a href="https://scatter-dashboard-bert.streamlit.app/" target="_blank" class="btn btn-primary">📊 View Previous Work</a>
+      <a href="#contact" class="btn btn-secondary">📧 Hire Me</a>
+      <a href="#" onclick="downloadCV()" class="btn btn-secondary">📄 Download CV</a>
     </div>
-</div>
+  </div>
 
   <div class="avatar-wrap">
     <div class="avatar-card" id="avatarCard">
@@ -599,22 +599,23 @@ footer {
         <li>Server Security Hardening & Firewall Setup (UFW, CSF)</li>
         <li>Linux Command Line Operations (Ubuntu, CentOS, Debian)</li>
         <li>WordPress Optimization on VPS Environments</li>
-        <li>Performance Monitoring & Optimization (htop, nload, netdata)</li>
       </ul>
     </div>
 
-    <!-- 2024 - 2025 SEO FREELANCE -->
+    <!-- 2024 - 2025 SEO FREELANCE - WHITE HAT VERSION -->
     <div class="card">
       <h3>🔹 SEO FREELANCE</h3>
       <p><strong>Self-employed</strong> | 2024 - 2025</p>
       <ul>
-        <li>Black hat SEO - Casino India Market</li>
-        <li>Auto Claim GMB/GBP - Bypass Verification</li>
-        <li>Cloaking: Showing different content to users and search engines</li>
-        <li>Private Blog Networks (PBNs)</li>
-        <li>Negative SEO</li>
-        <li>Auto-generated/Click fraud or bot traffic backlinks injection / High DA/DR</li>
-        <li>No Tools - Linux Based Operations</li>
+        <li>Keyword Research & Strategy using SEMrush, Ahrefs, Google Keyword Planner</li>
+        <li>On-Page SEO Optimization (meta tags, headers, content structure)</li>
+        <li>Technical SEO Audits (site speed, mobile-friendliness, core web vitals)</li>
+        <li>Quality Backlink Building through guest posting and outreach</li>
+        <li>Content Strategy & Creation for organic growth</li>
+        <li>Google My Business (GMB) Optimization for local SEO</li>
+        <li>SEO Reporting & Analytics using Google Analytics 4 and Search Console</li>
+        <li>Competitor Analysis & Gap Identification</li>
+        <li>WordPress SEO Optimization (Yoast SEO, Rank Math)</li>
       </ul>
     </div>
 
@@ -701,18 +702,19 @@ footer {
       </ul>
     </div>
 
-    <!-- 2019 - 2020 Junior SEO - WBridge -->
+    <!-- 2019 - 2020 Junior SEO - WBridge - WHITE HAT VERSION -->
     <div class="card">
       <h3>🔹 Junior SEO Specialist</h3>
       <p><strong>WBridge Island Cove</strong> | 2019 - 2020</p>
       <ul>
-        <li>Black hat SEO - Casino India Market</li>
-        <li>Click fraud or bot traffic</li>
-        <li>Cloaking: Showing different content to users and search engines</li>
-        <li>Private Blog Networks (PBNs)</li>
-        <li>Negative SEO</li>
-        <li>Auto-generated/Click fraud or bot traffic</li>
-        <li>Bypass GMB/GBP/Bing Business</li>
+        <li>On-Page SEO optimization (meta descriptions, title tags, header structure)</li>
+        <li>Keyword research and implementation</li>
+        <li>Content optimization for target keywords</li>
+        <li>Internal linking strategy improvement</li>
+        <li>Technical SEO fixes (broken links, redirects, sitemap)</li>
+        <li>Local SEO optimization for business listings</li>
+        <li>SEO performance monitoring via Google Analytics & Search Console</li>
+        <li>Competitor keyword analysis and gap identification</li>
       </ul>
     </div>
 
@@ -750,12 +752,16 @@ footer {
     </div>
 
     <div class="card">
-      <h3>🔗 Off-Page SEO</h3>
+      <h3>🔗 White Hat SEO</h3>
       <ul>
-        <li>Strategic backlink campaigns (HARO, Digital PR)</li>
-        <li>Industry influencer relationships</li>
-        <li>Local SEO citations and directories</li>
-        <li>Toxic backlink monitoring & disavow</li>
+        <li>Ethical Link Building (Guest posting, HARO, Digital PR)</li>
+        <li>Quality Content Creation & Strategy</li>
+        <li>GMB & Local SEO Optimization</li>
+        <li>Technical SEO Audits & Fixes</li>
+        <li>Keyword Research & Strategy</li>
+        <li>On-Page SEO Optimization</li>
+        <li>SEO Analytics & Reporting (GA4, GSC)</li>
+        <li>Competitor Analysis & Gap Identification</li>
       </ul>
     </div>
 
@@ -767,7 +773,7 @@ footer {
         <li>hPanel Management</li>
         <li>Website Migration</li>
         <li>Database Transfer</li>
-        <li>Linux Operations (No Tools)</li>
+        <li>Linux Operations</li>
       </ul>
     </div>
 
@@ -798,6 +804,7 @@ footer {
         <li>Google Search Console</li>
         <li>Data Analysis & Reporting</li>
         <li>Performance Tracking</li>
+        <li>SEO Tools: Ahrefs, SEMrush, Screaming Frog, Moz</li>
       </ul>
     </div>
   </div>
@@ -977,20 +984,22 @@ function downloadCV() {
         <div class="company">Self-employed</div>
         <div class="date">2024 - 2025</div>
         <ul class="job-description">
-          <li>Black hat SEO - Casino India Market</li>
-          <li>Auto Claim GMB/GBP - Bypass Verification</li>
-          <li>Cloaking: Showing different content to users and search engines</li>
-          <li>Private Blog Networks (PBNs)</li>
-          <li>Negative SEO</li>
-          <li>Auto-generated/Click fraud or bot traffic backlinks injection / High DA/DR</li>
-          <li>No Tools - Linux Based Operations</li>
+          <li>Keyword Research & Strategy using SEMrush, Ahrefs, Google Keyword Planner</li>
+          <li>On-Page SEO Optimization (meta tags, headers, content structure)</li>
+          <li>Technical SEO Audits (site speed, mobile-friendliness, core web vitals)</li>
+          <li>Quality Backlink Building through guest posting and outreach</li>
+          <li>Content Strategy & Creation for organic growth</li>
+          <li>Google My Business (GMB) Optimization for local SEO</li>
+          <li>SEO Reporting & Analytics using Google Analytics 4 and Search Console</li>
+          <li>Competitor Analysis & Gap Identification</li>
+          <li>WordPress SEO Optimization (Yoast SEO, Rank Math)</li>
         </ul>
       </div>
 
       <div class="job">
         <div class="job-title">SEO Team Lead</div>
         <div class="company">IE Soft Technology</div>
-        <div class="date">2024 - 2025</div>
+        <div class="date">2023 - 2024</div>
         <ul class="job-description">
           <li>Led a team of specialists to design and implement SEO strategies</li>
           <li>Create road Map & SEO strategies</li>
@@ -1004,7 +1013,7 @@ function downloadCV() {
       <div class="job">
         <div class="job-title">Offpage SEO Specialist</div>
         <div class="company">Bricksharts Technology</div>
-        <div class="date">2022</div>
+        <div class="date">2022 - 2023</div>
         <ul class="job-description">
           <li>Executed strategic backlink campaigns (HARO, Digital PR)</li>
           <li>Built relationships with industry influencers</li>
@@ -1057,16 +1066,14 @@ function downloadCV() {
         <div class="company">WBridge Island Cove</div>
         <div class="date">2019 - 2020</div>
         <ul class="job-description">
-          <li>Black hat SEO - Casino India Market</li>
-          <li>Click fraud or bot traffic</li>
-          <li>Cloaking: Showing different content to users and search engines</li>
-          <li>Private Blog Networks (PBNs)</li>
-          <li>Negative SEO</li>
-          <li>Bypass GMB/GBP/Bing Business</li>
-          <li>Supporting organic growth</li>
-          <li>Improved URL structures, header tags</li>
-          <li>Updated old content for freshness and relevance</li>
-          <li>Monitored rankings, traffic (Google Analytics/Search Console)</li>
+          <li>On-Page SEO optimization (meta descriptions, title tags, header structure)</li>
+          <li>Keyword research and implementation</li>
+          <li>Content optimization for target keywords</li>
+          <li>Internal linking strategy improvement</li>
+          <li>Technical SEO fixes (broken links, redirects, sitemap)</li>
+          <li>Local SEO optimization for business listings</li>
+          <li>SEO performance monitoring via Google Analytics & Search Console</li>
+          <li>Competitor keyword analysis and gap identification</li>
         </ul>
       </div>
     </div>
