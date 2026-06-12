@@ -1,0 +1,21 @@
+import streamlit as st
+import streamlit.components.v1 as components
+
+st.set_page_config(page_title="Obeth Gabiana Silawan", layout="wide")
+
+# Hide Streamlit default elements
+st.markdown("""
+    <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+        .stApp {margin: 0; padding: 0;}
+        .block-container {padding: 0 !important; max-width: 100% !important;}
+    </style>
+""", unsafe_allow_html=True)
+
+# Read and display the HTML file
+with open("portfolio.html", "r", encoding="utf-8") as f:
+    html_content = f.read()
+
+components.html(html_content, height=2000, scrolling=True)
