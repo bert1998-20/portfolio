@@ -886,17 +886,21 @@ function downloadCV() {
       <p style="line-height: 1.6; color: #4a5568;">As a young coder from Samar, I left home seeking deeper knowledge and skills to thrive in a fast-changing world. My journey led me to explore what it takes to succeed in the 21st century. I've discovered through years of study and insights from experienced IT professionals that turning information into real understanding is the real challenge. With 5+ years of experience in SEO, WordPress development, data analysis, and server administration, I deliver results-driven digital solutions.</p>
     </div>
 
-    <div class="special-box">
-      <h3>⚠️ Black Hat SEO Expertise</h3>
-      <p>• Casino India Market Specialist</p>
-      <p>• Click Fraud / Bot Traffic Bypass</p>
-      <p>• Cloaking (Different content to users vs search engines)</p>
-      <p>• Private Blog Networks (PBNs) Setup & Management</p>
-      <p>• Negative SEO Campaigns</p>
-      <p>• Auto-generated Content Injection / High DA/DR Backlinks</p>
-      <p>• GMB/GBP/Bing Business Bypass Verification</p>
-      <p>• No Tools - Linux Based Operations</p>
-    </div>
+  <h3>🛡️ White Hat SEO & Server Management Expertise</h3>
+<p>• VPS Self-Managed Setup & Configuration (DigitalOcean, Vultr, Linode)</p>
+<p>• aaPanel Installation & Management for Linux Servers</p>
+<p>• cPanel & WHM Administration</p>
+<p>• hPanel Management & Configuration</p>
+<p>• Website Migration (Server to Server, Zero Downtime)</p>
+<p>• Database to Database Transfer (MySQL, PostgreSQL)</p>
+<p>• Self-Managed Hosting Environment Setup</p>
+<p>• Nginx / Apache Web Server Configuration</p>
+<p>• SSL Certificate Installation (Let's Encrypt, Commercial)</p>
+<p>• Server Security Hardening & Firewall Setup</p>
+<p>• WordPress Optimization on VPS Environments</p>
+<p>• DNS Management & Domain Configuration</p>
+<p>• Linux Command Line Operations (Ubuntu, CentOS, Debian)</p>
+
 
     <div class="section">
       <div class="section-title">Work Experience</div>
