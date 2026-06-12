@@ -516,7 +516,7 @@ footer {
     <div class="buttons">
       <a href="https://scatter-dashboard-bert.streamlit.app/" target="_blank" class="btn btn-primary">📊 View My Work</a>
       <a href="#contact" class="btn btn-secondary">📧 Hire Me</a>
-      <a href="#projects" class="btn btn-secondary">🚀 My Projects</a>
+      <a href="cv.html" target="_blank" class="btn btn-secondary">📄 View/Download CV</a>
     </div>
   </div>
 
