@@ -601,32 +601,6 @@ footer {
     </div>
 
     <div class="card">
-      <h3>🔹 Junior SEO Specialist</h3>
-      <p><strong>WBridge Island Cove</strong> | 2019 - 2020</p>
-      <ul>
-        <li>Supported organic growth for multiple client websites</li>
-        <li>Improved URL structures, header tags, and meta descriptions</li>
-        <li>Updated old content for freshness and search relevance</li>
-        <li>Monitored keyword rankings and organic traffic</li>
-        <li>Used Google Analytics and Search Console for reporting</li>
-        <li>Assisted in backlink analysis and competitor research</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>🔹 Junior ASO Specialist</h3>
-      <p><strong>Various Clients</strong> | 2021</p>
-      <ul>
-        <li>Keyword Research & Optimization for app stores</li>
-        <li>A/B tested icons, screenshots, and video previews to improve CTR</li>
-        <li>Analyzed competitor creatives and adapted best practices</li>
-        <li>Tools used: AppTweak, MobileAction, Google Play Console, App Store Connect</li>
-        <li>Improved app rankings and conversion rates</li>
-        <li>Localized app store listings for international markets</li>
-      </ul>
-    </div>
-
-    <div class="card">
       <h3>🔹 SEO Freelance</h3>
       <p><strong>Self-employed</strong> | 2024 - 2025</p>
       <ul>
@@ -640,6 +614,33 @@ footer {
         <li>Negative SEO campaigns and protection</li>
       </ul>
     </div>
+
+     <div class="card">
+      <h3>🔹 Junior ASO Specialist</h3>
+      <p><strong>Various Clients</strong> | 2021</p>
+      <ul>
+        <li>Keyword Research & Optimization for app stores</li>
+        <li>A/B tested icons, screenshots, and video previews to improve CTR</li>
+        <li>Analyzed competitor creatives and adapted best practices</li>
+        <li>Tools used: AppTweak, MobileAction, Google Play Console, App Store Connect</li>
+        <li>Improved app rankings and conversion rates</li>
+        <li>Localized app store listings for international markets</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>🔹 Junior SEO Specialist</h3>
+      <p><strong>WBridge Island Cove</strong> | 2019 - 2020</p>
+      <ul>
+        <li>Supported organic growth for multiple client websites</li>
+        <li>Improved URL structures, header tags, and meta descriptions</li>
+        <li>Updated old content for freshness and search relevance</li>
+        <li>Monitored keyword rankings and organic traffic</li>
+        <li>Used Google Analytics and Search Console for reporting</li>
+        <li>Assisted in backlink analysis and competitor research</li>
+      </ul>
+    </div>
+
   </div>
 </section>
 
