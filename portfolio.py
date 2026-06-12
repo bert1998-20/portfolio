@@ -580,10 +580,29 @@ footer {
 
 <section id="experience">
   <h2 class="section-title">Work Experience</h2>
-  <p class="section-desc">My complete professional journey from 2019 to Present - chronological order.</p>
+  <p class="section-desc">My complete professional journey from 2019 to Present (2026) - chronological order from newest to oldest.</p>
 
   <div class="grid">
-    <!-- SEO FREELANCE / Self-employed -->
+    <!-- 2026 - PRESENT (MOST RECENT) -->
+    <div class="card">
+      <h3>🔹 Senior SEO Specialist</h3>
+      <p><strong>Self-employed / Freelance</strong> | 2026 - PRESENT</p>
+      <ul>
+        <li>VPS Self-Managed Setup & Configuration (DigitalOcean, Vultr, Linode)</li>
+        <li>aaPanel, cPanel, WHM, hPanel Administration and Management</li>
+        <li>Website Migration between hosting providers with zero downtime</li>
+        <li>Database to Database Transfer ensuring data integrity</li>
+        <li>Technical SEO Audits and implementation</li>
+        <li>Nginx / Apache Web Server Configuration</li>
+        <li>SSL Certificate Installation (Let's Encrypt, Commercial)</li>
+        <li>Server Security Hardening & Firewall Setup (UFW, CSF)</li>
+        <li>Linux Command Line Operations (Ubuntu, CentOS, Debian)</li>
+        <li>WordPress Optimization on VPS Environments</li>
+        <li>Performance Monitoring & Optimization (htop, nload, netdata)</li>
+      </ul>
+    </div>
+
+    <!-- 2024 - 2025 SEO FREELANCE -->
     <div class="card">
       <h3>🔹 SEO FREELANCE</h3>
       <p><strong>Self-employed</strong> | 2024 - 2025</p>
@@ -598,7 +617,7 @@ footer {
       </ul>
     </div>
 
-    <!-- IE Soft Technology - SEO Team Lead -->
+    <!-- 2024 - 2025 SEO Team Lead -->
     <div class="card">
       <h3>🔹 SEO Team Lead</h3>
       <p><strong>IE Soft Technology</strong> | 2024 - 2025</p>
@@ -613,7 +632,7 @@ footer {
       </ul>
     </div>
 
-    <!-- BRICKSHARTS TECHNOLOGY - Offpage SEO -->
+    <!-- 2022 Offpage SEO -->
     <div class="card">
       <h3>🔹 Offpage SEO Specialist</h3>
       <p><strong>Bricksharts Technology</strong> | 2022</p>
@@ -625,7 +644,7 @@ footer {
       </ul>
     </div>
 
-    <!-- ELEVATE OUTSOURCING - Onpage SEO -->
+    <!-- 2022 Onpage SEO - Elevate Outsourcing -->
     <div class="card">
       <h3>🔹 Onpage SEO Specialist</h3>
       <p><strong>Elevate Outsourcing</strong> | 2022</p>
@@ -641,7 +660,7 @@ footer {
       </ul>
     </div>
 
-    <!-- LEVENDER GROUPS - Onpage SEO -->
+    <!-- 2022 Onpage SEO - Levender Groups -->
     <div class="card">
       <h3>🔹 Onpage SEO Specialist</h3>
       <p><strong>Levender Groups</strong> | 2022</p>
@@ -657,7 +676,7 @@ footer {
       </ul>
     </div>
 
-    <!-- COSMOLINK GLOBAL SOLUTION - Junior ASO -->
+    <!-- 2021 Junior ASO -->
     <div class="card">
       <h3>🔹 Junior ASO Specialist</h3>
       <p><strong>Cosmolink Global Solution</strong> | 2021</p>
@@ -669,7 +688,7 @@ footer {
       </ul>
     </div>
 
-    <!-- BRICKSHARTS TECHNOLOGY - WordPress Developer -->
+    <!-- 2021 WordPress Developer -->
     <div class="card">
       <h3>🔹 WordPress Developer</h3>
       <p><strong>Bricksharts Technology</strong> | 2021</p>
@@ -681,7 +700,7 @@ footer {
       </ul>
     </div>
 
-    <!-- WBridge Island Cove - Junior SEO Specialist -->
+    <!-- 2019 - 2020 Junior SEO - WBridge -->
     <div class="card">
       <h3>🔹 Junior SEO Specialist</h3>
       <p><strong>WBridge Island Cove</strong> | 2019 - 2020</p>
@@ -696,7 +715,7 @@ footer {
       </ul>
     </div>
 
-    <!-- Additional Junior SEO -->
+    <!-- 2019 - 2020 Junior SEO - Various Clients -->
     <div class="card">
       <h3>🔹 Junior SEO Specialist</h3>
       <p><strong>Various Clients</strong> | 2019 - 2020</p>
@@ -846,7 +865,7 @@ function downloadCV() {
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Obeth Gabiana Silawan - Complete CV</title>
+<title>Obeth Gabiana Silawan - Complete CV 2019-2026</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -929,12 +948,29 @@ function downloadCV() {
 
     <div class="section">
       <div class="section-title">Professional Summary</div>
-      <p style="line-height: 1.6; color: #4a5568;">As a young coder from Samar, I left home seeking deeper knowledge and skills to thrive in a fast-changing world. My journey led me to explore what it takes to succeed in the 21st century. I've discovered through years of study and insights from experienced friends in IT. While there's plenty of information available, turning it into real understanding is the real challenge.</p>
+      <p style="line-height: 1.6; color: #4a5568;">As a young coder from Samar, I left home seeking deeper knowledge and skills to thrive in a fast-changing world. My journey led me to explore what it takes to succeed in the 21st century. I've discovered through years of study and insights from experienced friends in IT. While there's plenty of information available, turning it into real understanding is the real challenge. With 7+ years of experience, I deliver results-driven digital solutions.</p>
     </div>
 
     <div class="section">
-      <div class="section-title">Work Experience</div>
+      <div class="section-title">Work Experience (2019 - 2026 PRESENT)</div>
       
+      <div class="job">
+        <div class="job-title">Senior SEO Specialist</div>
+        <div class="company">Self-employed / Freelance</div>
+        <div class="date">2026 - PRESENT</div>
+        <ul class="job-description">
+          <li>VPS Self-Managed Setup & Configuration (DigitalOcean, Vultr, Linode)</li>
+          <li>aaPanel, cPanel, WHM, hPanel Administration and Management</li>
+          <li>Website Migration between hosting providers with zero downtime</li>
+          <li>Database to Database Transfer ensuring data integrity</li>
+          <li>Technical SEO Audits and implementation</li>
+          <li>Nginx / Apache Web Server Configuration</li>
+          <li>SSL Certificate Installation (Let's Encrypt, Commercial)</li>
+          <li>Server Security Hardening & Firewall Setup</li>
+          <li>Linux Command Line Operations (Ubuntu, CentOS, Debian)</li>
+        </ul>
+      </div>
+
       <div class="job">
         <div class="job-title">SEO FREELANCE</div>
         <div class="company">Self-employed</div>
@@ -1071,7 +1107,7 @@ function downloadCV() {
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'Obeth_Silawan_CV.html';
+  a.download = 'Obeth_Silawan_Complete_CV.html';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
