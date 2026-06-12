@@ -610,6 +610,197 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     if (target) target.scrollIntoView({ behavior: 'smooth' });
   });
 });
+
+<script>
+const cursor = document.querySelector(".cursor");
+const cursorDot = document.querySelector(".cursor-dot");
+const avatarCard = document.getElementById("avatarCard");
+
+document.addEventListener("mousemove", function(e) {
+  cursor.style.left = e.clientX + "px";
+  cursor.style.top = e.clientY + "px";
+  cursorDot.style.left = e.clientX + "px";
+  cursorDot.style.top = e.clientY + "px";
+  
+  if (avatarCard) {
+    const x = (window.innerWidth / 2 - e.clientX) / 35;
+    const y = (window.innerHeight / 2 - e.clientY) / 35;
+    avatarCard.style.transform = `rotateY(${-x}deg) rotateX(${y}deg)`;
+  }
+});
+
+// Eye tracking
+document.addEventListener("mousemove", function(e) {
+  const eyes = document.querySelectorAll(".eye");
+  eyes.forEach(eye => {
+    const rect = eye.getBoundingClientRect();
+    const angle = Math.atan2(e.clientY - rect.top, e.clientX - rect.left);
+    const distance = Math.min(5, Math.hypot(e.clientX - rect.left, e.clientY - rect.top) / 30);
+    eye.style.transform = `translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px)`;
+  });
+});
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) target.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+// Download CV function
+function downloadCV() {
+  const cvContent = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Obeth Silawan - CV</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 40px 20px;
+  }
+  .cv-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .cv-content { padding: 40px; }
+  .header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 30px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #667eea;
+    margin-bottom: 30px;
+  }
+  .name-title h1 { font-size: 42px; color: #2d3748; }
+  .name-title .title { font-size: 18px; color: #667eea; margin: 10px 0; }
+  .contact-info { text-align: right; }
+  .contact-info p { margin: 5px 0; color: #4a5568; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+  .section { margin-bottom: 30px; }
+  .section-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2d3748;
+    border-left: 4px solid #667eea;
+    padding-left: 12px;
+    margin-bottom: 15px;
+  }
+  .special-box {
+    background: #1a202c;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+  }
+  .special-box h3 { color: #fbbf24; margin-bottom: 10px; }
+  .special-box p { color: #e2e8f0; font-size: 13px; margin: 5px 0; }
+  .skills-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .skill-tag {
+    background: #e2e8f0;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  @media (max-width: 768px) {
+    .header { grid-template-columns: 1fr; text-align: center; }
+    .contact-info { text-align: center; }
+    .two-col { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="cv-container">
+  <div class="cv-content">
+    <div class="header">
+      <div class="name-title">
+        <h1>OBETH GABIANA SILAWAN</h1>
+        <div class="title">SEO Team Lead | Black Hat SEO | WordPress Developer</div>
+      </div>
+      <div class="contact-info">
+        <p>📞 +63 9564574637</p>
+        <p>✉️ ieph.bert888@gmail.com</p>
+        <p>📍 San Leon Umingan Pangasinan</p>
+      </div>
+    </div>
+    <div class="two-col">
+      <div>
+        <div class="section">
+          <div class="section-title">About Me</div>
+          <p>As a young coder from Samar, I left home seeking deeper knowledge and skills. I've discovered through years of study and insights from experienced IT professionals that turning information into real understanding is the real challenge.</p>
+        </div>
+        <div class="special-box">
+          <h3>⚠️ Black Hat SEO Expertise</h3>
+          <p>• Casino India Market Specialist</p>
+          <p>• Click Fraud / Bot Traffic Bypass</p>
+          <p>• Cloaking & PBNs</p>
+          <p>• Negative SEO</p>
+          <p>• GMB/GBP Bypass Verification</p>
+        </div>
+        <div class="section">
+          <div class="section-title">Experience</div>
+          <h4>Senior SEO Specialist</h4>
+          <p>2026 - Present | VPS, aaPanel, cPanel, WHM, Website Migration</p>
+          <h4>SEO Team Lead</h4>
+          <p>2024-2025 | India Casino Market, Technical Audits, GA4</p>
+          <h4>WordPress Developer</h4>
+          <p>2024 | IE Soft Technology - Theme Dev, Performance</p>
+        </div>
+      </div>
+      <div>
+        <div class="section">
+          <div class="section-title">Skills</div>
+          <div class="skills-tags">
+            <span class="skill-tag">VPS Setup</span>
+            <span class="skill-tag">aaPanel</span>
+            <span class="skill-tag">cPanel/WHM</span>
+            <span class="skill-tag">WordPress</span>
+            <span class="skill-tag">SEO</span>
+            <span class="skill-tag">Data Analysis</span>
+            <span class="skill-tag">GA4</span>
+            <span class="skill-tag">Linux</span>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section-title">Education</div>
+          <h4>BS Information Technology</h4>
+          <p>Samar State University | 2015-2018</p>
+        </div>
+        <div class="section">
+          <div class="section-title">Languages</div>
+          <p>English (Fluent) | Tagalog/Filipino (Native)</p>
+        </div>
+        <div class="section">
+          <div class="section-title">References</div>
+          <h4>Prince Alojado</h4>
+          <p>All World SEO / Manager | 09095699870</p>
+          <h4>Aladin Legazpi</h4>
+          <p>All World SEO / CEO | Telegram: @aladinlegaspi</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>`;
+  
+  const blob = new Blob([cvContent], { type: 'text/html' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'Obeth_Silawan_CV.html';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+</script>
 </script>
 </body>
 </html>
