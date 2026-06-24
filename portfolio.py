@@ -549,7 +549,7 @@ footer {
     <div class="buttons">
       <a href="https://scatter-dashboard-bert.streamlit.app/" target="_blank" class="btn btn-primary">📊 View Previous Work</a>
       <a href="#contact" class="btn btn-secondary">📧 Hire Me</a>
-      <a href="#" onclick="downloadPDF()" class="btn btn-secondary">📄 Download CV (PDF)</a>
+      <a href="#" onclick="downloadPDF(event)" class="btn btn-secondary">📄 Download CV (PDF)</a>
     </div>
   </div>
 
@@ -861,14 +861,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // PDF Download function
-function downloadPDF() {
-  // Show loading indicator
+function downloadPDF(event) {
+  event.preventDefault();
+  
+  // Get the button
   const btn = event.target;
   const originalText = btn.innerHTML;
   btn.innerHTML = '⏳ Generating PDF...';
   btn.style.opacity = '0.7';
+  btn.style.pointerEvents = 'none';
   
-  // Create CV content for PDF
+  // Create CV content for PDF with ALL data
   const cvContent = `
   <!DOCTYPE html>
   <html>
@@ -978,11 +981,13 @@ function downloadPDF() {
             <li>VPS Self-Managed Setup & Configuration (DigitalOcean, Vultr, Linode)</li>
             <li>aaPanel, cPanel, WHM, hPanel Administration and Management</li>
             <li>Website Migration between hosting providers with zero downtime</li>
+            <li>Database to Database Transfer ensuring data integrity</li>
             <li>Technical SEO Audits and implementation</li>
             <li>Nginx / Apache Web Server Configuration</li>
             <li>SSL Certificate Installation (Let's Encrypt, Commercial)</li>
-            <li>Server Security Hardening & Firewall Setup</li>
+            <li>Server Security Hardening & Firewall Setup (UFW, CSF)</li>
             <li>Linux Command Line Operations (Ubuntu, CentOS, Debian)</li>
+            <li>WordPress Optimization on VPS Environments</li>
           </ul>
         </div>
 
@@ -996,43 +1001,68 @@ function downloadPDF() {
             <li>Technical SEO Audits (site speed, mobile-friendliness, core web vitals)</li>
             <li>Quality Backlink Building through guest posting and outreach</li>
             <li>Content Strategy & Creation for organic growth</li>
+            <li>Google My Business (GMB) Optimization for local SEO</li>
             <li>SEO Reporting & Analytics using Google Analytics 4 and Search Console</li>
             <li>Competitor Analysis & Gap Identification</li>
+            <li>WordPress SEO Optimization (Yoast SEO, Rank Math)</li>
           </ul>
         </div>
 
         <div class="job">
           <div class="job-title">SEO Team Lead</div>
           <div class="company">IE Soft Technology</div>
-          <div class="date">2023 - 2024</div>
+          <div class="date">2024 - 2025</div>
           <ul class="job-description">
             <li>Led a team of specialists to design and implement SEO strategies</li>
             <li>Created road maps & SEO strategies</li>
             <li>Managed technical audits and link-building campaigns</li>
             <li>Analyzed performance via GA4, Search Console</li>
+            <li>Translated insights into scalable actions</li>
+            <li>Collaborated with cross-functional teams</li>
           </ul>
         </div>
 
         <div class="job">
           <div class="job-title">Offpage SEO Specialist</div>
           <div class="company">Bricksharts Technology</div>
-          <div class="date">2022 - 2023</div>
+          <div class="date">2022</div>
           <ul class="job-description">
             <li>Executed strategic backlink campaigns (HARO, Digital PR)</li>
             <li>Built relationships with industry influencers</li>
             <li>Managed local SEO citations and directory listings</li>
+            <li>Monitored and disavowed toxic backlinks</li>
           </ul>
         </div>
 
         <div class="job">
           <div class="job-title">Onpage SEO Specialist</div>
-          <div class="company">Elevate Outsourcing / Levender Groups</div>
+          <div class="company">Elevate Outsourcing</div>
           <div class="date">2022</div>
           <ul class="job-description">
             <li>Keyword Research & Optimization</li>
-            <li>Content Optimization, Meta Tags & URL Structuring</li>
+            <li>Content Optimization</li>
+            <li>Meta Tags & URL Structuring</li>
             <li>Header Tags (H1, H2, H3) & HTML Markup</li>
             <li>Internal Linking Strategy</li>
+            <li>Image & Multimedia Optimization</li>
+            <li>Mobile & Core Web Vitals</li>
+            <li>User Experience (UX) Signals</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-title">Onpage SEO Specialist</div>
+          <div class="company">Levender Groups</div>
+          <div class="date">2022</div>
+          <ul class="job-description">
+            <li>Keyword Research & Optimization</li>
+            <li>Content Optimization</li>
+            <li>Meta Tags & URL Structuring</li>
+            <li>Header Tags (H1, H2, H3) & HTML Markup</li>
+            <li>Internal Linking Strategy</li>
+            <li>Image & Multimedia Optimization</li>
+            <li>Mobile & Core Web Vitals</li>
+            <li>User Experience (UX) Signals</li>
           </ul>
         </div>
 
@@ -1043,6 +1073,7 @@ function downloadPDF() {
           <ul class="job-description">
             <li>Keyword Research & Optimization for app stores</li>
             <li>A/B tested icons, screenshots, and video previews to improve CTR</li>
+            <li>Analyzed competitor creatives and adapted best practices</li>
             <li>Tools: AppTweak, MobileAction, Google Play Console, App Store Connect</li>
           </ul>
         </div>
@@ -1071,6 +1102,19 @@ function downloadPDF() {
             <li>Technical SEO fixes (broken links, redirects, sitemap)</li>
             <li>Local SEO optimization for business listings</li>
             <li>SEO performance monitoring via Google Analytics & Search Console</li>
+            <li>Competitor keyword analysis and gap identification</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-title">Junior SEO Specialist</div>
+          <div class="company">Various Clients</div>
+          <div class="date">2019 - 2020</div>
+          <ul class="job-description">
+            <li>Supporting organic growth</li>
+            <li>Improved URL structures, header tags</li>
+            <li>Updated old content for freshness and relevance</li>
+            <li>Monitored rankings, traffic (Google Analytics/Search Console)</li>
           </ul>
         </div>
       </div>
@@ -1099,6 +1143,11 @@ function downloadPDF() {
               <span class="skill-tag">cPanel/WHM</span>
               <span class="skill-tag">GA4</span>
               <span class="skill-tag">Linux</span>
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Nginx</span>
+              <span class="skill-tag">Apache</span>
             </div>
           </div>
         </div>
@@ -1113,32 +1162,47 @@ function downloadPDF() {
   container.style.position = 'fixed';
   container.style.left = '-9999px';
   container.style.top = '0';
+  container.style.width = '794px';
+  container.style.background = 'white';
   container.innerHTML = cvContent;
   document.body.appendChild(container);
 
-  // Generate PDF
-  const opt = {
-    margin: 0,
-    filename: 'Obeth_Silawan_CV.pdf',
-    image: { type: 'jpeg', quality: 0.98 },
-    html2canvas: { scale: 2, useCORS: true },
-    jsPDF: { unit: 'px', format: 'a4', orientation: 'portrait' }
-  };
+  // Wait for content to render
+  setTimeout(function() {
+    // Generate PDF
+    const opt = {
+      margin: 0,
+      filename: 'Obeth_Silawan_CV.pdf',
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { 
+        scale: 2, 
+        useCORS: true,
+        logging: false
+      },
+      jsPDF: { 
+        unit: 'px', 
+        format: 'a4', 
+        orientation: 'portrait' 
+      },
+      pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+    };
 
-  html2pdf().set(opt).from(container).save().then(() => {
-    document.body.removeChild(container);
-    // Reset button
-    btn.innerHTML = originalText;
-    btn.style.opacity = '1';
-  }).catch((error) => {
-    console.error('PDF generation error:', error);
-    document.body.removeChild(container);
-    btn.innerHTML = '❌ Error - Try Again';
-    btn.style.opacity = '1';
-    setTimeout(() => {
+    html2pdf().set(opt).from(container).save().then(function() {
+      document.body.removeChild(container);
       btn.innerHTML = originalText;
-    }, 3000);
-  });
+      btn.style.opacity = '1';
+      btn.style.pointerEvents = 'auto';
+    }).catch(function(error) {
+      console.error('PDF generation error:', error);
+      document.body.removeChild(container);
+      btn.innerHTML = '❌ Error - Try Again';
+      btn.style.opacity = '1';
+      btn.style.pointerEvents = 'auto';
+      setTimeout(function() {
+        btn.innerHTML = originalText;
+      }, 3000);
+    });
+  }, 500);
 }
 </script>
 </body>
