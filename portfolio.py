@@ -20,7 +20,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Your HTML portfolio
+# Your HTML portfolio with PDF download functionality
 portfolio_html = """
 <!DOCTYPE html>
 <html lang="en">
@@ -31,6 +31,9 @@ portfolio_html = """
 <meta name="description" content="Obeth Gabiana Silawan - SEO Specialist, WordPress Developer, ASO Specialist, and Server Administrator">
 <meta name="keywords" content="SEO Specialist, WordPress Developer, ASO Specialist, Server Administrator">
 <meta name="author" content="Obeth Gabiana Silawan">
+
+<!-- html2pdf library for PDF generation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
 <style>
 * {
@@ -291,7 +294,7 @@ nav a:hover {
 .avatar-wrap {
   perspective: 1200px;
   display: flex;
-  justify-center;
+  justify-content: center;
 }
 
 .avatar-card {
@@ -546,7 +549,7 @@ footer {
     <div class="buttons">
       <a href="https://scatter-dashboard-bert.streamlit.app/" target="_blank" class="btn btn-primary">📊 View Previous Work</a>
       <a href="#contact" class="btn btn-secondary">📧 Hire Me</a>
-      <a href="#" onclick="downloadCV()" class="btn btn-secondary">📄 Download CV</a>
+      <a href="#" onclick="downloadPDF()" class="btn btn-secondary">📄 Download CV (PDF)</a>
     </div>
   </div>
 
@@ -584,7 +587,6 @@ footer {
   <p class="section-desc">My complete professional journey from 2019 to Present (2026) - chronological order from newest to oldest.</p>
 
   <div class="grid">
-    <!-- 2026 - PRESENT (MOST RECENT) -->
     <div class="card">
       <h3>🔹 Senior SEO Specialist</h3>
       <p><strong>Self-employed / Freelance</strong> | 2026 - PRESENT</p>
@@ -602,7 +604,6 @@ footer {
       </ul>
     </div>
 
-    <!-- 2024 - 2025 SEO FREELANCE - WHITE HAT VERSION -->
     <div class="card">
       <h3>🔹 SEO FREELANCE</h3>
       <p><strong>Self-employed</strong> | 2024 - 2025</p>
@@ -619,7 +620,6 @@ footer {
       </ul>
     </div>
 
-    <!-- 2024 - 2025 SEO Team Lead -->
     <div class="card">
       <h3>🔹 SEO Team Lead</h3>
       <p><strong>IE Soft Technology</strong> | 2024 - 2025</p>
@@ -634,7 +634,6 @@ footer {
       </ul>
     </div>
 
-    <!-- 2022 Offpage SEO -->
     <div class="card">
       <h3>🔹 Offpage SEO Specialist</h3>
       <p><strong>Bricksharts Technology</strong> | 2022</p>
@@ -646,7 +645,6 @@ footer {
       </ul>
     </div>
 
-    <!-- 2022 Onpage SEO - Elevate Outsourcing -->
     <div class="card">
       <h3>🔹 Onpage SEO Specialist</h3>
       <p><strong>Elevate Outsourcing</strong> | 2022</p>
@@ -662,7 +660,6 @@ footer {
       </ul>
     </div>
 
-    <!-- 2022 Onpage SEO - Levender Groups -->
     <div class="card">
       <h3>🔹 Onpage SEO Specialist</h3>
       <p><strong>Levender Groups</strong> | 2022</p>
@@ -678,7 +675,6 @@ footer {
       </ul>
     </div>
 
-    <!-- 2021 Junior ASO -->
     <div class="card">
       <h3>🔹 Junior ASO Specialist</h3>
       <p><strong>Cosmolink Global Solution</strong> | 2021</p>
@@ -690,7 +686,6 @@ footer {
       </ul>
     </div>
 
-    <!-- 2021 WordPress Developer -->
     <div class="card">
       <h3>🔹 WordPress Developer</h3>
       <p><strong>Bricksharts Technology</strong> | 2021</p>
@@ -702,7 +697,6 @@ footer {
       </ul>
     </div>
 
-    <!-- 2019 - 2020 Junior SEO - WBridge - WHITE HAT VERSION -->
     <div class="card">
       <h3>🔹 Junior SEO Specialist</h3>
       <p><strong>WBridge Island Cove</strong> | 2019 - 2020</p>
@@ -718,7 +712,6 @@ footer {
       </ul>
     </div>
 
-    <!-- 2019 - 2020 Junior SEO - Various Clients -->
     <div class="card">
       <h3>🔹 Junior SEO Specialist</h3>
       <p><strong>Various Clients</strong> | 2019 - 2020</p>
@@ -867,259 +860,285 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Download CV function
-function downloadCV() {
-  const cvContent = `<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Obeth Gabiana Silawan - Complete CV 2019-2026</title>
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    padding: 40px 20px;
-  }
-  .cv-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    background: #fff;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-  }
-  .cv-content { padding: 40px; }
-  .header {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 30px;
-    padding-bottom: 30px;
-    border-bottom: 3px solid #667eea;
-    margin-bottom: 30px;
-  }
-  .name-title h1 { font-size: 42px; color: #2d3748; }
-  .name-title .title { font-size: 18px; color: #667eea; margin: 10px 0; }
-  .contact-info { text-align: right; }
-  .contact-info p { margin: 5px 0; color: #4a5568; }
-  .section { margin-bottom: 30px; }
-  .section-title {
-    font-size: 22px;
-    font-weight: bold;
-    color: #2d3748;
-    border-left: 4px solid #667eea;
-    padding-left: 15px;
-    margin-bottom: 20px;
-    margin-top: 25px;
-  }
-  .job {
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #e2e8f0;
-  }
-  .job-title { font-size: 18px; font-weight: bold; color: #2d3748; }
-  .company { color: #667eea; font-weight: 600; margin: 5px 0; }
-  .date { color: #718096; font-size: 13px; margin-bottom: 10px; }
-  .job-description { margin-left: 20px; }
-  .job-description li { margin: 8px 0; color: #4a5568; line-height: 1.5; }
-  .skills-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
-  .skill-tag {
-    background: #e2e8f0;
-    padding: 5px 15px;
-    border-radius: 25px;
-    font-size: 12px;
-    color: #2d3748;
-  }
-  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-  @media (max-width: 768px) {
-    .header { grid-template-columns: 1fr; text-align: center; }
-    .contact-info { text-align: center; }
-    .two-col { grid-template-columns: 1fr; }
-  }
-</style>
-</head>
-<body>
-<div class="cv-container">
-  <div class="cv-content">
-    <div class="header">
-      <div class="name-title">
-        <h1>OBETH GABIANA SILAWAN</h1>
-        <div class="title">SEO Specialist | WordPress Developer | ASO Specialist | Server Administrator</div>
-      </div>
-      <div class="contact-info">
-        <p>📞 +63 9564574637</p>
-        <p>✉️ ieph.bert888@gmail.com</p>
-        <p>📍 San Leon Umingan Pangasinan</p>
-        <p>🌐 English | Tagalog</p>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="section-title">Professional Summary</div>
-      <p style="line-height: 1.6; color: #4a5568;">As a young coder from Samar, I left home seeking deeper knowledge and skills to thrive in a fast-changing world. My journey led me to explore what it takes to succeed in the 21st century. I've discovered through years of study and insights from experienced friends in IT. While there's plenty of information available, turning it into real understanding is the real challenge. With 7+ years of experience, I deliver results-driven digital solutions.</p>
-    </div>
-
-    <div class="section">
-      <div class="section-title">Work Experience (2019 - 2026 PRESENT)</div>
-      
-      <div class="job">
-        <div class="job-title">Senior SEO Specialist</div>
-        <div class="company">Self-employed / Freelance</div>
-        <div class="date">2026 - PRESENT</div>
-        <ul class="job-description">
-          <li>VPS Self-Managed Setup & Configuration (DigitalOcean, Vultr, Linode)</li>
-          <li>aaPanel, cPanel, WHM, hPanel Administration and Management</li>
-          <li>Website Migration between hosting providers with zero downtime</li>
-          <li>Database to Database Transfer ensuring data integrity</li>
-          <li>Technical SEO Audits and implementation</li>
-          <li>Nginx / Apache Web Server Configuration</li>
-          <li>SSL Certificate Installation (Let's Encrypt, Commercial)</li>
-          <li>Server Security Hardening & Firewall Setup</li>
-          <li>Linux Command Line Operations (Ubuntu, CentOS, Debian)</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-title">SEO FREELANCE</div>
-        <div class="company">Self-employed</div>
-        <div class="date">2024 - 2025</div>
-        <ul class="job-description">
-          <li>Keyword Research & Strategy using SEMrush, Ahrefs, Google Keyword Planner</li>
-          <li>On-Page SEO Optimization (meta tags, headers, content structure)</li>
-          <li>Technical SEO Audits (site speed, mobile-friendliness, core web vitals)</li>
-          <li>Quality Backlink Building through guest posting and outreach</li>
-          <li>Content Strategy & Creation for organic growth</li>
-          <li>Google My Business (GMB) Optimization for local SEO</li>
-          <li>SEO Reporting & Analytics using Google Analytics 4 and Search Console</li>
-          <li>Competitor Analysis & Gap Identification</li>
-          <li>WordPress SEO Optimization (Yoast SEO, Rank Math)</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-title">SEO Team Lead</div>
-        <div class="company">IE Soft Technology</div>
-        <div class="date">2023 - 2024</div>
-        <ul class="job-description">
-          <li>Led a team of specialists to design and implement SEO strategies</li>
-          <li>Create road Map & SEO strategies</li>
-          <li>Managed technical audits and link-building campaigns</li>
-          <li>Analyzed performance via GA4, Search Console</li>
-          <li>Translating insights into scalable actions</li>
-          <li>Collaborated with cross-functional teams</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-title">Offpage SEO Specialist</div>
-        <div class="company">Bricksharts Technology</div>
-        <div class="date">2022 - 2023</div>
-        <ul class="job-description">
-          <li>Executed strategic backlink campaigns (HARO, Digital PR)</li>
-          <li>Built relationships with industry influencers</li>
-          <li>Managed local SEO citations and directory listings</li>
-          <li>Monitored and disavowed toxic backlinks</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-title">Onpage SEO Specialist</div>
-        <div class="company">Elevate Outsourcing / Levender Groups</div>
-        <div class="date">2022</div>
-        <ul class="job-description">
-          <li>Keyword Research & Optimization</li>
-          <li>Content Optimization, Meta Tags & URL Structuring</li>
-          <li>Header Tags (H1, H2, H3) & HTML Markup</li>
-          <li>Internal Linking Strategy</li>
-          <li>Image & Multimedia Optimization</li>
-          <li>Mobile & Core Web Vitals</li>
-          <li>User Experience (UX) Signals</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-title">Junior ASO Specialist</div>
-        <div class="company">Cosmolink Global Solution</div>
-        <div class="date">2021</div>
-        <ul class="job-description">
-          <li>Keyword Research & Optimization for app stores</li>
-          <li>A/B tested icons, screenshots, and video previews to improve CTR</li>
-          <li>Analyzed competitor creatives and adapted best practices</li>
-          <li>Tools: AppTweak, MobileAction, Google Play Console, App Store Connect</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-title">WordPress Developer</div>
-        <div class="company">Bricksharts Technology</div>
-        <div class="date">2021</div>
-        <ul class="job-description">
-          <li>Theme & Plugin Development</li>
-          <li>Page Builders & Gutenberg</li>
-          <li>Performance Optimization</li>
-          <li>Security & Maintenance</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-title">Junior SEO Specialist</div>
-        <div class="company">WBridge Island Cove</div>
-        <div class="date">2019 - 2020</div>
-        <ul class="job-description">
-          <li>On-Page SEO optimization (meta descriptions, title tags, header structure)</li>
-          <li>Keyword research and implementation</li>
-          <li>Content optimization for target keywords</li>
-          <li>Internal linking strategy improvement</li>
-          <li>Technical SEO fixes (broken links, redirects, sitemap)</li>
-          <li>Local SEO optimization for business listings</li>
-          <li>SEO performance monitoring via Google Analytics & Search Console</li>
-          <li>Competitor keyword analysis and gap identification</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="two-col">
-      <div>
-        <div class="section">
-          <div class="section-title">Education</div>
-          <div class="job">
-            <div class="job-title">BS Information Technology</div>
-            <div class="company">Samar State University</div>
-            <div class="date">2015 - 2018</div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="section">
-          <div class="section-title">Core Competencies</div>
-          <div class="skills-tags">
-            <span class="skill-tag">SEO</span>
-            <span class="skill-tag">On-Page SEO</span>
-            <span class="skill-tag">Off-Page SEO</span>
-            <span class="skill-tag">WordPress</span>
-            <span class="skill-tag">ASO</span>
-            <span class="skill-tag">VPS</span>
-            <span class="skill-tag">cPanel/WHM</span>
-            <span class="skill-tag">GA4</span>
-            <span class="skill-tag">Linux</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</body>
-</html>`;
+// PDF Download function
+function downloadPDF() {
+  // Show loading indicator
+  const btn = event.target;
+  const originalText = btn.innerHTML;
+  btn.innerHTML = '⏳ Generating PDF...';
+  btn.style.opacity = '0.7';
   
-  const blob = new Blob([cvContent], { type: 'text/html' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = 'Obeth_Silawan_Complete_CV.html';
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
+  // Create CV content for PDF
+  const cvContent = `
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Obeth Gabiana Silawan - CV</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        padding: 40px;
+        background: white;
+        color: #2d3748;
+      }
+      .cv-container {
+        max-width: 794px;
+        margin: 0 auto;
+      }
+      .header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 30px;
+        padding-bottom: 30px;
+        border-bottom: 3px solid #667eea;
+        margin-bottom: 30px;
+      }
+      .name-title h1 { font-size: 32px; color: #2d3748; }
+      .name-title .title { font-size: 16px; color: #667eea; font-weight: 600; }
+      .contact-info { text-align: right; font-size: 13px; line-height: 1.6; }
+      .contact-info p { margin: 3px 0; color: #4a5568; }
+      .section { margin-bottom: 25px; }
+      .section-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: #2d3748;
+        border-left: 4px solid #667eea;
+        padding-left: 15px;
+        margin-bottom: 15px;
+        margin-top: 20px;
+      }
+      .job {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #e2e8f0;
+      }
+      .job:last-child { border-bottom: none; }
+      .job-title { font-size: 16px; font-weight: bold; color: #2d3748; }
+      .company { color: #667eea; font-weight: 600; margin: 5px 0; font-size: 14px; }
+      .date { color: #718096; font-size: 12px; margin-bottom: 10px; }
+      .job-description { margin-left: 20px; list-style-type: disc; }
+      .job-description li { margin: 5px 0; color: #4a5568; line-height: 1.5; font-size: 13px; }
+      .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+      .skills-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+      }
+      .skill-tag {
+        background: #e2e8f0;
+        padding: 4px 14px;
+        border-radius: 20px;
+        font-size: 12px;
+        color: #2d3748;
+        font-weight: 500;
+      }
+      .summary-text {
+        line-height: 1.7;
+        color: #4a5568;
+        font-size: 14px;
+      }
+      @media (max-width: 600px) {
+        .header { grid-template-columns: 1fr; text-align: center; }
+        .contact-info { text-align: center; }
+        .two-col { grid-template-columns: 1fr; gap: 0; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cv-container">
+      <div class="header">
+        <div class="name-title">
+          <h1>OBETH GABIANA SILAWAN</h1>
+          <div class="title">SEO Specialist | WordPress Developer | ASO Specialist | Server Administrator</div>
+        </div>
+        <div class="contact-info">
+          <p>📞 +63 9564574637</p>
+          <p>✉️ ieph.bert888@gmail.com</p>
+          <p>📍 San Leon Umingan Pangasinan</p>
+          <p>🌐 English | Tagalog</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p class="summary-text">As a young coder from Samar, I left home seeking deeper knowledge and skills to thrive in a fast-changing world. My journey led me to explore what it takes to succeed in the 21st century. I've discovered through years of study and insights from experienced friends in IT. While there's plenty of information available, turning it into real understanding is the real challenge. With 7+ years of experience, I deliver results-driven digital solutions.</p>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Work Experience (2019 - 2026 PRESENT)</div>
+        
+        <div class="job">
+          <div class="job-title">Senior SEO Specialist</div>
+          <div class="company">Self-employed / Freelance</div>
+          <div class="date">2026 - PRESENT</div>
+          <ul class="job-description">
+            <li>VPS Self-Managed Setup & Configuration (DigitalOcean, Vultr, Linode)</li>
+            <li>aaPanel, cPanel, WHM, hPanel Administration and Management</li>
+            <li>Website Migration between hosting providers with zero downtime</li>
+            <li>Technical SEO Audits and implementation</li>
+            <li>Nginx / Apache Web Server Configuration</li>
+            <li>SSL Certificate Installation (Let's Encrypt, Commercial)</li>
+            <li>Server Security Hardening & Firewall Setup</li>
+            <li>Linux Command Line Operations (Ubuntu, CentOS, Debian)</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-title">SEO FREELANCE</div>
+          <div class="company">Self-employed</div>
+          <div class="date">2024 - 2025</div>
+          <ul class="job-description">
+            <li>Keyword Research & Strategy using SEMrush, Ahrefs, Google Keyword Planner</li>
+            <li>On-Page SEO Optimization (meta tags, headers, content structure)</li>
+            <li>Technical SEO Audits (site speed, mobile-friendliness, core web vitals)</li>
+            <li>Quality Backlink Building through guest posting and outreach</li>
+            <li>Content Strategy & Creation for organic growth</li>
+            <li>SEO Reporting & Analytics using Google Analytics 4 and Search Console</li>
+            <li>Competitor Analysis & Gap Identification</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-title">SEO Team Lead</div>
+          <div class="company">IE Soft Technology</div>
+          <div class="date">2023 - 2024</div>
+          <ul class="job-description">
+            <li>Led a team of specialists to design and implement SEO strategies</li>
+            <li>Created road maps & SEO strategies</li>
+            <li>Managed technical audits and link-building campaigns</li>
+            <li>Analyzed performance via GA4, Search Console</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-title">Offpage SEO Specialist</div>
+          <div class="company">Bricksharts Technology</div>
+          <div class="date">2022 - 2023</div>
+          <ul class="job-description">
+            <li>Executed strategic backlink campaigns (HARO, Digital PR)</li>
+            <li>Built relationships with industry influencers</li>
+            <li>Managed local SEO citations and directory listings</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-title">Onpage SEO Specialist</div>
+          <div class="company">Elevate Outsourcing / Levender Groups</div>
+          <div class="date">2022</div>
+          <ul class="job-description">
+            <li>Keyword Research & Optimization</li>
+            <li>Content Optimization, Meta Tags & URL Structuring</li>
+            <li>Header Tags (H1, H2, H3) & HTML Markup</li>
+            <li>Internal Linking Strategy</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-title">Junior ASO Specialist</div>
+          <div class="company">Cosmolink Global Solution</div>
+          <div class="date">2021</div>
+          <ul class="job-description">
+            <li>Keyword Research & Optimization for app stores</li>
+            <li>A/B tested icons, screenshots, and video previews to improve CTR</li>
+            <li>Tools: AppTweak, MobileAction, Google Play Console, App Store Connect</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-title">WordPress Developer</div>
+          <div class="company">Bricksharts Technology</div>
+          <div class="date">2021</div>
+          <ul class="job-description">
+            <li>Theme & Plugin Development</li>
+            <li>Page Builders & Gutenberg</li>
+            <li>Performance Optimization</li>
+            <li>Security & Maintenance</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-title">Junior SEO Specialist</div>
+          <div class="company">WBridge Island Cove</div>
+          <div class="date">2019 - 2020</div>
+          <ul class="job-description">
+            <li>On-Page SEO optimization (meta descriptions, title tags, header structure)</li>
+            <li>Keyword research and implementation</li>
+            <li>Content optimization for target keywords</li>
+            <li>Internal linking strategy improvement</li>
+            <li>Technical SEO fixes (broken links, redirects, sitemap)</li>
+            <li>Local SEO optimization for business listings</li>
+            <li>SEO performance monitoring via Google Analytics & Search Console</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <div class="section">
+            <div class="section-title">Education</div>
+            <div class="job">
+              <div class="job-title">BS Information Technology</div>
+              <div class="company">Samar State University</div>
+              <div class="date">2015 - 2018</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="section">
+            <div class="section-title">Core Competencies</div>
+            <div class="skills-tags">
+              <span class="skill-tag">SEO</span>
+              <span class="skill-tag">On-Page SEO</span>
+              <span class="skill-tag">Off-Page SEO</span>
+              <span class="skill-tag">WordPress</span>
+              <span class="skill-tag">ASO</span>
+              <span class="skill-tag">VPS</span>
+              <span class="skill-tag">cPanel/WHM</span>
+              <span class="skill-tag">GA4</span>
+              <span class="skill-tag">Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
+  `;
+
+  // Create temporary container
+  const container = document.createElement('div');
+  container.style.position = 'fixed';
+  container.style.left = '-9999px';
+  container.style.top = '0';
+  container.innerHTML = cvContent;
+  document.body.appendChild(container);
+
+  // Generate PDF
+  const opt = {
+    margin: 0,
+    filename: 'Obeth_Silawan_CV.pdf',
+    image: { type: 'jpeg', quality: 0.98 },
+    html2canvas: { scale: 2, useCORS: true },
+    jsPDF: { unit: 'px', format: 'a4', orientation: 'portrait' }
+  };
+
+  html2pdf().set(opt).from(container).save().then(() => {
+    document.body.removeChild(container);
+    // Reset button
+    btn.innerHTML = originalText;
+    btn.style.opacity = '1';
+  }).catch((error) => {
+    console.error('PDF generation error:', error);
+    document.body.removeChild(container);
+    btn.innerHTML = '❌ Error - Try Again';
+    btn.style.opacity = '1';
+    setTimeout(() => {
+      btn.innerHTML = originalText;
+    }, 3000);
+  });
 }
 </script>
 </body>
