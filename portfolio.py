@@ -26,7 +26,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# CV HTML content for PDF generation - UPDATED WITH ACCURATE EXPERIENCE
+# CV HTML content for PDF generation - UPDATED WITHOUT BLACK HAT
 CV_HTML = """
 <!DOCTYPE html>
 <html>
@@ -110,7 +110,7 @@ CV_HTML = """
         <div class="header">
             <div class="name-title">
                 <h1>OBETH GABIANA SILAWAN</h1>
-                <div class="title">SEO Specialist | WordPress Developer | ASO Specialist</div>
+                <div class="title">SEO Specialist | WordPress Developer | ASO Specialist | Server Administrator</div>
             </div>
             <div class="contact-info">
                 <p>📞 +63 9545674637</p>
@@ -122,38 +122,27 @@ CV_HTML = """
 
         <div class="section">
             <div class="section-title">Professional Summary</div>
-            <p class="summary-text">As a young coder from Samar, I left home seeking deeper knowledge and skills to thrive in a fast-changing world. My journey led me to explore what it takes to succeed in the 21st century. I've discovered through years of study and insights from experienced friends in IT. While there's plenty of information available, turning it into real understanding is the real challenge. With diverse experience in SEO, WordPress development, and ASO, I deliver results-driven digital solutions.</p>
+            <p class="summary-text">As a young coder from Samar, I left home seeking deeper knowledge and skills to thrive in a fast-changing world. My journey led me to explore what it takes to succeed in the 21st century. I've discovered through years of study and insights from experienced friends in IT. While there's plenty of information available, turning it into real understanding is the real challenge. With diverse experience in SEO, WordPress development, ASO, and server administration, I deliver results-driven digital solutions.</p>
         </div>
 
         <div class="section">
             <div class="section-title">Work Experience</div>
             
             <div class="job">
-                <div class="job-title">SEO FREELANCE</div>
-                <div class="company">Black Hat SEA - Catoni India Market</div>
-                <div class="date">01-2024 - 07-2024</div>
+                <div class="job-title">Senior SEO Specialist & Server Administrator</div>
+                <div class="company">Self-employed / Freelance</div>
+                <div class="date">2024 - PRESENT</div>
                 <ul class="job-description">
-                    <li>Author: Kim CHA/BGBP - By Pass Verification</li>
-                    <li>Cloaking: Showing different content to users and search engines</li>
-                    <li>Private Blog Network (PBN) Management</li>
-                    <li>Negative SEO Strategies</li>
-                    <li>Auto-generated/CSK fraud or bot traffic management</li>
-                    <li>Backlinks injection / High DA/DR</li>
-                    <li>New Tools Development - Unique approaches</li>
-                </ul>
-            </div>
-
-            <div class="job">
-                <div class="job-title">Black Hat SEO Specialist</div>
-                <div class="company">Wbridge Island Cove</div>
-                <div class="date">01-2023 - 01-2024</div>
-                <ul class="job-description">
-                    <li>Click fraud or bot traffic management</li>
-                    <li>Cloaking: Showing different content to users and search engines</li>
-                    <li>Private Blog Network (PBN) Management</li>
-                    <li>Negative SEO Strategies</li>
-                    <li>Auto-generated/CSK fraud or bot traffic management</li>
-                    <li>By Pass CHA/BGBP/Big Business</li>
+                    <li>cPanel & WHM Administration and Management</li>
+                    <li>aaPanel Server Management and Configuration</li>
+                    <li>Domain Management and Configuration</li>
+                    <li>Website Migration between hosting providers with zero downtime</li>
+                    <li>Database to Database Transfer ensuring data integrity</li>
+                    <li>VPS Self-Managed Setup & Configuration</li>
+                    <li>Technical SEO Audits and implementation</li>
+                    <li>SSL Certificate Installation (Let's Encrypt, Commercial)</li>
+                    <li>Server Security Hardening & Firewall Setup</li>
+                    <li>WordPress Optimization on VPS Environments</li>
                 </ul>
             </div>
 
@@ -274,19 +263,19 @@ CV_HTML = """
                         <span class="skill-tag">SEO</span>
                         <span class="skill-tag">On-Page SEO</span>
                         <span class="skill-tag">Off-Page SEO</span>
-                        <span class="skill-tag">Black Hat SEO</span>
-                        <span class="skill-tag">PBN</span>
                         <span class="skill-tag">WordPress</span>
                         <span class="skill-tag">ASO</span>
+                        <span class="skill-tag">cPanel</span>
+                        <span class="skill-tag">WHM</span>
+                        <span class="skill-tag">aaPanel</span>
+                        <span class="skill-tag">VPS</span>
                         <span class="skill-tag">GA4</span>
+                        <span class="skill-tag">Linux</span>
                         <span class="skill-tag">HTML/CSS</span>
                         <span class="skill-tag">JavaScript</span>
                         <span class="skill-tag">Python</span>
                         <span class="skill-tag">Digital Marketing</span>
                         <span class="skill-tag">Leadership</span>
-                        <span class="skill-tag">Critical Thinking</span>
-                        <span class="skill-tag">Creativity</span>
-                        <span class="skill-tag">Management</span>
                     </div>
                 </div>
             </div>
@@ -319,7 +308,7 @@ with st.sidebar:
     4. Select "Save as PDF"
     """)
 
-# Your HTML portfolio - with accurate experience
+# Your HTML portfolio - UPDATED WITHOUT BLACK HAT
 portfolio_html = """
 <!DOCTYPE html>
 <html lang="en">
@@ -327,8 +316,8 @@ portfolio_html = """
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Obeth Gabiana Silawan | SEO Specialist Portfolio</title>
-<meta name="description" content="Obeth Gabiana Silawan - SEO Specialist, WordPress Developer, ASO Specialist">
-<meta name="keywords" content="SEO Specialist, WordPress Developer, ASO Specialist, Black Hat SEO">
+<meta name="description" content="Obeth Gabiana Silawan - SEO Specialist, WordPress Developer, ASO Specialist, Server Administrator">
+<meta name="keywords" content="SEO Specialist, WordPress Developer, ASO Specialist, Server Administrator, cPanel, WHM">
 <meta name="author" content="Obeth Gabiana Silawan">
 
 <style>
@@ -833,7 +822,9 @@ footer {
     <div class="badge">✨ SEO Specialist & WordPress Developer</div>
     <h1>Hi, I'm <span>Obeth Gabiana Silawan</span></h1>
     <p>
-      SEO Specialist, WordPress Developer, and ASO Specialist with expertise in both White Hat and Black Hat SEO strategies. I create intelligent websites, automation systems, data-driven insights, and search-optimized digital experiences that help brands grow smarter in the modern world.
+      SEO Specialist, WordPress Developer, ASO Specialist, and Server Administrator. 
+      I create intelligent websites, automation systems, data-driven insights, and search-optimized digital
+      experiences that help brands grow smarter in the modern world.
     </p>
     
     <div class="stats">
@@ -869,8 +860,8 @@ footer {
       </div>
       <div class="code-chip">
         🔍 SEO Specialist | WordPress Developer<br>
-        📱 ASO Specialist | Black Hat SEO<br>
-        🚀 PBN | Cloaking | Link Building
+        🖥️ cPanel | WHM | aaPanel<br>
+        📱 ASO Specialist | Server Admin
       </div>
     </div>
   </div>
@@ -891,29 +882,19 @@ footer {
 
   <div class="grid">
     <div class="card">
-      <h3>🔹 SEO FREELANCE</h3>
-      <p><strong>Black Hat SEA - Catoni India Market</strong><br>01-2024 - 07-2024</p>
+      <h3>🔹 Senior SEO Specialist & Server Administrator</h3>
+      <p><strong>Self-employed / Freelance</strong><br>2024 - PRESENT</p>
       <ul>
-        <li>Author: Kim CHA/BGBP - By Pass Verification</li>
-        <li>Cloaking: Showing different content to users and search engines</li>
-        <li>Private Blog Network (PBN) Management</li>
-        <li>Negative SEO Strategies</li>
-        <li>Auto-generated/CSK fraud or bot traffic management</li>
-        <li>Backlinks injection / High DA/DR</li>
-        <li>New Tools Development - Unique approaches</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>🔹 Black Hat SEO Specialist</h3>
-      <p><strong>Wbridge Island Cove</strong><br>01-2023 - 01-2024</p>
-      <ul>
-        <li>Click fraud or bot traffic management</li>
-        <li>Cloaking: Showing different content to users and search engines</li>
-        <li>Private Blog Network (PBN) Management</li>
-        <li>Negative SEO Strategies</li>
-        <li>Auto-generated/CSK fraud or bot traffic management</li>
-        <li>By Pass CHA/BGBP/Big Business</li>
+        <li>cPanel & WHM Administration and Management</li>
+        <li>aaPanel Server Management and Configuration</li>
+        <li>Domain Management and Configuration</li>
+        <li>Website Migration between hosting providers with zero downtime</li>
+        <li>Database to Database Transfer ensuring data integrity</li>
+        <li>VPS Self-Managed Setup & Configuration</li>
+        <li>Technical SEO Audits and implementation</li>
+        <li>SSL Certificate Installation (Let's Encrypt, Commercial)</li>
+        <li>Server Security Hardening & Firewall Setup</li>
+        <li>WordPress Optimization on VPS Environments</li>
       </ul>
     </div>
 
@@ -1007,7 +988,7 @@ footer {
 
 <section id="skills">
   <h2 class="section-title">Skills & Expertise</h2>
-  <p class="section-desc">A comprehensive skill set combining SEO mastery, WordPress Development, ASO, and Digital Marketing.</p>
+  <p class="section-desc">A comprehensive skill set combining SEO mastery, WordPress Development, ASO, and Server Administration.</p>
 
   <div class="grid">
     <div class="card">
@@ -1025,16 +1006,29 @@ footer {
     </div>
 
     <div class="card">
-      <h3>🔗 Off-Page & Black Hat SEO</h3>
+      <h3>🔗 Off-Page SEO</h3>
       <ul>
-        <li>Private Blog Network (PBN) Management</li>
-        <li>Cloaking Techniques</li>
-        <li>Negative SEO Strategies</li>
-        <li>Backlinks Injection / High DA/DR</li>
-        <li>Click Fraud & Bot Traffic Management</li>
-        <li>Auto-generated/CSK Fraud</li>
-        <li>HARO & Digital PR</li>
-        <li>By Pass CHA/BGBP/Big Business</li>
+        <li>Ethical Link Building (Guest posting, HARO, Digital PR)</li>
+        <li>Quality Content Creation & Strategy</li>
+        <li>GMB & Local SEO Optimization</li>
+        <li>Technical SEO Audits & Fixes</li>
+        <li>SEO Analytics & Reporting (GA4, GSC)</li>
+        <li>Competitor Analysis & Gap Identification</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>🖥️ Server & Hosting</h3>
+      <ul>
+        <li>cPanel & WHM Administration</li>
+        <li>aaPanel Server Management</li>
+        <li>Domain Management & Configuration</li>
+        <li>Website Migration (Zero Downtime)</li>
+        <li>Database to Database Transfer</li>
+        <li>VPS Setup & Configuration</li>
+        <li>SSL Certificate Installation</li>
+        <li>Server Security Hardening</li>
+        <li>Linux Operations (Ubuntu, CentOS, Debian)</li>
       </ul>
     </div>
 
@@ -1068,18 +1062,6 @@ footer {
         <li>SEO Tools: Ahrefs, SEMrush, Screaming Frog, Moz</li>
       </ul>
     </div>
-
-    <div class="card">
-      <h3>🚀 Leadership & Management</h3>
-      <ul>
-        <li>Team Leadership</li>
-        <li>Strategic Planning</li>
-        <li>Project Management</li>
-        <li>Critical Thinking</li>
-        <li>Creativity & Innovation</li>
-        <li>Cross-functional Collaboration</li>
-      </ul>
-    </div>
   </div>
 </section>
 
@@ -1098,7 +1080,7 @@ footer {
 </section>
 
 <footer>
-  © 2026 Obeth Gabiana Silawan | SEO Specialist | WordPress Developer | ASO Specialist | Built with 💙
+  © 2026 Obeth Gabiana Silawan | SEO Specialist | WordPress Developer | ASO Specialist | Server Administrator | Built with 💙
 </footer>
 
 <!-- Floating Download CV Button -->
