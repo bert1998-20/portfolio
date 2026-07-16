@@ -363,7 +363,7 @@ with st.sidebar:
             href = f'<a href="data:application/pdf;base64,{b64}" download="Obeth_Silawan_CV.pdf" style="display:block;text-align:center;padding:10px;background:#667eea;color:white;text-decoration:none;border-radius:5px;margin-top:10px;">📥 Direct PDF Download</a>'
             st.markdown(href, unsafe_allow_html=True)
 
-# Your HTML portfolio
+# Your HTML portfolio - FIXED VERSION
 portfolio_html = """
 <!DOCTYPE html>
 <html lang="en">
@@ -381,7 +381,6 @@ portfolio_html = """
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
-  cursor: none;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
@@ -390,30 +389,7 @@ body {
   background: radial-gradient(circle at top, #1a2cff, #060714 55%, #02030a);
   color: #fff;
   overflow-x: hidden;
-}
-
-.cursor {
-  width: 20px;
-  height: 20px;
-  border: 2px solid #7df9ff;
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: width 0.2s, height 0.2s, background 0.2s;
-  box-shadow: 0 0 15px rgba(125, 249, 255, 0.5);
-}
-
-.cursor-dot {
-  width: 4px;
-  height: 4px;
-  background: #7df9ff;
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
+  cursor: default;
 }
 
 .bg-grid {
@@ -845,8 +821,6 @@ footer {
 </head>
 <body>
 
-<div class="cursor"></div>
-<div class="cursor-dot"></div>
 <div class="bg-grid"></div>
 <div class="bg-glow-1"></div>
 <div class="bg-glow-2"></div>
@@ -1163,17 +1137,10 @@ footer {
 </footer>
 
 <script>
-// Cursor and 3D effects
-const cursor = document.querySelector(".cursor");
-const cursorDot = document.querySelector(".cursor-dot");
+// 3D card tilt effect (removed custom cursor)
 const avatarCard = document.getElementById("avatarCard");
 
 document.addEventListener("mousemove", function(e) {
-  cursor.style.left = e.clientX + "px";
-  cursor.style.top = e.clientY + "px";
-  cursorDot.style.left = e.clientX + "px";
-  cursorDot.style.top = e.clientY + "px";
-  
   if (avatarCard) {
     const x = (window.innerWidth / 2 - e.clientX) / 35;
     const y = (window.innerHeight / 2 - e.clientY) / 35;
@@ -1205,5 +1172,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 </html>
 """
 
-# Render the HTML
-components.html(portfolio_html, height=2000, scrolling=True)
+# Render the HTML - using iframe with proper height
+components.html(portfolio_html, height=2500, scrolling=True)
