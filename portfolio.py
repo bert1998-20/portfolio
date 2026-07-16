@@ -4,13 +4,8 @@ import base64
 from io import BytesIO
 import os
 
-# Try to import weasyprint, if not available, show error
-try:
-    from weasyprint import HTML
-    WEASYPRINT_AVAILABLE = True
-except ImportError:
-    WEASYPRINT_AVAILABLE = False
-    st.warning("⚠️ weasyprint not installed. PDF download will use browser print. Install with: pip install weasyprint")
+# Weasyprint is NOT available on Streamlit Cloud - use browser print instead
+WEASYPRINT_AVAILABLE = False
 
 # Page configuration
 st.set_page_config(
@@ -317,53 +312,44 @@ CV_HTML = """
 </html>
 """
 
-# Function to generate PDF
-def generate_pdf():
-    if WEASYPRINT_AVAILABLE:
-        try:
-            pdf_bytes = HTML(string=CV_HTML).write_pdf()
-            return pdf_bytes
-        except Exception as e:
-            st.error(f"Error generating PDF: {e}")
-            return None
-    else:
-        # Fallback: Encode HTML for download
-        return CV_HTML.encode('utf-8')
+# Function to generate HTML for browser print (no weasyprint)
+def get_cv_html():
+    return CV_HTML
 
-# Create download button in Streamlit sidebar or custom position
+# Create download button in Streamlit sidebar
 with st.sidebar:
     st.markdown("### 📄 Download Options")
+    st.info("ℹ️ PDF will be generated using your browser's print function")
     
-    # Method 1: Streamlit download button
-    if st.button("📄 Download CV as PDF", use_container_width=True):
-        pdf_data = generate_pdf()
-        if pdf_data:
-            if WEASYPRINT_AVAILABLE:
-                st.download_button(
-                    label="✅ Click to Download PDF",
-                    data=pdf_data,
-                    file_name="Obeth_Silawan_CV.pdf",
-                    mime="application/pdf",
-                    use_container_width=True
-                )
-            else:
-                st.download_button(
-                    label="✅ Click to Download HTML (Print to PDF)",
-                    data=pdf_data,
-                    file_name="Obeth_Silawan_CV.html",
-                    mime="text/html",
-                    use_container_width=True
-                )
+    # HTML download option (works everywhere)
+    html_data = get_cv_html()
+    st.download_button(
+        label="📄 Download CV as HTML (Print to PDF)",
+        data=html_data,
+        file_name="Obeth_Silawan_CV.html",
+        mime="text/html",
+        use_container_width=True
+    )
     
-    # Method 2: Direct download link
-    if WEASYPRINT_AVAILABLE:
-        pdf_bytes = generate_pdf()
-        if pdf_bytes:
-            b64 = base64.b64encode(pdf_bytes).decode()
-            href = f'<a href="data:application/pdf;base64,{b64}" download="Obeth_Silawan_CV.pdf" style="display:block;text-align:center;padding:10px;background:#667eea;color:white;text-decoration:none;border-radius:5px;margin-top:10px;">📥 Direct PDF Download</a>'
-            st.markdown(href, unsafe_allow_html=True)
+    # Also provide a print button that opens browser print dialog
+    st.markdown("""
+    <button onclick="window.print()" style="
+        width: 100%;
+        padding: 10px;
+        background: #667eea;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 10px;
+    ">
+    🖨️ Print CV (Save as PDF)
+    </button>
+    """, unsafe_allow_html=True)
 
-# Your HTML portfolio - FIXED VERSION
+# Your HTML portfolio (same as before)
 portfolio_html = """
 <!DOCTYPE html>
 <html lang="en">
@@ -863,7 +849,6 @@ footer {
     <div class="buttons">
       <a href="https://scatter-dashboard-bert.streamlit.app/" target="_blank" class="btn btn-primary">📊 View Previous Work</a>
       <a href="#contact" class="btn btn-secondary">📧 Hire Me</a>
-      <!-- This button opens the sidebar where PDF download is available -->
       <a href="#" onclick="document.querySelector('[data-testid=\"stSidebarNav\"]')?.click(); return false;" class="btn btn-secondary">📄 Download CV (PDF)</a>
     </div>
   </div>
@@ -1137,7 +1122,7 @@ footer {
 </footer>
 
 <script>
-// 3D card tilt effect (removed custom cursor)
+// 3D card tilt effect
 const avatarCard = document.getElementById("avatarCard");
 
 document.addEventListener("mousemove", function(e) {
@@ -1172,5 +1157,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 </html>
 """
 
-# Render the HTML - using iframe with proper height
+# Render the HTML
 components.html(portfolio_html, height=2500, scrolling=True)
