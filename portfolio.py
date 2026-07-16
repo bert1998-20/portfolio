@@ -26,7 +26,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# CV HTML content for PDF generation - UPDATED WITHOUT BLACK HAT
+# CV HTML content for PDF generation
 CV_HTML = """
 <!DOCTYPE html>
 <html>
@@ -285,6 +285,9 @@ CV_HTML = """
 </html>
 """
 
+# Encode CV HTML to Base64 for direct download
+cv_base64 = base64.b64encode(CV_HTML.encode('utf-8')).decode('utf-8')
+
 # Create a download button in the sidebar
 with st.sidebar:
     st.markdown("### 📄 Download Options")
@@ -308,8 +311,8 @@ with st.sidebar:
     4. Select "Save as PDF"
     """)
 
-# Your HTML portfolio - UPDATED WITHOUT BLACK HAT
-portfolio_html = """
+# Your HTML portfolio - WITH WORKING DIRECT DOWNLOAD
+portfolio_html = f"""
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -321,23 +324,23 @@ portfolio_html = """
 <meta name="author" content="Obeth Gabiana Silawan">
 
 <style>
-* {
+* {{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
-}
+}}
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-body {
+body {{
   background: radial-gradient(circle at top, #1a2cff, #060714 55%, #02030a);
   color: #fff;
   overflow-x: hidden;
   cursor: default;
-}
+}}
 
-.bg-grid {
+.bg-grid {{
   position: fixed;
   inset: 0;
   background-image:
@@ -345,9 +348,9 @@ body {
     linear-gradient(90deg, rgba(125,249,255,.06) 1px, transparent 1px);
   background-size: 45px 45px;
   z-index: -2;
-}
+}}
 
-.bg-glow-1 {
+.bg-glow-1 {{
   position: fixed;
   width: 600px;
   height: 600px;
@@ -359,9 +362,9 @@ body {
   right: -10%;
   z-index: -1;
   animation: floatGlow 12s ease-in-out infinite;
-}
+}}
 
-.bg-glow-2 {
+.bg-glow-2 {{
   position: fixed;
   width: 500px;
   height: 500px;
@@ -373,14 +376,14 @@ body {
   left: -10%;
   z-index: -1;
   animation: floatGlow 10s ease-in-out infinite reverse;
-}
+}}
 
-@keyframes floatGlow {
-  0%, 100% { transform: translate(0, 0); }
-  50% { transform: translate(30px, 20px); }
-}
+@keyframes floatGlow {{
+  0%, 100% {{ transform: translate(0, 0); }}
+  50% {{ transform: translate(30px, 20px); }}
+}}
 
-header {
+header {{
   padding: 24px 8%;
   display: flex;
   justify-content: space-between;
@@ -390,9 +393,9 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-}
+}}
 
-.logo {
+.logo {{
   font-size: 28px;
   font-weight: 900;
   background: linear-gradient(135deg, #7df9ff, #9b6cff);
@@ -400,16 +403,16 @@ header {
   background-clip: text;
   color: transparent;
   letter-spacing: 2px;
-}
+}}
 
-.logo span {
+.logo span {{
   color: #7df9ff;
   background: none;
   -webkit-background-clip: unset;
   background-clip: unset;
-}
+}}
 
-nav a {
+nav a {{
   color: #fff;
   text-decoration: none;
   margin-left: 32px;
@@ -418,9 +421,9 @@ nav a {
   opacity: .8;
   transition: all 0.3s ease;
   position: relative;
-}
+}}
 
-nav a::after {
+nav a::after {{
   content: '';
   position: absolute;
   bottom: -5px;
@@ -429,27 +432,27 @@ nav a::after {
   height: 2px;
   background: linear-gradient(90deg, #7df9ff, #9b6cff);
   transition: width 0.3s ease;
-}
+}}
 
-nav a:hover::after {
+nav a:hover::after {{
   width: 100%;
-}
+}}
 
-nav a:hover {
+nav a:hover {{
   opacity: 1;
   color: #7df9ff;
-}
+}}
 
-.hero {
+.hero {{
   min-height: 88vh;
   padding: 50px 8%;
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   align-items: center;
   gap: 50px;
-}
+}}
 
-.badge {
+.badge {{
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -462,42 +465,42 @@ nav a:hover {
   font-size: 14px;
   font-weight: 500;
   backdrop-filter: blur(5px);
-}
+}}
 
-.badge::before {
+.badge::before {{
   content: '✨';
   font-size: 16px;
-}
+}}
 
-.hero h1 {
+.hero h1 {{
   font-size: 68px;
   line-height: 1.08;
   margin-bottom: 24px;
   font-weight: 800;
-}
+}}
 
-.hero h1 span {
+.hero h1 span {{
   background: linear-gradient(135deg, #7df9ff, #9b6cff);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-}
+}}
 
-.hero p {
+.hero p {{
   max-width: 620px;
   font-size: 18px;
   line-height: 1.7;
   color: #d6dcff;
   margin-bottom: 36px;
-}
+}}
 
-.buttons {
+.buttons {{
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-}
+}}
 
-.btn {
+.btn {{
   padding: 14px 32px;
   border-radius: 50px;
   text-decoration: none;
@@ -507,58 +510,58 @@ nav a:hover {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-}
+}}
 
-.btn-primary {
+.btn-primary {{
   background: linear-gradient(135deg, #7df9ff, #9b6cff);
   color: #030713;
   box-shadow: 0 0 20px rgba(125,249,255,.3);
-}
+}}
 
-.btn-primary:hover {
+.btn-primary:hover {{
   transform: translateY(-3px);
   box-shadow: 0 0 35px rgba(125,249,255,.5);
-}
+}}
 
-.btn-secondary {
+.btn-secondary {{
   border: 1px solid rgba(255,255,255,.3);
   color: #fff;
   background: rgba(255,255,255,.06);
-}
+}}
 
-.btn-secondary:hover {
+.btn-secondary:hover {{
   border-color: #7df9ff;
   background: rgba(125,249,255,.1);
   transform: translateY(-3px);
-}
+}}
 
-.stats {
+.stats {{
   display: flex;
   gap: 40px;
   margin-top: 40px;
   flex-wrap: wrap;
-}
+}}
 
-.stat-number {
+.stat-number {{
   font-size: 32px;
   font-weight: 800;
   color: #7df9ff;
   display: block;
-}
+}}
 
-.stat-label {
+.stat-label {{
   font-size: 13px;
   color: #a0a8e0;
   letter-spacing: 1px;
-}
+}}
 
-.avatar-wrap {
+.avatar-wrap {{
   perspective: 1200px;
   display: flex;
   justify-content: center;
-}
+}}
 
-.avatar-card {
+.avatar-card {{
   width: 400px;
   height: 620px;
   position: relative;
@@ -570,23 +573,23 @@ nav a:hover {
   transform-style: preserve-3d;
   animation: float 5s ease-in-out infinite;
   overflow: hidden;
-}
+}}
 
-@keyframes float {
-  0%,100% { transform: translateY(0) rotateY(-5deg); }
-  50% { transform: translateY(-20px) rotateY(5deg); }
-}
+@keyframes float {{
+  0%,100% {{ transform: translateY(0) rotateY(-5deg); }}
+  50% {{ transform: translateY(-20px) rotateY(5deg); }}
+}}
 
-.character {
+.character {{
   position: absolute;
   left: 50%;
   top: 70px;
   transform: translateX(-50%) translateZ(80px);
   width: 260px;
   height: 380px;
-}
+}}
 
-.hair {
+.hair {{
   position: absolute;
   top: 0;
   left: 25px;
@@ -595,9 +598,9 @@ nav a:hover {
   background: linear-gradient(135deg, #0f1530, #5a50dd);
   border-radius: 55% 55% 40% 40%;
   box-shadow: 0 0 30px rgba(109,97,255,.6);
-}
+}}
 
-.face {
+.face {{
   position: absolute;
   top: 70px;
   left: 50px;
@@ -605,9 +608,9 @@ nav a:hover {
   height: 170px;
   background: #ffddcf;
   border-radius: 50% 50% 45% 45%;
-}
+}}
 
-.eye {
+.eye {{
   position: absolute;
   top: 70px;
   width: 22px;
@@ -615,12 +618,12 @@ nav a:hover {
   background: #071030;
   border-radius: 50%;
   transition: all 0.1s ease;
-}
+}}
 
-.eye.left { left: 42px; }
-.eye.right { right: 42px; }
+.eye.left {{ left: 42px; }}
+.eye.right {{ right: 42px; }}
 
-.mouth {
+.mouth {{
   position: absolute;
   bottom: 48px;
   left: 68px;
@@ -628,9 +631,9 @@ nav a:hover {
   height: 10px;
   border-bottom: 3px solid #b85c6a;
   border-radius: 50%;
-}
+}}
 
-.body {
+.body {{
   position: absolute;
   top: 248px;
   left: 20px;
@@ -639,9 +642,9 @@ nav a:hover {
   background: linear-gradient(135deg, #1a2eff, #8a5cff);
   border-radius: 50px 50px 30px 30px;
   box-shadow: 0 0 25px rgba(125,249,255,.3);
-}
+}}
 
-.code-chip {
+.code-chip {{
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -656,13 +659,13 @@ nav a:hover {
   text-align: center;
   transform: translateZ(60px);
   backdrop-filter: blur(8px);
-}
+}}
 
-section {
+section {{
   padding: 80px 8%;
-}
+}}
 
-.section-title {
+.section-title {{
   font-size: 46px;
   margin-bottom: 16px;
   background: linear-gradient(135deg, #fff, #7df9ff);
@@ -670,90 +673,90 @@ section {
   background-clip: text;
   color: transparent;
   font-weight: 700;
-}
+}}
 
-.section-desc {
+.section-desc {{
   color: #cfd5ff;
   max-width: 760px;
   line-height: 1.7;
   margin-bottom: 45px;
   font-size: 17px;
-}
+}}
 
-.grid {
+.grid {{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
-}
+}}
 
-.card {
+.card {{
   padding: 32px;
   border-radius: 28px;
   background: rgba(255,255,255,.06);
   border: 1px solid rgba(255,255,255,.12);
   backdrop-filter: blur(14px);
   transition: all 0.3s ease;
-}
+}}
 
-.card:hover {
+.card:hover {{
   transform: translateY(-10px);
   border-color: rgba(125,249,255,.5);
   box-shadow: 0 0 40px rgba(125,249,255,.15);
-}
+}}
 
-.card ul {
+.card ul {{
   padding-left: 20px;
   margin-top: 10px;
-}
+}}
 
-.card li {
+.card li {{
   color: #d5dcff;
   line-height: 1.6;
   font-size: 13px;
   margin-bottom: 6px;
-}
+}}
 
-.about-box {
+.about-box {{
   padding: 40px;
   border-radius: 32px;
   background: linear-gradient(145deg, rgba(125,249,255,.1), rgba(255,255,255,.04));
   border: 1px solid rgba(125,249,255,.2);
-}
+}}
 
-.about-box p {
+.about-box p {{
   color: #dce2ff;
   line-height: 1.8;
   margin-bottom: 18px;
-}
+}}
 
-.contact-box {
+.contact-box {{
   text-align: center;
   padding: 60px;
   border-radius: 40px;
   background: linear-gradient(135deg, rgba(125,249,255,.12), rgba(155,108,255,.1));
   border: 1px solid rgba(255,255,255,.15);
-}
+}}
 
-.contact-box p {
+.contact-box p {{
   color: #dce2ff;
   margin-bottom: 20px;
-}
+}}
 
-footer {
+footer {{
   padding: 30px;
   text-align: center;
   color: #bfc5ff;
   border-top: 1px solid rgba(255,255,255,.08);
-}
+}}
 
-.download-btn-container {
+.download-btn-container {{
   position: fixed;
   bottom: 30px;
   right: 30px;
   z-index: 999;
-}
+}}
 
-.download-btn {
+.download-btn {{
   background: linear-gradient(135deg, #7df9ff, #9b6cff);
   color: #030713;
   padding: 16px 28px;
@@ -768,37 +771,37 @@ footer {
   gap: 10px;
   border: none;
   cursor: pointer;
-}
+}}
 
-.download-btn:hover {
+.download-btn:hover {{
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 0 50px rgba(125,249,255,.5);
-}
+}}
 
-@media(max-width: 850px) {
-  .hero {
+@media(max-width: 850px) {{
+  .hero {{
     grid-template-columns: 1fr;
     text-align: center;
-  }
-  .hero h1 {
+  }}
+  .hero h1 {{
     font-size: 48px;
-  }
-  .grid {
+  }}
+  .grid {{
     grid-template-columns: 1fr;
-  }
-  .avatar-card {
+  }}
+  .avatar-card {{
     width: 340px;
     height: 580px;
-  }
-  .download-btn-container {
+  }}
+  .download-btn-container {{
     bottom: 15px;
     right: 15px;
-  }
-  .download-btn {
+  }}
+  .download-btn {{
     padding: 12px 20px;
     font-size: 13px;
-  }
-}
+  }}
+}}
 </style>
 </head>
 <body>
@@ -1083,61 +1086,44 @@ footer {
   © 2026 Obeth Gabiana Silawan | SEO Specialist | WordPress Developer | ASO Specialist | Server Administrator | Built with 💙
 </footer>
 
-<!-- Floating Download CV Button -->
+<!-- Floating Download CV Button with DIRECT download -->
 <div class="download-btn-container">
-    <button class="download-btn" onclick="downloadCV()">
+    <a href="data:text/html;base64,{cv_base64}" download="Obeth_Silawan_CV.html" class="download-btn">
         📄 Download CV
-    </button>
+    </a>
 </div>
 
 <script>
 // 3D card tilt effect
 const avatarCard = document.getElementById("avatarCard");
 
-document.addEventListener("mousemove", function(e) {
-  if (avatarCard) {
+document.addEventListener("mousemove", function(e) {{
+  if (avatarCard) {{
     const x = (window.innerWidth / 2 - e.clientX) / 35;
     const y = (window.innerHeight / 2 - e.clientY) / 35;
-    avatarCard.style.transform = `rotateY(${-x}deg) rotateX(${y}deg)`;
-  }
-});
+    avatarCard.style.transform = `rotateY(${{-x}}deg) rotateX(${{y}}deg)`;
+  }}
+}});
 
 // Eye tracking
-document.addEventListener("mousemove", function(e) {
+document.addEventListener("mousemove", function(e) {{
   const eyes = document.querySelectorAll(".eye");
-  eyes.forEach(eye => {
+  eyes.forEach(eye => {{
     const rect = eye.getBoundingClientRect();
     const angle = Math.atan2(e.clientY - rect.top, e.clientX - rect.left);
     const distance = Math.min(5, Math.hypot(e.clientX - rect.left, e.clientY - rect.top) / 30);
-    eye.style.transform = `translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px)`;
-  });
-});
+    eye.style.transform = `translate(${{Math.cos(angle) * distance}}px, ${{Math.sin(angle) * distance}}px)`;
+  }});
+}});
 
 // Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {{
+  anchor.addEventListener('click', function(e) {{
     e.preventDefault();
     const target = document.querySelector(this.getAttribute('href'));
-    if (target) target.scrollIntoView({ behavior: 'smooth' });
-  });
-});
-
-// Download CV function
-function downloadCV() {
-    const downloadBtn = document.querySelector('[data-testid="stDownloadButton"] button');
-    if (downloadBtn) {
-        downloadBtn.click();
-    } else {
-        const sidebarToggle = document.querySelector('[data-testid="stSidebarNav"]');
-        if (sidebarToggle) {
-            sidebarToggle.click();
-            setTimeout(() => {
-                const btn = document.querySelector('[data-testid="stDownloadButton"] button');
-                if (btn) btn.click();
-            }, 500);
-        }
-    }
-}
+    if (target) target.scrollIntoView({{ behavior: 'smooth' }});
+  }});
+}});
 </script>
 </body>
 </html>
