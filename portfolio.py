@@ -114,7 +114,7 @@ CV_HTML = """
             </div>
             <div class="contact-info">
                 <p>📞 +63 9545674637</p>
-                <p>✉️ isph.best888@gmail.com</p>
+                <p>✉️ isph.bert888@gmail.com</p>
                 <p>📍 San Leon Umingan Pangasinan</p>
                 <p>🌐 English | Tagalog</p>
             </div>
@@ -1074,11 +1074,11 @@ footer {{
     <p>Ready to create an SEO-friendly, data-driven digital experience? Let's collaborate and bring your vision to life.</p>
     <div style="margin-bottom: 20px;">
       <p>📞 +63 9545674637</p>
-      <p>✉️ isph.best888@gmail.com</p>
+      <p>✉️ isph.bert888@gmail.com</p>
       <p>📍 San Leon Umingan Pangasinan</p>
       <p>🌐 Languages: English | Tagalog</p>
     </div>
-    <a href="mailto:isph.best888@gmail.com" class="btn btn-primary">✉️ Contact Me</a>
+    <a href="mailto:isph.bert888@gmail.com" class="btn btn-primary">✉️ Contact Me</a>
   </div>
 </section>
 
