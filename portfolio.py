@@ -149,7 +149,7 @@ CV_HTML = """
             <div class="job">
                 <div class="job-title">SEO Team Lead</div>
                 <div class="company">IE Soft Technology</div>
-                <div class="date">06-2022 - 08-2022</div>
+                <div class="date">06-2022 - 08-2023</div>
                 <ul class="job-description">
                     <li>Led a team of specialists to design and implement creative and effective SEO strategies</li>
                     <li>Managed link-building campaigns</li>
