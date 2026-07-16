@@ -26,7 +26,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# CV HTML content for PDF generation
+# CV HTML content for PDF generation - UPDATED WITH ACCURATE EXPERIENCE
 CV_HTML = """
 <!DOCTYPE html>
 <html>
@@ -110,11 +110,11 @@ CV_HTML = """
         <div class="header">
             <div class="name-title">
                 <h1>OBETH GABIANA SILAWAN</h1>
-                <div class="title">SEO Specialist | WordPress Developer | ASO Specialist | Server Administrator</div>
+                <div class="title">SEO Specialist | WordPress Developer | ASO Specialist</div>
             </div>
             <div class="contact-info">
-                <p>📞 +63 9564574637</p>
-                <p>✉️ ieph.bert888@gmail.com</p>
+                <p>📞 +63 9545674637</p>
+                <p>✉️ isph.best888@gmail.com</p>
                 <p>📍 San Leon Umingan Pangasinan</p>
                 <p>🌐 English | Tagalog</p>
             </div>
@@ -122,57 +122,50 @@ CV_HTML = """
 
         <div class="section">
             <div class="section-title">Professional Summary</div>
-            <p class="summary-text">As a young coder from Samar, I left home seeking deeper knowledge and skills to thrive in a fast-changing world. My journey led me to explore what it takes to succeed in the 21st century. I've discovered through years of study and insights from experienced friends in IT. While there's plenty of information available, turning it into real understanding is the real challenge. With 7+ years of experience, I deliver results-driven digital solutions.</p>
+            <p class="summary-text">As a young coder from Samar, I left home seeking deeper knowledge and skills to thrive in a fast-changing world. My journey led me to explore what it takes to succeed in the 21st century. I've discovered through years of study and insights from experienced friends in IT. While there's plenty of information available, turning it into real understanding is the real challenge. With diverse experience in SEO, WordPress development, and ASO, I deliver results-driven digital solutions.</p>
         </div>
 
         <div class="section">
-            <div class="section-title">Work Experience (2019 - 2026 PRESENT)</div>
+            <div class="section-title">Work Experience</div>
             
             <div class="job">
-                <div class="job-title">Senior SEO Specialist</div>
-                <div class="company">Self-employed / Freelance</div>
-                <div class="date">2026 - PRESENT</div>
+                <div class="job-title">SEO FREELANCE</div>
+                <div class="company">Black Hat SEA - Catoni India Market</div>
+                <div class="date">01-2024 - 07-2024</div>
                 <ul class="job-description">
-                    <li>VPS Self-Managed Setup & Configuration (DigitalOcean, Vultr, Linode)</li>
-                    <li>aaPanel, cPanel, WHM, hPanel Administration and Management</li>
-                    <li>Website Migration between hosting providers with zero downtime</li>
-                    <li>Database to Database Transfer ensuring data integrity</li>
-                    <li>Technical SEO Audits and implementation</li>
-                    <li>Nginx / Apache Web Server Configuration</li>
-                    <li>SSL Certificate Installation (Let's Encrypt, Commercial)</li>
-                    <li>Server Security Hardening & Firewall Setup (UFW, CSF)</li>
-                    <li>Linux Command Line Operations (Ubuntu, CentOS, Debian)</li>
-                    <li>WordPress Optimization on VPS Environments</li>
+                    <li>Author: Kim CHA/BGBP - By Pass Verification</li>
+                    <li>Cloaking: Showing different content to users and search engines</li>
+                    <li>Private Blog Network (PBN) Management</li>
+                    <li>Negative SEO Strategies</li>
+                    <li>Auto-generated/CSK fraud or bot traffic management</li>
+                    <li>Backlinks injection / High DA/DR</li>
+                    <li>New Tools Development - Unique approaches</li>
                 </ul>
             </div>
 
             <div class="job">
-                <div class="job-title">SEO FREELANCE</div>
-                <div class="company">Self-employed</div>
-                <div class="date">2024 - 2025</div>
+                <div class="job-title">Black Hat SEO Specialist</div>
+                <div class="company">Wbridge Island Cove</div>
+                <div class="date">01-2023 - 01-2024</div>
                 <ul class="job-description">
-                    <li>Keyword Research & Strategy using SEMrush, Ahrefs, Google Keyword Planner</li>
-                    <li>On-Page SEO Optimization (meta tags, headers, content structure)</li>
-                    <li>Technical SEO Audits (site speed, mobile-friendliness, core web vitals)</li>
-                    <li>Quality Backlink Building through guest posting and outreach</li>
-                    <li>Content Strategy & Creation for organic growth</li>
-                    <li>Google My Business (GMB) Optimization for local SEO</li>
-                    <li>SEO Reporting & Analytics using Google Analytics 4 and Search Console</li>
-                    <li>Competitor Analysis & Gap Identification</li>
-                    <li>WordPress SEO Optimization (Yoast SEO, Rank Math)</li>
+                    <li>Click fraud or bot traffic management</li>
+                    <li>Cloaking: Showing different content to users and search engines</li>
+                    <li>Private Blog Network (PBN) Management</li>
+                    <li>Negative SEO Strategies</li>
+                    <li>Auto-generated/CSK fraud or bot traffic management</li>
+                    <li>By Pass CHA/BGBP/Big Business</li>
                 </ul>
             </div>
 
             <div class="job">
                 <div class="job-title">SEO Team Lead</div>
                 <div class="company">IE Soft Technology</div>
-                <div class="date">2024 - 2025</div>
+                <div class="date">06-2022 - 08-2022</div>
                 <ul class="job-description">
-                    <li>Led a team of specialists to design and implement SEO strategies</li>
-                    <li>Created road maps & SEO strategies</li>
-                    <li>Managed technical audits and link-building campaigns</li>
-                    <li>Analyzed performance via GA4, Search Console</li>
-                    <li>Translated insights into scalable actions</li>
+                    <li>Led a team of specialists to design and implement creative and effective SEO strategies</li>
+                    <li>Managed link-building campaigns</li>
+                    <li>Analyzed performance via GA4, Search Console, and other tools</li>
+                    <li>Identified and addressed SEO issues</li>
                     <li>Collaborated with cross-functional teams</li>
                 </ul>
             </div>
@@ -180,7 +173,7 @@ CV_HTML = """
             <div class="job">
                 <div class="job-title">Offpage SEO Specialist</div>
                 <div class="company">Bricksharts Technology</div>
-                <div class="date">2022</div>
+                <div class="date">12-2021 - 06-2022</div>
                 <ul class="job-description">
                     <li>Executed strategic backlink campaigns (HARO, Digital PR)</li>
                     <li>Built relationships with industry influencers</li>
@@ -192,7 +185,7 @@ CV_HTML = """
             <div class="job">
                 <div class="job-title">Onpage SEO Specialist</div>
                 <div class="company">Elevate Outsourcing</div>
-                <div class="date">2022</div>
+                <div class="date">06-2021 - 12-2021</div>
                 <ul class="job-description">
                     <li>Keyword Research & Optimization</li>
                     <li>Content Optimization</li>
@@ -208,7 +201,7 @@ CV_HTML = """
             <div class="job">
                 <div class="job-title">Onpage SEO Specialist</div>
                 <div class="company">Levender Groups</div>
-                <div class="date">2022</div>
+                <div class="date">01-2021 - 06-2021</div>
                 <ul class="job-description">
                     <li>Keyword Research & Optimization</li>
                     <li>Content Optimization</li>
@@ -224,7 +217,7 @@ CV_HTML = """
             <div class="job">
                 <div class="job-title">Junior ASO Specialist</div>
                 <div class="company">Cosmolink Global Solution</div>
-                <div class="date">2021</div>
+                <div class="date">01-2020 - 12-2020</div>
                 <ul class="job-description">
                     <li>Keyword Research & Optimization for app stores</li>
                     <li>A/B tested icons, screenshots, and video previews to improve CTR</li>
@@ -236,7 +229,7 @@ CV_HTML = """
             <div class="job">
                 <div class="job-title">WordPress Developer</div>
                 <div class="company">Bricksharts Technology</div>
-                <div class="date">2021</div>
+                <div class="date">06-2019 - 01-2020</div>
                 <ul class="job-description">
                     <li>Theme & Plugin Development</li>
                     <li>Page Builders & Gutenberg</li>
@@ -247,29 +240,13 @@ CV_HTML = """
 
             <div class="job">
                 <div class="job-title">Junior SEO Specialist</div>
-                <div class="company">WBridge Island Cove</div>
-                <div class="date">2019 - 2020</div>
-                <ul class="job-description">
-                    <li>On-Page SEO optimization (meta descriptions, title tags, header structure)</li>
-                    <li>Keyword research and implementation</li>
-                    <li>Content optimization for target keywords</li>
-                    <li>Internal linking strategy improvement</li>
-                    <li>Technical SEO fixes (broken links, redirects, sitemap)</li>
-                    <li>Local SEO optimization for business listings</li>
-                    <li>SEO performance monitoring via Google Analytics & Search Console</li>
-                    <li>Competitor keyword analysis and gap identification</li>
-                </ul>
-            </div>
-
-            <div class="job">
-                <div class="job-title">Junior SEO Specialist</div>
                 <div class="company">Various Clients</div>
                 <div class="date">2019 - 2020</div>
                 <ul class="job-description">
                     <li>Supporting organic growth</li>
                     <li>Improved URL structures, header tags</li>
-                    <li>Updated old content for freshness and relevance</li>
-                    <li>Monitored rankings, traffic (Google Analytics/Search Console)</li>
+                    <li>Updated content for freshness and relevance</li>
+                    <li>Monitored rankings, traffic via Google Analytics/Search Console</li>
                 </ul>
             </div>
         </div>
@@ -283,6 +260,11 @@ CV_HTML = """
                         <div class="company">Samar State University</div>
                         <div class="date">2015 - 2018</div>
                     </div>
+                    <div class="job">
+                        <div class="job-title">Secondary Education</div>
+                        <div class="company">CNCHS High School</div>
+                        <div class="date">2011 - 2014</div>
+                    </div>
                 </div>
             </div>
             <div>
@@ -292,17 +274,19 @@ CV_HTML = """
                         <span class="skill-tag">SEO</span>
                         <span class="skill-tag">On-Page SEO</span>
                         <span class="skill-tag">Off-Page SEO</span>
+                        <span class="skill-tag">Black Hat SEO</span>
+                        <span class="skill-tag">PBN</span>
                         <span class="skill-tag">WordPress</span>
                         <span class="skill-tag">ASO</span>
-                        <span class="skill-tag">VPS</span>
-                        <span class="skill-tag">cPanel/WHM</span>
                         <span class="skill-tag">GA4</span>
-                        <span class="skill-tag">Linux</span>
                         <span class="skill-tag">HTML/CSS</span>
                         <span class="skill-tag">JavaScript</span>
                         <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Nginx</span>
-                        <span class="skill-tag">Apache</span>
+                        <span class="skill-tag">Digital Marketing</span>
+                        <span class="skill-tag">Leadership</span>
+                        <span class="skill-tag">Critical Thinking</span>
+                        <span class="skill-tag">Creativity</span>
+                        <span class="skill-tag">Management</span>
                     </div>
                 </div>
             </div>
@@ -312,44 +296,30 @@ CV_HTML = """
 </html>
 """
 
-# Function to generate HTML for browser print (no weasyprint)
-def get_cv_html():
-    return CV_HTML
-
-# Create download button in Streamlit sidebar
+# Create a download button in the sidebar
 with st.sidebar:
     st.markdown("### 📄 Download Options")
-    st.info("ℹ️ PDF will be generated using your browser's print function")
+    st.info("ℹ️ Download CV as HTML and print to PDF using your browser")
     
-    # HTML download option (works everywhere)
-    html_data = get_cv_html()
+    # HTML download option
     st.download_button(
-        label="📄 Download CV as HTML (Print to PDF)",
-        data=html_data,
+        label="📄 Download CV (HTML)",
+        data=CV_HTML,
         file_name="Obeth_Silawan_CV.html",
         mime="text/html",
         use_container_width=True
     )
     
-    # Also provide a print button that opens browser print dialog
+    st.markdown("---")
+    st.markdown("### 📋 How to save as PDF:")
     st.markdown("""
-    <button onclick="window.print()" style="
-        width: 100%;
-        padding: 10px;
-        background: #667eea;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        font-weight: bold;
-        cursor: pointer;
-        margin-top: 10px;
-    ">
-    🖨️ Print CV (Save as PDF)
-    </button>
-    """, unsafe_allow_html=True)
+    1. Download the HTML file above
+    2. Open it in your browser
+    3. Press `Ctrl+P` (or `Cmd+P` on Mac)
+    4. Select "Save as PDF"
+    """)
 
-# Your HTML portfolio (same as before)
+# Your HTML portfolio - with accurate experience
 portfolio_html = """
 <!DOCTYPE html>
 <html lang="en">
@@ -357,8 +327,8 @@ portfolio_html = """
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Obeth Gabiana Silawan | SEO Specialist Portfolio</title>
-<meta name="description" content="Obeth Gabiana Silawan - SEO Specialist, WordPress Developer, ASO Specialist, and Server Administrator">
-<meta name="keywords" content="SEO Specialist, WordPress Developer, ASO Specialist, Server Administrator">
+<meta name="description" content="Obeth Gabiana Silawan - SEO Specialist, WordPress Developer, ASO Specialist">
+<meta name="keywords" content="SEO Specialist, WordPress Developer, ASO Specialist, Black Hat SEO">
 <meta name="author" content="Obeth Gabiana Silawan">
 
 <style>
@@ -787,6 +757,35 @@ footer {
   border-top: 1px solid rgba(255,255,255,.08);
 }
 
+.download-btn-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+}
+
+.download-btn {
+  background: linear-gradient(135deg, #7df9ff, #9b6cff);
+  color: #030713;
+  padding: 16px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  box-shadow: 0 0 30px rgba(125,249,255,.3);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 50px rgba(125,249,255,.5);
+}
+
 @media(max-width: 850px) {
   .hero {
     grid-template-columns: 1fr;
@@ -801,6 +800,14 @@ footer {
   .avatar-card {
     width: 340px;
     height: 580px;
+  }
+  .download-btn-container {
+    bottom: 15px;
+    right: 15px;
+  }
+  .download-btn {
+    padding: 12px 20px;
+    font-size: 13px;
   }
 }
 </style>
@@ -826,30 +833,26 @@ footer {
     <div class="badge">✨ SEO Specialist & WordPress Developer</div>
     <h1>Hi, I'm <span>Obeth Gabiana Silawan</span></h1>
     <p>
-      SEO Specialist, WordPress Developer, ASO Specialist, and Server Administrator.
-      I create intelligent websites, automation systems, data-driven insights, and search-optimized digital
-      experiences that help brands grow smarter in the modern world.
+      SEO Specialist, WordPress Developer, and ASO Specialist with expertise in both White Hat and Black Hat SEO strategies. I create intelligent websites, automation systems, data-driven insights, and search-optimized digital experiences that help brands grow smarter in the modern world.
     </p>
     
     <div class="stats">
       <div>
-        <span class="stat-number">7+</span>
+        <span class="stat-number">5+</span>
         <span class="stat-label">Years Experience</span>
       </div>
       <div>
-        <span class="stat-number">100+</span>
+        <span class="stat-number">50+</span>
         <span class="stat-label">Projects Completed</span>
       </div>
       <div>
-        <span class="stat-number">50+</span>
+        <span class="stat-number">30+</span>
         <span class="stat-label">Happy Clients</span>
       </div>
     </div>
 
     <div class="buttons">
-      <a href="https://scatter-dashboard-bert.streamlit.app/" target="_blank" class="btn btn-primary">📊 View Previous Work</a>
       <a href="#contact" class="btn btn-secondary">📧 Hire Me</a>
-      <a href="#" onclick="document.querySelector('[data-testid=\"stSidebarNav\"]')?.click(); return false;" class="btn btn-secondary">📄 Download CV (PDF)</a>
     </div>
   </div>
 
@@ -866,8 +869,8 @@ footer {
       </div>
       <div class="code-chip">
         🔍 SEO Specialist | WordPress Developer<br>
-        🖥️ VPS | aaPanel | cPanel | WHM<br>
-        📱 ASO Specialist | Data Analyst
+        📱 ASO Specialist | Black Hat SEO<br>
+        🚀 PBN | Cloaking | Link Building
       </div>
     </div>
   </div>
@@ -884,59 +887,51 @@ footer {
 
 <section id="experience">
   <h2 class="section-title">Work Experience</h2>
-  <p class="section-desc">My complete professional journey from 2019 to Present (2026) - chronological order from newest to oldest.</p>
+  <p class="section-desc">My complete professional journey from 2019 to Present - chronological order from newest to oldest.</p>
 
   <div class="grid">
     <div class="card">
-      <h3>🔹 Senior SEO Specialist</h3>
-      <p><strong>Self-employed / Freelance</strong> | 2026 - PRESENT</p>
+      <h3>🔹 SEO FREELANCE</h3>
+      <p><strong>Black Hat SEA - Catoni India Market</strong><br>01-2024 - 07-2024</p>
       <ul>
-        <li>VPS Self-Managed Setup & Configuration (DigitalOcean, Vultr, Linode)</li>
-        <li>aaPanel, cPanel, WHM, hPanel Administration and Management</li>
-        <li>Website Migration between hosting providers with zero downtime</li>
-        <li>Database to Database Transfer ensuring data integrity</li>
-        <li>Technical SEO Audits and implementation</li>
-        <li>Nginx / Apache Web Server Configuration</li>
-        <li>SSL Certificate Installation (Let's Encrypt, Commercial)</li>
-        <li>Server Security Hardening & Firewall Setup (UFW, CSF)</li>
-        <li>Linux Command Line Operations (Ubuntu, CentOS, Debian)</li>
-        <li>WordPress Optimization on VPS Environments</li>
+        <li>Author: Kim CHA/BGBP - By Pass Verification</li>
+        <li>Cloaking: Showing different content to users and search engines</li>
+        <li>Private Blog Network (PBN) Management</li>
+        <li>Negative SEO Strategies</li>
+        <li>Auto-generated/CSK fraud or bot traffic management</li>
+        <li>Backlinks injection / High DA/DR</li>
+        <li>New Tools Development - Unique approaches</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>🔹 SEO FREELANCE</h3>
-      <p><strong>Self-employed</strong> | 2024 - 2025</p>
+      <h3>🔹 Black Hat SEO Specialist</h3>
+      <p><strong>Wbridge Island Cove</strong><br>01-2023 - 01-2024</p>
       <ul>
-        <li>Keyword Research & Strategy using SEMrush, Ahrefs, Google Keyword Planner</li>
-        <li>On-Page SEO Optimization (meta tags, headers, content structure)</li>
-        <li>Technical SEO Audits (site speed, mobile-friendliness, core web vitals)</li>
-        <li>Quality Backlink Building through guest posting and outreach</li>
-        <li>Content Strategy & Creation for organic growth</li>
-        <li>Google My Business (GMB) Optimization for local SEO</li>
-        <li>SEO Reporting & Analytics using Google Analytics 4 and Search Console</li>
-        <li>Competitor Analysis & Gap Identification</li>
-        <li>WordPress SEO Optimization (Yoast SEO, Rank Math)</li>
+        <li>Click fraud or bot traffic management</li>
+        <li>Cloaking: Showing different content to users and search engines</li>
+        <li>Private Blog Network (PBN) Management</li>
+        <li>Negative SEO Strategies</li>
+        <li>Auto-generated/CSK fraud or bot traffic management</li>
+        <li>By Pass CHA/BGBP/Big Business</li>
       </ul>
     </div>
 
     <div class="card">
       <h3>🔹 SEO Team Lead</h3>
-      <p><strong>IE Soft Technology</strong> | 2024 - 2025</p>
+      <p><strong>IE Soft Technology</strong><br>06-2022 - 08-2022</p>
       <ul>
-        <li>Led a team of specialists to design and implement SEO strategies</li>
-        <li>Create road Map & SEO strategies</li>
-        <li>Managed technical audits</li>
+        <li>Led a team of specialists to design and implement creative and effective SEO strategies</li>
         <li>Managed link-building campaigns</li>
-        <li>Analyzed performance via GA4, Search Console</li>
-        <li>Translating insights into scalable actions</li>
+        <li>Analyzed performance via GA4, Search Console, and other tools</li>
+        <li>Identified and addressed SEO issues</li>
         <li>Collaborated with cross-functional teams</li>
       </ul>
     </div>
 
     <div class="card">
       <h3>🔹 Offpage SEO Specialist</h3>
-      <p><strong>Bricksharts Technology</strong> | 2022</p>
+      <p><strong>Bricksharts Technology</strong><br>12-2021 - 06-2022</p>
       <ul>
         <li>Executed strategic backlink campaigns (HARO, Digital PR)</li>
         <li>Built relationships with industry influencers</li>
@@ -947,7 +942,7 @@ footer {
 
     <div class="card">
       <h3>🔹 Onpage SEO Specialist</h3>
-      <p><strong>Elevate Outsourcing</strong> | 2022</p>
+      <p><strong>Elevate Outsourcing</strong><br>06-2021 - 12-2021</p>
       <ul>
         <li>Keyword Research & Optimization</li>
         <li>Content Optimization</li>
@@ -962,7 +957,7 @@ footer {
 
     <div class="card">
       <h3>🔹 Onpage SEO Specialist</h3>
-      <p><strong>Levender Groups</strong> | 2022</p>
+      <p><strong>Levender Groups</strong><br>01-2021 - 06-2021</p>
       <ul>
         <li>Keyword Research & Optimization</li>
         <li>Content Optimization</li>
@@ -977,7 +972,7 @@ footer {
 
     <div class="card">
       <h3>🔹 Junior ASO Specialist</h3>
-      <p><strong>Cosmolink Global Solution</strong> | 2021</p>
+      <p><strong>Cosmolink Global Solution</strong><br>01-2020 - 12-2020</p>
       <ul>
         <li>Keyword Research & Optimization for app stores</li>
         <li>A/B tested icons, screenshots, and video previews to improve CTR</li>
@@ -988,7 +983,7 @@ footer {
 
     <div class="card">
       <h3>🔹 WordPress Developer</h3>
-      <p><strong>Bricksharts Technology</strong> | 2021</p>
+      <p><strong>Bricksharts Technology</strong><br>06-2019 - 01-2020</p>
       <ul>
         <li>Theme & Plugin Development</li>
         <li>Page Builders & Gutenberg</li>
@@ -999,27 +994,12 @@ footer {
 
     <div class="card">
       <h3>🔹 Junior SEO Specialist</h3>
-      <p><strong>WBridge Island Cove</strong> | 2019 - 2020</p>
-      <ul>
-        <li>On-Page SEO optimization (meta descriptions, title tags, header structure)</li>
-        <li>Keyword research and implementation</li>
-        <li>Content optimization for target keywords</li>
-        <li>Internal linking strategy improvement</li>
-        <li>Technical SEO fixes (broken links, redirects, sitemap)</li>
-        <li>Local SEO optimization for business listings</li>
-        <li>SEO performance monitoring via Google Analytics & Search Console</li>
-        <li>Competitor keyword analysis and gap identification</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>🔹 Junior SEO Specialist</h3>
-      <p><strong>Various Clients</strong> | 2019 - 2020</p>
+      <p><strong>Various Clients</strong><br>2019 - 2020</p>
       <ul>
         <li>Supporting organic growth</li>
         <li>Improved URL structures, header tags</li>
-        <li>Updated old content for freshness and relevance</li>
-        <li>Monitored rankings, traffic (Google Analytics/Search Console)</li>
+        <li>Updated content for freshness and relevance</li>
+        <li>Monitored rankings, traffic via Google Analytics/Search Console</li>
       </ul>
     </div>
   </div>
@@ -1027,7 +1007,7 @@ footer {
 
 <section id="skills">
   <h2 class="section-title">Skills & Expertise</h2>
-  <p class="section-desc">A comprehensive skill set combining SEO mastery, WordPress Development, ASO, and Server Administration.</p>
+  <p class="section-desc">A comprehensive skill set combining SEO mastery, WordPress Development, ASO, and Digital Marketing.</p>
 
   <div class="grid">
     <div class="card">
@@ -1045,28 +1025,16 @@ footer {
     </div>
 
     <div class="card">
-      <h3>🔗 White Hat SEO</h3>
+      <h3>🔗 Off-Page & Black Hat SEO</h3>
       <ul>
-        <li>Ethical Link Building (Guest posting, HARO, Digital PR)</li>
-        <li>Quality Content Creation & Strategy</li>
-        <li>GMB & Local SEO Optimization</li>
-        <li>Technical SEO Audits & Fixes</li>
-        <li>Keyword Research & Strategy</li>
-        <li>On-Page SEO Optimization</li>
-        <li>SEO Analytics & Reporting (GA4, GSC)</li>
-        <li>Competitor Analysis & Gap Identification</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>🖥️ Server & Hosting</h3>
-      <ul>
-        <li>VPS Setup & Configuration</li>
-        <li>aaPanel / cPanel / WHM</li>
-        <li>hPanel Management</li>
-        <li>Website Migration</li>
-        <li>Database Transfer</li>
-        <li>Linux Operations</li>
+        <li>Private Blog Network (PBN) Management</li>
+        <li>Cloaking Techniques</li>
+        <li>Negative SEO Strategies</li>
+        <li>Backlinks Injection / High DA/DR</li>
+        <li>Click Fraud & Bot Traffic Management</li>
+        <li>Auto-generated/CSK Fraud</li>
+        <li>HARO & Digital PR</li>
+        <li>By Pass CHA/BGBP/Big Business</li>
       </ul>
     </div>
 
@@ -1100,6 +1068,18 @@ footer {
         <li>SEO Tools: Ahrefs, SEMrush, Screaming Frog, Moz</li>
       </ul>
     </div>
+
+    <div class="card">
+      <h3>🚀 Leadership & Management</h3>
+      <ul>
+        <li>Team Leadership</li>
+        <li>Strategic Planning</li>
+        <li>Project Management</li>
+        <li>Critical Thinking</li>
+        <li>Creativity & Innovation</li>
+        <li>Cross-functional Collaboration</li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -1108,18 +1088,25 @@ footer {
     <h2>Let's Build Something Intelligent</h2>
     <p>Ready to create an SEO-friendly, data-driven digital experience? Let's collaborate and bring your vision to life.</p>
     <div style="margin-bottom: 20px;">
-      <p>📞 +63 9564574637</p>
-      <p>✉️ ieph.bert888@gmail.com</p>
+      <p>📞 +63 9545674637</p>
+      <p>✉️ isph.best888@gmail.com</p>
       <p>📍 San Leon Umingan Pangasinan</p>
       <p>🌐 Languages: English | Tagalog</p>
     </div>
-    <a href="mailto:ieph.bert888@gmail.com" class="btn btn-primary">✉️ Contact Me</a>
+    <a href="mailto:isph.best888@gmail.com" class="btn btn-primary">✉️ Contact Me</a>
   </div>
 </section>
 
 <footer>
-  © 2026 Obeth Gabiana Silawan | SEO Specialist | WordPress Developer | ASO Specialist | Server Administrator | Built with 💙
+  © 2026 Obeth Gabiana Silawan | SEO Specialist | WordPress Developer | ASO Specialist | Built with 💙
 </footer>
+
+<!-- Floating Download CV Button -->
+<div class="download-btn-container">
+    <button class="download-btn" onclick="downloadCV()">
+        📄 Download CV
+    </button>
+</div>
 
 <script>
 // 3D card tilt effect
@@ -1152,6 +1139,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     if (target) target.scrollIntoView({ behavior: 'smooth' });
   });
 });
+
+// Download CV function
+function downloadCV() {
+    const downloadBtn = document.querySelector('[data-testid="stDownloadButton"] button');
+    if (downloadBtn) {
+        downloadBtn.click();
+    } else {
+        const sidebarToggle = document.querySelector('[data-testid="stSidebarNav"]');
+        if (sidebarToggle) {
+            sidebarToggle.click();
+            setTimeout(() => {
+                const btn = document.querySelector('[data-testid="stDownloadButton"] button');
+                if (btn) btn.click();
+            }, 500);
+        }
+    }
+}
 </script>
 </body>
 </html>
