@@ -12,46 +12,31 @@ st.set_page_config(
 # Hide ALL Streamlit default elements including file explorer
 st.markdown("""
     <style>
-        /* Hide default Streamlit elements */
         #MainMenu {visibility: hidden;}
         footer {visibility: hidden;}
         header {visibility: hidden;}
         .stApp {margin: 0; padding: 0;}
         .block-container {padding: 0 !important; max-width: 100% !important;}
-        
-        /* Hide sidebar completely */
         .css-1d391kg, .css-1lcbmhc, .css-1vq4p4l, .css-1y4p8pa {
             display: none !important;
         }
-        
-        /* Hide file explorer */
         .stFileUploader, .stFileUploader div {
             display: none !important;
         }
-        
-        /* Hide any file navigation */
         [data-testid="stFileUploader"], [data-testid="stSidebar"] {
             display: none !important;
         }
-        
-        /* Hide the entire sidebar */
         section[data-testid="stSidebar"] {
             display: none !important;
             width: 0 !important;
         }
-        
-        /* Hide the file/directory list */
         .st-emotion-cache-1r6slb0, .st-emotion-cache-1r6slb0 * {
             display: none !important;
         }
-        
-        /* Main content full width */
         .main .block-container {
             padding: 0 !important;
             max-width: 100% !important;
         }
-        
-        /* Hide "Go to file" or any file browsing elements */
         .st-emotion-cache-1v0mbdj {
             display: none !important;
         }
@@ -155,7 +140,7 @@ body {
 }
 
 header {
-  padding: 24px 8%;
+  padding: 18px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -167,7 +152,7 @@ header {
 }
 
 .logo {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 900;
   background: linear-gradient(135deg, #7df9ff, #9b6cff);
   -webkit-background-clip: text;
@@ -186,8 +171,8 @@ header {
 nav a {
   color: #fff;
   text-decoration: none;
-  margin-left: 32px;
-  font-size: 15px;
+  margin-left: 28px;
+  font-size: 14px;
   font-weight: 500;
   opacity: .8;
   transition: all 0.3s ease;
@@ -215,38 +200,38 @@ nav a:hover {
 }
 
 .hero {
-  min-height: 88vh;
-  padding: 50px 8%;
+  min-height: auto;
+  padding: 40px 8% 50px;
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   align-items: center;
-  gap: 50px;
+  gap: 40px;
 }
 
 .badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 8px 20px;
+  padding: 6px 18px;
   border: 1px solid rgba(125,249,255,.45);
   border-radius: 50px;
   color: #7df9ff;
   background: rgba(125,249,255,.08);
-  margin-bottom: 28px;
-  font-size: 14px;
+  margin-bottom: 20px;
+  font-size: 13px;
   font-weight: 500;
   backdrop-filter: blur(5px);
 }
 
 .badge::before {
   content: '✨';
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .hero h1 {
-  font-size: 68px;
+  font-size: 52px;
   line-height: 1.08;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
   font-weight: 800;
 }
 
@@ -259,24 +244,24 @@ nav a:hover {
 
 .hero p {
   max-width: 620px;
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.6;
   color: #d6dcff;
-  margin-bottom: 36px;
+  margin-bottom: 28px;
 }
 
 .buttons {
   display: flex;
-  gap: 20px;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
 .btn {
-  padding: 14px 32px;
+  padding: 12px 28px;
   border-radius: 50px;
   text-decoration: none;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 14px;
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
@@ -308,20 +293,20 @@ nav a:hover {
 
 .stats {
   display: flex;
-  gap: 40px;
-  margin-top: 40px;
+  gap: 32px;
+  margin-top: 28px;
   flex-wrap: wrap;
 }
 
 .stat-number {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 800;
   color: #7df9ff;
   display: block;
 }
 
 .stat-label {
-  font-size: 13px;
+  font-size: 12px;
   color: #a0a8e0;
   letter-spacing: 1px;
 }
@@ -333,8 +318,8 @@ nav a:hover {
 }
 
 .avatar-card {
-  width: 400px;
-  height: 620px;
+  width: 340px;
+  height: 500px;
   position: relative;
   border-radius: 40px;
   background: linear-gradient(145deg, rgba(255,255,255,.12), rgba(255,255,255,.03));
@@ -348,24 +333,24 @@ nav a:hover {
 
 @keyframes float {
   0%,100% { transform: translateY(0) rotateY(-5deg); }
-  50% { transform: translateY(-20px) rotateY(5deg); }
+  50% { transform: translateY(-15px) rotateY(5deg); }
 }
 
 .character {
   position: absolute;
   left: 50%;
-  top: 70px;
+  top: 50px;
   transform: translateX(-50%) translateZ(80px);
-  width: 260px;
-  height: 380px;
+  width: 220px;
+  height: 320px;
 }
 
 .hair {
   position: absolute;
   top: 0;
-  left: 25px;
-  width: 210px;
-  height: 150px;
+  left: 20px;
+  width: 180px;
+  height: 120px;
   background: linear-gradient(135deg, #0f1530, #5a50dd);
   border-radius: 55% 55% 40% 40%;
   box-shadow: 0 0 30px rgba(109,97,255,.6);
@@ -373,43 +358,43 @@ nav a:hover {
 
 .face {
   position: absolute;
-  top: 70px;
-  left: 50px;
-  width: 160px;
-  height: 170px;
+  top: 55px;
+  left: 40px;
+  width: 140px;
+  height: 140px;
   background: #ffddcf;
   border-radius: 50% 50% 45% 45%;
 }
 
 .eye {
   position: absolute;
-  top: 70px;
-  width: 22px;
-  height: 28px;
+  top: 60px;
+  width: 18px;
+  height: 22px;
   background: #071030;
   border-radius: 50%;
   transition: all 0.1s ease;
 }
 
-.eye.left { left: 42px; }
-.eye.right { right: 42px; }
+.eye.left { left: 35px; }
+.eye.right { right: 35px; }
 
 .mouth {
   position: absolute;
-  bottom: 48px;
-  left: 68px;
-  width: 24px;
-  height: 10px;
+  bottom: 40px;
+  left: 58px;
+  width: 20px;
+  height: 8px;
   border-bottom: 3px solid #b85c6a;
   border-radius: 50%;
 }
 
 .body {
   position: absolute;
-  top: 248px;
-  left: 20px;
-  width: 220px;
-  height: 140px;
+  top: 200px;
+  left: 15px;
+  width: 190px;
+  height: 115px;
   background: linear-gradient(135deg, #1a2eff, #8a5cff);
   border-radius: 50px 50px 30px 30px;
   box-shadow: 0 0 25px rgba(125,249,255,.3);
@@ -417,28 +402,28 @@ nav a:hover {
 
 .code-chip {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
-  padding: 15px;
-  border-radius: 20px;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  padding: 12px;
+  border-radius: 18px;
   background: rgba(0,0,0,.6);
   color: #dffcff;
   border: 1px solid rgba(125,249,255,.3);
-  font-size: 11px;
-  line-height: 1.7;
+  font-size: 10px;
+  line-height: 1.6;
   text-align: center;
   transform: translateZ(60px);
   backdrop-filter: blur(8px);
 }
 
 section {
-  padding: 80px 8%;
+  padding: 60px 8%;
 }
 
 .section-title {
-  font-size: 46px;
-  margin-bottom: 16px;
+  font-size: 38px;
+  margin-bottom: 14px;
   background: linear-gradient(135deg, #fff, #7df9ff);
   -webkit-background-clip: text;
   background-clip: text;
@@ -450,18 +435,18 @@ section {
   color: #cfd5ff;
   max-width: 760px;
   line-height: 1.7;
-  margin-bottom: 45px;
-  font-size: 17px;
+  margin-bottom: 35px;
+  font-size: 16px;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  gap: 24px;
 }
 
 .card {
-  padding: 32px;
+  padding: 28px;
   border-radius: 28px;
   background: rgba(255,255,255,.06);
   border: 1px solid rgba(255,255,255,.12);
@@ -476,19 +461,30 @@ section {
 }
 
 .card ul {
-  padding-left: 20px;
-  margin-top: 10px;
+  padding-left: 18px;
+  margin-top: 8px;
 }
 
 .card li {
   color: #d5dcff;
   line-height: 1.6;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.card p {
   font-size: 13px;
+  color: #a0a8e0;
   margin-bottom: 6px;
 }
 
 .about-box {
-  padding: 40px;
+  padding: 35px;
   border-radius: 32px;
   background: linear-gradient(145deg, rgba(125,249,255,.1), rgba(255,255,255,.04));
   border: 1px solid rgba(125,249,255,.2);
@@ -497,12 +493,13 @@ section {
 .about-box p {
   color: #dce2ff;
   line-height: 1.8;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
+  font-size: 15px;
 }
 
 .contact-box {
   text-align: center;
-  padding: 60px;
+  padding: 50px;
   border-radius: 40px;
   background: linear-gradient(135deg, rgba(125,249,255,.12), rgba(155,108,255,.1));
   border: 1px solid rgba(255,255,255,.15);
@@ -510,30 +507,45 @@ section {
 
 .contact-box p {
   color: #dce2ff;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+.contact-box h2 {
+  font-size: 34px;
+  margin-bottom: 12px;
+  background: linear-gradient(135deg, #fff, #7df9ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 footer {
-  padding: 30px;
+  padding: 24px;
   text-align: center;
   color: #bfc5ff;
   border-top: 1px solid rgba(255,255,255,.08);
+  font-size: 13px;
 }
 
 @media(max-width: 850px) {
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
+    padding: 30px 8% 40px;
   }
   .hero h1 {
-    font-size: 48px;
+    font-size: 38px;
   }
   .grid {
     grid-template-columns: 1fr;
   }
   .avatar-card {
-    width: 340px;
-    height: 580px;
+    width: 280px;
+    height: 420px;
+  }
+  .section-title {
+    font-size: 30px;
   }
 }
 </style>
@@ -843,9 +855,9 @@ footer {
 <section id="featured">
   <h2 class="section-title">Featured Project</h2>
   <div class="about-box" style="text-align: center;">
-    <div style="font-size: 60px; margin-bottom: 20px;">📊</div>
-    <h3 style="color: #7df9ff; margin-bottom: 15px; font-size: 28px;">Scatter Dashboard</h3>
-    <p style="margin-bottom: 25px; max-width: 600px; margin-left: auto; margin-right: auto;">
+    <div style="font-size: 50px; margin-bottom: 15px;">📊</div>
+    <h3 style="color: #7df9ff; margin-bottom: 12px; font-size: 24px;">Scatter Dashboard</h3>
+    <p style="margin-bottom: 20px; max-width: 600px; margin-left: auto; margin-right: auto; font-size: 15px; color: #dce2ff;">
       An interactive data visualization dashboard built with Streamlit. 
       Explore scatter plots, data analysis, and real-time insights.
     </p>
@@ -857,7 +869,7 @@ footer {
   <div class="contact-box">
     <h2>Let's Build Something Intelligent</h2>
     <p>Ready to create an SEO-friendly, data-driven digital experience? Let's collaborate and bring your vision to life.</p>
-    <div style="margin-bottom: 20px;">
+    <div style="margin-bottom: 16px;">
       <p>📞 +63 9564574637</p>
       <p>✉️ ieph.bert888@gmail.com</p>
       <p>📍 San Leon Umingan Pangasinan</p>
