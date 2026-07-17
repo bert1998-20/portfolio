@@ -1,11 +1,6 @@
 import streamlit as st
 import streamlit.components.v1 as components
 import base64
-from io import BytesIO
-import os
-
-# Weasyprint is NOT available on Streamlit Cloud - use browser print instead
-WEASYPRINT_AVAILABLE = False
 
 # Page configuration
 st.set_page_config(
@@ -288,12 +283,11 @@ CV_HTML = """
 # Encode CV HTML to Base64 for direct download
 cv_base64 = base64.b64encode(CV_HTML.encode('utf-8')).decode('utf-8')
 
-# Create a download button in the sidebar
+# Sidebar
 with st.sidebar:
     st.markdown("### 📄 Download Options")
     st.info("ℹ️ Download CV as HTML and print to PDF using your browser")
     
-    # HTML download option
     st.download_button(
         label="📄 Download CV (HTML)",
         data=CV_HTML,
@@ -311,7 +305,7 @@ with st.sidebar:
     4. Select "Save as PDF"
     """)
 
-# Your HTML portfolio - WITH WORKING DIRECT DOWNLOAD
+# Portfolio HTML
 portfolio_html = f"""
 <!DOCTYPE html>
 <html lang="en">
@@ -1086,7 +1080,7 @@ footer {{
   © 2026 Obeth Gabiana Silawan | SEO Specialist | WordPress Developer | ASO Specialist | Server Administrator | Built with 💙
 </footer>
 
-<!-- Floating Download CV Button with DIRECT download -->
+<!-- Floating Download CV Button -->
 <div class="download-btn-container">
     <a href="data:text/html;base64,{cv_base64}" download="Obeth_Silawan_CV.html" class="download-btn">
         📄 Download CV
