@@ -43,7 +43,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Portfolio HTML - Clean version without file navigation
+# Portfolio HTML
 portfolio_html = """
 <!DOCTYPE html>
 <html lang="en">
@@ -51,10 +51,6 @@ portfolio_html = """
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Obeth Gabiana Silawan | SEO Specialist Portfolio</title>
-<meta name="description" content="Obeth Gabiana Silawan - SEO Specialist, WordPress Developer, ASO Specialist, and Server Administrator">
-<meta name="keywords" content="SEO Specialist, WordPress Developer, ASO Specialist, Server Administrator">
-<meta name="author" content="Obeth Gabiana Silawan">
-
 <style>
 * {
   margin: 0;
@@ -635,19 +631,15 @@ footer {
   <p class="section-desc">My complete professional journey from 2019 to Present (2026) - chronological order from newest to oldest.</p>
 
   <div class="grid">
+    <!-- SENIOR SEO SPECIALIST - SIMPLIFIED -->
     <div class="card">
       <h3>🔹 Senior SEO Specialist</h3>
       <p><strong>Self-employed / Freelance</strong> | 2026 - PRESENT</p>
       <ul>
-        <li>VPS Self-Managed Setup & Configuration (DigitalOcean, Vultr, Linode)</li>
-        <li>aaPanel, cPanel, WHM, hPanel Administration and Management</li>
+        <li>Manage VPS, cPanel, WHM, aaPanel, and hPanel servers</li>
         <li>Website Migration between hosting providers with zero downtime</li>
-        <li>Database to Database Transfer ensuring data integrity</li>
         <li>Technical SEO Audits and implementation</li>
-        <li>Nginx / Apache Web Server Configuration</li>
-        <li>SSL Certificate Installation (Let's Encrypt, Commercial)</li>
-        <li>Server Security Hardening & Firewall Setup (UFW, CSF)</li>
-        <li>Linux Command Line Operations (Ubuntu, CentOS, Debian)</li>
+        <li>Server Security Hardening & Firewall Setup</li>
         <li>WordPress Optimization on VPS Environments</li>
       </ul>
     </div>
@@ -1022,15 +1014,11 @@ function downloadCV() {
         <div class="company">Self-employed / Freelance</div>
         <div class="date">2026 - PRESENT</div>
         <ul class="job-description">
-          <li>VPS Self-Managed Setup & Configuration (DigitalOcean, Vultr, Linode)</li>
-          <li>aaPanel, cPanel, WHM, hPanel Administration and Management</li>
+          <li>Manage VPS, cPanel, WHM, aaPanel, and hPanel servers</li>
           <li>Website Migration between hosting providers with zero downtime</li>
-          <li>Database to Database Transfer ensuring data integrity</li>
           <li>Technical SEO Audits and implementation</li>
-          <li>Nginx / Apache Web Server Configuration</li>
-          <li>SSL Certificate Installation (Let's Encrypt, Commercial)</li>
           <li>Server Security Hardening & Firewall Setup</li>
-          <li>Linux Command Line Operations (Ubuntu, CentOS, Debian)</li>
+          <li>WordPress Optimization on VPS Environments</li>
         </ul>
       </div>
 
